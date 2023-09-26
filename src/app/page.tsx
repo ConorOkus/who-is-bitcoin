@@ -1,95 +1,100 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+"use client";
+
+import {
+  AspectRatio,
+  Box,
+  Heading,
+  Menu,
+  Flex,
+  Text,
+  Button,
+  Center,
+} from "@chakra-ui/react";
+import HamburgerMenu, { MenuItems } from "../../components/HamburgerMenu";
+import { ArrowForwardIcon } from "@chakra-ui/icons";
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
+    <Box>
+      <HamburgerMenu />
+
+      <Flex
+        pl={{
+          base: 0,
+          lg: 10,
+        }}
+        pr={{
+          base: 0,
+          lg: 24,
+        }}
+      >
+        <Box
+          mr={{
+            base: 0,
+            lg: 100,
+          }}
+          mt={100}
+          display={{
+            base: "none",
+            lg: "block",
+          }}
+        >
+          <MenuItems />
+        </Box>
+        <Box
+          position={{
+            base: "absolute",
+            lg: "relative",
+          }}
+          w='100%'
+          flex={1}
+        >
+          <Box pb='56.25%' position='relative' height='0' mb={8}>
+            <iframe
+              title='A sample video'
+              src='https://www.youtube.com/embed/dQw4w9WgXcQ'
+              allowFullScreen
+              style={{
+                position: "absolute",
+                top: 0,
+                left: 0,
+                width: "100%",
+                height: "100%",
+                border: 0,
+              }}
             />
-          </a>
-        </div>
-      </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  )
+          </Box>
+          <Center mb={8}>
+            <Text
+              color='maroon'
+              maxW={600}
+              px={{
+                base: 4,
+                lg: 0,
+              }}
+              textAlign='center'
+            >
+              Bitcoin...you heard somebody on the news saying it’s for
+              criminals. Your friend’s friend made some money off it. But have
+              you ever met Bitcoin? Who is bitcoin really?
+            </Text>
+          </Center>
+          <Center>
+            <Button
+              rightIcon={<ArrowForwardIcon fontSize={32} />}
+              color='maroon'
+              variant='outline'
+              borderColor='maroon'
+              size='lg'
+              w={300}
+              p={6}
+              borderWidth={4}
+            >
+              Learn More about Bitcoin
+            </Button>
+          </Center>
+        </Box>
+      </Flex>
+    </Box>
+  );
 }
