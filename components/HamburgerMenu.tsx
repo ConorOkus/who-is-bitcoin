@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import {
   Box,
   IconButton,
@@ -29,37 +29,37 @@ export function MenuItems() {
     <VStack spacing={4} alignItems='flex-start'>
       <Box display='flex' alignItems='center'>
         <Icon as={BiFilm} mr={2} color='maroon' />
-        <Link href='#home' color='maroon'>
+        <Link href='#home' color='maroon' fontWeight='bold'>
           Watch Film
         </Link>
       </Box>
       <Box display='flex' alignItems='center'>
         <Icon as={FaDownload} mr={2} color='maroon' />
-        <Link href='#home' color='maroon'>
+        <Link href='#home' color='maroon' fontWeight='bold'>
           Downloads
         </Link>
       </Box>
       <Box display='flex' alignItems='center'>
         <Icon as={FaFaceGrinBeam} mr={2} color='maroon' />
-        <Link href='#home' color='maroon'>
+        <Link href='#home' color='maroon' fontWeight='bold'>
           Showcase
         </Link>
       </Box>
       <Box display='flex' alignItems='center'>
         <Icon as={FaYoutube} mr={2} color='maroon' />
-        <Link href='#home' color='maroon'>
+        <Link href='#home' color='maroon' fontWeight='bold'>
           Youtube
         </Link>
       </Box>
       <Box display='flex' alignItems='center'>
         <Icon as={FaTiktok} mr={2} color='maroon' />
-        <Link href='#home' color='maroon'>
+        <Link href='#home' color='maroon' fontWeight='bold'>
           Tik Tok
         </Link>
       </Box>
       <Box display='flex' alignItems='center'>
         <Icon as={IoIosMail} mr={2} color='maroon' />
-        <Link href='#home' color='maroon'>
+        <Link href='#home' color='maroon' fontWeight='bold'>
           Contact
         </Link>
       </Box>

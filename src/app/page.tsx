@@ -9,9 +9,38 @@ import {
   Text,
   Button,
   Center,
+  Grid,
 } from "@chakra-ui/react";
 import HamburgerMenu, { MenuItems } from "../../components/HamburgerMenu";
 import { ArrowForwardIcon } from "@chakra-ui/icons";
+import Asset from "../../components/Asset";
+
+const downloadableAssets = [
+  {
+    src: "./knight.svg",
+    alt: "bitcoin knight",
+    svgLink: "./knight.svg",
+    pngLink: "./knight.png",
+  },
+  {
+    src: "./dracula.svg",
+    alt: "bitcoin dracula",
+    svgLink: "./dracula.svg",
+    pngLink: "./dracula.png",
+  },
+  {
+    src: "./flying.svg",
+    alt: "bitcoin flying",
+    svgLink: "./flying.svg",
+    pngLink: "./flying.png",
+  },
+  {
+    src: "./girl.svg",
+    alt: "bitcoin girl",
+    svgLink: "./girl.svg",
+    pngLink: "./girl.png",
+  },
+];
 
 export default function Home() {
   return (
@@ -67,6 +96,7 @@ export default function Home() {
           }}
           w='100%'
           flex={1}
+          mb={8}
         >
           <Box pb='56.25%' position='relative' height='0' mb={8}>
             <iframe
@@ -98,7 +128,7 @@ export default function Home() {
               you ever met Bitcoin? Who is bitcoin really?
             </Text>
           </Center>
-          <Center>
+          <Center mb={12}>
             <Button
               rightIcon={<ArrowForwardIcon fontSize={32} />}
               color='maroon'
@@ -113,6 +143,45 @@ export default function Home() {
             >
               Learn More About Bitcoin
             </Button>
+          </Center>
+          <Heading
+            fontFamily='heading'
+            fontWeight={400}
+            fontStyle='normal'
+            fontSize='42px'
+            background='linear-gradient(to bottom, #EFF68F, #DD7D6D)'
+            color='transparent'
+            backgroundClip='text'
+            textAlign='center'
+            lineHeight={1}
+            mb={6}
+            sx={{
+              WebkitTextFillColor: "transparent", // Equivalent to setting the text color, but more specific for Webkit
+              WebkitTextStroke: "2px #B93F28",
+            }}
+            position='relative'
+          >
+            Downloadable Assets
+          </Heading>
+          <Text color='maroon' textAlign='center' px={8} mb={8}>
+            Build your own Bitcoin adventure and share it with the world.
+          </Text>
+          <Center>
+            <Grid
+              w='100%'
+              templateColumns={{ base: "repeat(2, 1fr)", md: "repeat(4, 1fr)" }}
+              gap={4}
+            >
+              {downloadableAssets.map((asset, key) => (
+                <Asset
+                  key={key}
+                  src={asset.src}
+                  alt={asset.alt}
+                  svgLink={asset.svgLink}
+                  pngLink={asset.pngLink}
+                />
+              ))}
+            </Grid>
           </Center>
         </Box>
       </Flex>
