@@ -6,10 +6,15 @@ import { ChakraProvider } from "@chakra-ui/react";
 import { extendTheme } from "@chakra-ui/react";
 
 const colors = {
-  maroon: "#AB2E4C",
+  maroon: "#C33F82",
 };
 
-export const theme = extendTheme({ colors });
+const fonts = {
+  heading: "bookman-jf-pro, 'Georgia', 'Times New Roman', serif",
+  body: "'Georgia', 'Times New Roman', serif",
+};
+
+export const theme = extendTheme({ colors, fonts });
 
 export function Providers({ children }: { children: React.ReactNode }) {
   return (

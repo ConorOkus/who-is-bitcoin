@@ -12,6 +12,7 @@ import {
   Link,
   useDisclosure,
   Icon,
+  Heading,
 } from "@chakra-ui/react";
 import { HamburgerIcon } from "@chakra-ui/icons";
 import { BiFilm } from "react-icons/bi";
@@ -87,12 +88,32 @@ function HamburgerMenu() {
         color='maroon'
         background='none'
         fontSize={32}
+        mt={2}
+        pr={4}
       />
       <Drawer isOpen={isOpen} placement='left' onClose={onClose}>
         <DrawerOverlay>
           <DrawerContent>
             <DrawerCloseButton color='maroon' fontSize={18} />
-            <DrawerHeader>Here Comes Bitcoin</DrawerHeader>
+            <DrawerHeader w='200px'>
+              <Heading
+                fontFamily='heading'
+                fontWeight={400}
+                fontStyle='normal'
+                fontSize='42px'
+                background='linear-gradient(to bottom, #EFF68F, #DD7D6D)'
+                color='transparent'
+                backgroundClip='text'
+                lineHeight={1}
+                sx={{
+                  WebkitTextFillColor: "transparent", // Equivalent to setting the text color, but more specific for Webkit
+                  WebkitTextStroke: "2px #B93F28",
+                }}
+                position='relative'
+              >
+                Here Comes Bitcoin
+              </Heading>
+            </DrawerHeader>
             <DrawerBody>
               <MenuItems />
             </DrawerBody>

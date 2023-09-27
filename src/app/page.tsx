@@ -39,6 +39,25 @@ export default function Home() {
             lg: "block",
           }}
         >
+          <Box w='200px' mb={8}>
+            <Heading
+              fontFamily='heading'
+              fontWeight={400}
+              fontStyle='normal'
+              fontSize='42px'
+              background='linear-gradient(to bottom, #EFF68F, #DD7D6D)'
+              color='transparent'
+              backgroundClip='text'
+              lineHeight={1}
+              sx={{
+                WebkitTextFillColor: "transparent", // Equivalent to setting the text color, but more specific for Webkit
+                WebkitTextStroke: "2px #B93F28",
+              }}
+              position='relative'
+            >
+              Here Comes Bitcoin
+            </Heading>
+          </Box>
           <MenuItems />
         </Box>
         <Box
@@ -83,14 +102,16 @@ export default function Home() {
             <Button
               rightIcon={<ArrowForwardIcon fontSize={32} />}
               color='maroon'
+              fontFamily='heading'
               variant='outline'
               borderColor='maroon'
               size='lg'
               w={300}
               p={6}
               borderWidth={4}
+              fontSize={16}
             >
-              Learn More about Bitcoin
+              Learn More About Bitcoin
             </Button>
           </Center>
         </Box>
