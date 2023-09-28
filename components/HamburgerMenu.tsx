@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import {
   Box,
@@ -23,58 +25,80 @@ import {
   FaTiktok,
 } from "react-icons/fa6";
 import { IoIosMail } from "react-icons/io";
-import Link from "next/link";
+import NextLink from "next/link";
+import { BookmanHeading } from "./BookmanHeading";
 
 export function MenuItems() {
   return (
     <VStack spacing={4} alignItems='flex-start'>
       <Box display='flex' alignItems='center'>
         <Icon as={BiFilm} mr={2} color='maroon' />
-        <Link href='#home' passHref>
-          <ChakraLink color='maroon' fontWeight='bold'>
-            Watch Film
-          </ChakraLink>
-        </Link>
+        <ChakraLink
+          as={NextLink}
+          color='maroon'
+          fontWeight='bold'
+          href='#downloads'
+        >
+          Watch Film
+        </ChakraLink>
       </Box>
       <Box display='flex' alignItems='center'>
         <Icon as={FaDownload} mr={2} color='maroon' />
-        <Link href='#home' passHref>
-          <ChakraLink color='maroon' fontWeight='bold'>
-            Downloads
-          </ChakraLink>
-        </Link>
+        <ChakraLink
+          as={NextLink}
+          color='maroon'
+          fontWeight='bold'
+          scrollBehavior='smooth'
+          scroll={true}
+          href='#downloads'
+        >
+          Downloads
+        </ChakraLink>
       </Box>
       <Box display='flex' alignItems='center'>
         <Icon as={FaFaceGrinBeam} mr={2} color='maroon' />
-        <Link href='#home' passHref>
-          <ChakraLink color='maroon' fontWeight='bold'>
-            Showcase
-          </ChakraLink>
-        </Link>
+        <ChakraLink
+          as={NextLink}
+          color='maroon'
+          fontWeight='bold'
+          scrollBehavior='smooth'
+          href='#showcase'
+        >
+          Showcase
+        </ChakraLink>
       </Box>
       <Box display='flex' alignItems='center'>
         <Icon as={FaYoutube} mr={2} color='maroon' />
-        <Link href='#home' passHref>
-          <ChakraLink color='maroon' fontWeight='bold'>
-            Youtube
-          </ChakraLink>
-        </Link>
+        <ChakraLink
+          as={NextLink}
+          color='maroon'
+          fontWeight='bold'
+          href='#downloads'
+        >
+          Youtube
+        </ChakraLink>
       </Box>
       <Box display='flex' alignItems='center'>
         <Icon as={FaTiktok} mr={2} color='maroon' />
-        <Link href='#home' passHref>
-          <ChakraLink color='maroon' fontWeight='bold'>
-            Tik Tok
-          </ChakraLink>
-        </Link>
+        <ChakraLink
+          as={NextLink}
+          color='maroon'
+          fontWeight='bold'
+          href='#downloads'
+        >
+          Tik Tok
+        </ChakraLink>
       </Box>
       <Box display='flex' alignItems='center'>
         <Icon as={IoIosMail} mr={2} color='maroon' />
-        <Link href='#home' passHref>
-          <ChakraLink color='maroon' fontWeight='bold'>
-            Contact
-          </ChakraLink>
-        </Link>
+        <ChakraLink
+          as={NextLink}
+          color='maroon'
+          fontWeight='bold'
+          href='#downloads'
+        >
+          Contact
+        </ChakraLink>
       </Box>
     </VStack>
   );
@@ -82,7 +106,6 @@ export function MenuItems() {
 
 function HamburgerMenu() {
   const { isOpen, onOpen, onClose } = useDisclosure();
-  const btnRef = React.useRef();
 
   return (
     <Box
@@ -100,6 +123,7 @@ function HamburgerMenu() {
         float='right'
         color='maroon'
         background='none'
+        _hover={{ background: "none" }}
         fontSize={32}
         mt={2}
         pr={4}
@@ -109,23 +133,7 @@ function HamburgerMenu() {
           <DrawerContent>
             <DrawerCloseButton color='maroon' fontSize={18} />
             <DrawerHeader w='200px'>
-              <Heading
-                fontFamily='heading'
-                fontWeight={400}
-                fontStyle='normal'
-                fontSize='42px'
-                background='linear-gradient(to bottom, #EFF68F, #DD7D6D)'
-                color='transparent'
-                backgroundClip='text'
-                lineHeight={1}
-                sx={{
-                  WebkitTextFillColor: "transparent", // Equivalent to setting the text color, but more specific for Webkit
-                  WebkitTextStroke: "2px #B93F28",
-                }}
-                position='relative'
-              >
-                Here Comes Bitcoin
-              </Heading>
+              <BookmanHeading>Here Comes Bitcoin</BookmanHeading>
             </DrawerHeader>
             <DrawerBody>
               <MenuItems />

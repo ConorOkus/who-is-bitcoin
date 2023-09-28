@@ -10,10 +10,12 @@ import {
   Button,
   Center,
   Grid,
+  Image,
 } from "@chakra-ui/react";
 import HamburgerMenu, { MenuItems } from "../../components/HamburgerMenu";
 import { ArrowForwardIcon } from "@chakra-ui/icons";
 import Asset from "../../components/Asset";
+import { BookmanHeading } from "../../components/BookmanHeading";
 
 const downloadableAssets = [
   {
@@ -39,6 +41,17 @@ const downloadableAssets = [
     alt: "bitcoin girl",
     svgLink: "./girl.svg",
     pngLink: "./girl.png",
+  },
+];
+
+const showcase = [
+  {
+    src: "./gm.png",
+    alt: "bitcoin gm",
+  },
+  {
+    src: "./victory.png",
+    alt: "bitcoin gm",
   },
 ];
 
@@ -144,29 +157,13 @@ export default function Home() {
               Learn More About Bitcoin
             </Button>
           </Center>
-          <Heading
-            fontFamily='heading'
-            fontWeight={400}
-            fontStyle='normal'
-            fontSize='42px'
-            background='linear-gradient(to bottom, #EFF68F, #DD7D6D)'
-            color='transparent'
-            backgroundClip='text'
-            textAlign='center'
-            lineHeight={1}
-            mb={6}
-            sx={{
-              WebkitTextFillColor: "transparent", // Equivalent to setting the text color, but more specific for Webkit
-              WebkitTextStroke: "2px #B93F28",
-            }}
-            position='relative'
-          >
+          <BookmanHeading textAlign='center' mb={6} id='downloads'>
             Downloadable Assets
-          </Heading>
+          </BookmanHeading>
           <Text color='maroon' textAlign='center' px={8} mb={8}>
             Build your own Bitcoin adventure and share it with the world.
           </Text>
-          <Center>
+          <Center mb={8}>
             <Grid
               w='100%'
               templateColumns={{ base: "repeat(2, 1fr)", md: "repeat(4, 1fr)" }}
@@ -180,6 +177,23 @@ export default function Home() {
                   svgLink={asset.svgLink}
                   pngLink={asset.pngLink}
                 />
+              ))}
+            </Grid>
+          </Center>
+          <BookmanHeading textAlign='center' mb={6} id='showcase'>
+            Showcase
+          </BookmanHeading>
+          <Text color='maroon' textAlign='center' px={8} mb={8}>
+            Build your own Bitcoin adventure and share it with the world.{" "}
+          </Text>
+          <Center mb={8}>
+            <Grid
+              w='100%'
+              templateColumns={{ base: "repeat(1, 1fr)", md: "repeat(2, 1fr)" }}
+              gap={4}
+            >
+              {showcase.map((asset, key) => (
+                <Image src={asset.src} alt={asset.alt} px={4} key={key} />
               ))}
             </Grid>
           </Center>

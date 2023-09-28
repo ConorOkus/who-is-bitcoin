@@ -2,6 +2,13 @@ import React from "react";
 import { Box, Flex, Icon, Image, Link } from "@chakra-ui/react";
 import { GiDiamonds } from "react-icons/gi";
 
+type Props = {
+  src: string;
+  alt: string;
+  svgLink: string;
+  pngLink: string;
+};
+
 export const downloadableAssets = [
   {
     src: "./knight.svg",
@@ -28,13 +35,6 @@ export const downloadableAssets = [
     pngLink: "./girl.png",
   },
 ];
-
-type Props = {
-  src: string;
-  alt: string;
-  svgLink: string;
-  pngLink: string;
-};
 
 function Asset({ src, alt, svgLink, pngLink }: Props) {
   return (
