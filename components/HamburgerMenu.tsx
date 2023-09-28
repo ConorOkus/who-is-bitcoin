@@ -9,7 +9,7 @@ import {
   DrawerHeader,
   DrawerBody,
   VStack,
-  Link,
+  Link as ChakraLink,
   useDisclosure,
   Icon,
   Heading,
@@ -23,44 +23,57 @@ import {
   FaTiktok,
 } from "react-icons/fa6";
 import { IoIosMail } from "react-icons/io";
+import Link from "next/link";
 
 export function MenuItems() {
   return (
     <VStack spacing={4} alignItems='flex-start'>
       <Box display='flex' alignItems='center'>
         <Icon as={BiFilm} mr={2} color='maroon' />
-        <Link href='#home' color='maroon' fontWeight='bold'>
-          Watch Film
+        <Link href='#home' passHref>
+          <ChakraLink color='maroon' fontWeight='bold'>
+            Watch Film
+          </ChakraLink>
         </Link>
       </Box>
       <Box display='flex' alignItems='center'>
         <Icon as={FaDownload} mr={2} color='maroon' />
-        <Link href='#home' color='maroon' fontWeight='bold'>
-          Downloads
+        <Link href='#home' passHref>
+          <ChakraLink color='maroon' fontWeight='bold'>
+            Downloads
+          </ChakraLink>
         </Link>
       </Box>
       <Box display='flex' alignItems='center'>
         <Icon as={FaFaceGrinBeam} mr={2} color='maroon' />
-        <Link href='#home' color='maroon' fontWeight='bold'>
-          Showcase
+        <Link href='#home' passHref>
+          <ChakraLink color='maroon' fontWeight='bold'>
+            Showcase
+          </ChakraLink>
         </Link>
       </Box>
       <Box display='flex' alignItems='center'>
         <Icon as={FaYoutube} mr={2} color='maroon' />
-        <Link href='#home' color='maroon' fontWeight='bold'>
-          Youtube
+        <Link href='#home' passHref>
+          <ChakraLink color='maroon' fontWeight='bold'>
+            Youtube
+          </ChakraLink>
         </Link>
       </Box>
       <Box display='flex' alignItems='center'>
         <Icon as={FaTiktok} mr={2} color='maroon' />
-        <Link href='#home' color='maroon' fontWeight='bold'>
-          Tik Tok
+        <Link href='#home' passHref>
+          <ChakraLink color='maroon' fontWeight='bold'>
+            Tik Tok
+          </ChakraLink>
         </Link>
       </Box>
       <Box display='flex' alignItems='center'>
         <Icon as={IoIosMail} mr={2} color='maroon' />
-        <Link href='#home' color='maroon' fontWeight='bold'>
-          Contact
+        <Link href='#home' passHref>
+          <ChakraLink color='maroon' fontWeight='bold'>
+            Contact
+          </ChakraLink>
         </Link>
       </Box>
     </VStack>
