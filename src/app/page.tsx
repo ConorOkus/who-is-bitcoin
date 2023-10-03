@@ -11,11 +11,17 @@ import {
   Center,
   Grid,
   Image,
+  Icon,
+  Link as ChakraLink,
+  VStack,
 } from "@chakra-ui/react";
 import HamburgerMenu, { MenuItems } from "../../components/HamburgerMenu";
+import NextLink from "next/link";
 import { ArrowForwardIcon } from "@chakra-ui/icons";
 import Asset from "../../components/Asset";
 import { BookmanHeading } from "../../components/BookmanHeading";
+import { FaTiktok } from "react-icons/fa6";
+import { IoIosMail } from "react-icons/io";
 
 const downloadableAssets = [
   {
@@ -57,148 +63,180 @@ const showcase = [
 
 export default function Home() {
   return (
-    <Box>
-      <HamburgerMenu />
-
-      <Flex
-        pl={{
-          base: 0,
-          lg: 10,
-        }}
-        pr={{
-          base: 0,
-          lg: 24,
-        }}
+    <Box
+      px={{
+        base: 6,
+        lg: 12,
+      }}
+      py={{
+        base: 6,
+      }}
+    >
+      <Box
+        display='flex'
+        justifyContent='space-between'
+        alignItems='center'
+        mb={8}
       >
-        <Box
-          mr={{
-            base: 0,
-            lg: 100,
+        <BookmanHeading
+          width={{
+            base: "120px",
+            lg: "200px",
           }}
-          mt={100}
-          display={{
-            base: "none",
-            lg: "block",
+          fontSize={{
+            base: 24,
+            lg: 42,
           }}
         >
-          <Box w='200px' mb={8}>
-            <Heading
-              fontFamily='heading'
-              fontWeight={400}
-              fontStyle='normal'
-              fontSize='42px'
-              background='linear-gradient(to bottom, #EFF68F, #DD7D6D)'
-              color='transparent'
-              backgroundClip='text'
-              lineHeight={1}
-              sx={{
-                WebkitTextFillColor: "transparent", // Equivalent to setting the text color, but more specific for Webkit
-                WebkitTextStroke: "2px #B93F28",
-              }}
-              position='relative'
-            >
-              Here Comes Bitcoin
-            </Heading>
-          </Box>
-          <MenuItems />
-        </Box>
+          Here Comes Bitcoin
+        </BookmanHeading>
         <Box
-          position={{
-            base: "absolute",
-            lg: "relative",
+          display='flex'
+          flexDirection={{
+            base: "column",
+            lg: "row",
           }}
-          w='100%'
-          flex={1}
-          mb={8}
         >
-          <Box pb='56.25%' position='relative' height='0' mb={8}>
-            <iframe
-              title='A sample video'
-              src='https://www.youtube.com/embed/dQw4w9WgXcQ'
-              allowFullScreen
-              style={{
-                position: "absolute",
-                top: 0,
-                left: 0,
-                width: "100%",
-                height: "100%",
-                border: 0,
+          <Box
+            display='flex'
+            alignItems='center'
+            mr={{
+              base: 0,
+              lg: 4,
+            }}
+          >
+            <Icon
+              as={FaTiktok}
+              mr={2}
+              color='maroon'
+              fontSize={{
+                base: 16,
+                lg: 24,
               }}
             />
-          </Box>
-          <Center mb={8}>
-            <Text
+            <ChakraLink
+              as={NextLink}
               color='maroon'
-              maxW={600}
-              px={{
-                base: 4,
-                lg: 0,
+              fontWeight='bold'
+              href='#downloads'
+              fontSize={{
+                base: 16,
+                lg: 24,
               }}
-              textAlign='center'
             >
-              Bitcoin...you heard somebody on the news saying it’s for
-              criminals. Your friend’s friend made some money off it. But have
-              you ever met Bitcoin? Who is bitcoin really?
-            </Text>
-          </Center>
-          <Center mb={12}>
-            <Button
-              rightIcon={<ArrowForwardIcon fontSize={32} />}
+              Tik Tok
+            </ChakraLink>
+          </Box>
+          <Box display='flex' alignItems='center'>
+            <Icon
+              as={IoIosMail}
+              mr={2}
               color='maroon'
-              fontFamily='heading'
-              variant='outline'
-              borderColor='maroon'
-              size='lg'
-              w={300}
-              p={6}
-              borderWidth={4}
-              fontSize={16}
+              fontSize={{
+                base: 16,
+                lg: 24,
+              }}
+            />
+            <ChakraLink
+              as={NextLink}
+              color='maroon'
+              fontWeight='bold'
+              href='#downloads'
+              fontSize={{
+                base: 16,
+                lg: 24,
+              }}
             >
-              Learn More About Bitcoin
-            </Button>
-          </Center>
-          <BookmanHeading textAlign='center' mb={6} id='downloads'>
-            Downloadable Assets
-          </BookmanHeading>
-          <Text color='maroon' textAlign='center' px={8} mb={8}>
-            Build your own Bitcoin adventure and share it with the world.
-          </Text>
-          <Center mb={8}>
-            <Grid
-              w='100%'
-              templateColumns={{ base: "repeat(2, 1fr)", md: "repeat(4, 1fr)" }}
-              gap={4}
-            >
-              {downloadableAssets.map((asset, key) => (
-                <Asset
-                  key={key}
-                  src={asset.src}
-                  alt={asset.alt}
-                  svgLink={asset.svgLink}
-                  pngLink={asset.pngLink}
-                />
-              ))}
-            </Grid>
-          </Center>
-          <BookmanHeading textAlign='center' mb={6} id='showcase'>
-            Showcase
-          </BookmanHeading>
-          <Text color='maroon' textAlign='center' px={8} mb={8}>
-            Build your own Bitcoin adventure and share it with the world.{" "}
-          </Text>
-          <Center mb={8}>
-            <Grid
-              w='100%'
-              templateColumns={{ base: "repeat(1, 1fr)", md: "repeat(2, 1fr)" }}
-              gap={4}
-            >
-              {showcase.map((asset, key) => (
-                <Image src={asset.src} alt={asset.alt} px={4} key={key} />
-              ))}
-            </Grid>
-          </Center>
+              Contact
+            </ChakraLink>
+          </Box>
         </Box>
-      </Flex>
+      </Box>
+
+      <AspectRatio
+        width='100%'
+        px={{
+          base: 0,
+          lg: 12,
+        }}
+        ratio={4 / 3}
+        mb={8}
+      >
+        <iframe
+          title='rick'
+          src='https://www.youtube.com/embed/QhBnZ6NPOY0'
+          allowFullScreen
+        />
+      </AspectRatio>
+
+      <Center mb={8}>
+        <Text
+          color='maroon'
+          maxW={600}
+          px={{
+            base: 4,
+            lg: 0,
+          }}
+          textAlign='center'
+        >
+          Bitcoin...you heard somebody on the news saying it’s for criminals.
+          Your friend’s friend made some money off it. But have you ever met
+          Bitcoin? Who is bitcoin really?
+        </Text>
+      </Center>
+      <Center mb={12}>
+        <Button
+          rightIcon={<ArrowForwardIcon fontSize={32} />}
+          color='maroon'
+          fontFamily='heading'
+          variant='outline'
+          borderColor='maroon'
+          size='lg'
+          py={8}
+          borderWidth={4}
+          fontSize={16}
+        >
+          Learn More About Bitcoin
+        </Button>
+      </Center>
+      <BookmanHeading textAlign='center' mb={6} id='downloads'>
+        Downloadable Assets
+      </BookmanHeading>
+      <Text color='maroon' textAlign='center' px={8} mb={2}>
+        Build your own Bitcoin adventure and share it with the world.
+      </Text>
+      <Box display='flex' justifyContent='center' mb={12}>
+        <Flex wrap='wrap' w='100%'>
+          {downloadableAssets.map((asset, key) => (
+            <Asset
+              key={key}
+              src={asset.src}
+              alt={asset.alt}
+              svgLink={asset.svgLink}
+              pngLink={asset.pngLink}
+            />
+          ))}
+        </Flex>
+      </Box>
+      <BookmanHeading textAlign='center' mb={6} id='showcase'>
+        Showcase
+      </BookmanHeading>
+      <Text color='maroon' textAlign='center' px={8} mb={2}>
+        Build your own Bitcoin adventure and share it with the world.{}
+      </Text>
+      <Box display='flex' justifyContent='center'>
+        <Flex wrap='wrap' w='100%'>
+          {showcase.map((asset, key) => (
+            <Image
+              src={asset.src}
+              alt={asset.alt}
+              key={key}
+              w={["100%", "50%"]}
+              p={3}
+            />
+          ))}
+        </Flex>
+      </Box>
     </Box>
   );
 }

@@ -38,7 +38,13 @@ export const downloadableAssets = [
 
 function Asset({ src, alt, svgLink, pngLink }: Props) {
   return (
-    <Box w='100%' display='flex' justifyContent='center' flexDirection='column'>
+    <Box
+      display='flex'
+      justifyContent='center'
+      flexDirection='column'
+      w={["50%", "25%"]}
+      p={3}
+    >
       <Flex justifyContent='space-around' alignItems='center'>
         <Image src={src} alt={alt} />
       </Flex>
