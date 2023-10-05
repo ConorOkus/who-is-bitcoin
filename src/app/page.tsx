@@ -66,98 +66,18 @@ export default function Home() {
     <Box
       px={{
         base: 6,
-        lg: 12,
+        lg: "192px",
       }}
       py={{
         base: 6,
+        lg: 12,
       }}
     >
-      <Box
-        display='flex'
-        justifyContent='space-between'
-        alignItems='center'
-        mb={8}
-      >
-        <BookmanHeading
-          width={{
-            base: "120px",
-            lg: "200px",
-          }}
-          fontSize={{
-            base: 24,
-            lg: 42,
-          }}
-        >
-          Here Comes Bitcoin
-        </BookmanHeading>
-        <Box
-          display='flex'
-          flexDirection={{
-            base: "column",
-            lg: "row",
-          }}
-        >
-          <Box
-            display='flex'
-            alignItems='center'
-            mr={{
-              base: 0,
-              lg: 4,
-            }}
-          >
-            <Icon
-              as={FaTiktok}
-              mr={2}
-              color='maroon'
-              fontSize={{
-                base: 16,
-                lg: 24,
-              }}
-            />
-            <ChakraLink
-              as={NextLink}
-              color='maroon'
-              fontWeight='bold'
-              href='#downloads'
-              fontSize={{
-                base: 16,
-                lg: 24,
-              }}
-            >
-              Tik Tok
-            </ChakraLink>
-          </Box>
-          <Box display='flex' alignItems='center'>
-            <Icon
-              as={IoIosMail}
-              mr={2}
-              color='maroon'
-              fontSize={{
-                base: 16,
-                lg: 24,
-              }}
-            />
-            <ChakraLink
-              as={NextLink}
-              color='maroon'
-              fontWeight='bold'
-              href='#downloads'
-              fontSize={{
-                base: 16,
-                lg: 24,
-              }}
-            >
-              Contact
-            </ChakraLink>
-          </Box>
-        </Box>
-      </Box>
-
       <AspectRatio
         width='100%'
-        px={{
-          base: 0,
-          lg: 12,
+        height={{
+          base: "auto",
+          lg: "600px",
         }}
         ratio={4 / 3}
         mb={8}
@@ -169,7 +89,11 @@ export default function Home() {
         />
       </AspectRatio>
 
-      <Center mb={8}>
+      <BookmanHeading textAlign='center' mb={6}>
+        Here Comes Bitcoin
+      </BookmanHeading>
+
+      <Center mb={6}>
         <Text
           color='maroon'
           maxW={600}
@@ -184,7 +108,41 @@ export default function Home() {
           Bitcoin? Who is bitcoin really?
         </Text>
       </Center>
-      <Center mb={12}>
+      <Box display='flex' justifyContent='center' mb={12}>
+        <ChakraLink
+          as={NextLink}
+          color='maroon'
+          fontWeight='bold'
+          href='#downloads'
+        >
+          <Icon
+            as={FaTiktok}
+            mr={2}
+            color='maroon'
+            fontSize={{
+              base: 24,
+              lg: 32,
+            }}
+          />
+        </ChakraLink>
+        <ChakraLink
+          as={NextLink}
+          color='maroon'
+          fontWeight='bold'
+          href='#downloads'
+        >
+          <Icon
+            as={IoIosMail}
+            mr={2}
+            color='maroon'
+            fontSize={{
+              base: 24,
+              lg: 32,
+            }}
+          />
+        </ChakraLink>
+      </Box>
+      {/* <Center mb={12}>
         <Button
           rightIcon={<ArrowForwardIcon fontSize={32} />}
           color='maroon'
@@ -198,7 +156,7 @@ export default function Home() {
         >
           Learn More About Bitcoin
         </Button>
-      </Center>
+      </Center> */}
       <BookmanHeading textAlign='center' mb={6} id='downloads'>
         Downloadable Assets
       </BookmanHeading>
@@ -222,7 +180,7 @@ export default function Home() {
         Showcase
       </BookmanHeading>
       <Text color='maroon' textAlign='center' px={8} mb={2}>
-        Build your own Bitcoin adventure and share it with the world.{}
+        Build your own Bitcoin adventure and share it with the world.
       </Text>
       <Box display='flex' justifyContent='center'>
         <Flex wrap='wrap' w='100%'>
