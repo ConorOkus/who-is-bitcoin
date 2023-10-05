@@ -11,7 +11,10 @@ export function BookmanHeading(props: ExtendedHeadingProps) {
       fontFamily='heading'
       fontWeight={400}
       fontStyle='normal'
-      fontSize='42px'
+      fontSize={{
+        base: "32px",
+        md: "48px",
+      }}
       background='linear-gradient(to bottom, #EFF68F, #DD7D6D)'
       color='transparent'
       backgroundClip='text'
