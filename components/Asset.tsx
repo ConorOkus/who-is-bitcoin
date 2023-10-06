@@ -1,42 +1,12 @@
 import React from "react";
 import { Box, Flex, Icon, Image, Link } from "@chakra-ui/react";
-import { GiDiamonds } from "react-icons/gi";
 
 type Props = {
   src: string;
   alt: string;
-  svgLink: string;
-  pngLink: string;
 };
 
-export const downloadableAssets = [
-  {
-    src: "./knight.svg",
-    alt: "bitcoin knight",
-    svgLink: "./knight.svg",
-    pngLink: "./knight.png",
-  },
-  {
-    src: "./dracula.svg",
-    alt: "bitcoin dracula",
-    svgLink: "./dracula.svg",
-    pngLink: "./dracula.png",
-  },
-  {
-    src: "./flying.svg",
-    alt: "bitcoin flying",
-    svgLink: "./flying.svg",
-    pngLink: "./flying.png",
-  },
-  {
-    src: "./girl.svg",
-    alt: "bitcoin girl",
-    svgLink: "./girl.svg",
-    pngLink: "./girl.png",
-  },
-];
-
-function Asset({ src, alt, svgLink, pngLink }: Props) {
+function Asset({ src, alt }: Props) {
   return (
     <Box
       display='flex'
@@ -54,19 +24,9 @@ function Asset({ src, alt, svgLink, pngLink }: Props) {
           fontFamily='heading'
           color='maroon'
           download={true}
-          href={svgLink}
+          href={src}
         >
-          SVG
-        </Link>
-        <Icon as={GiDiamonds} fontSize={18} color='#CCCCCC' mx={4} />
-        <Link
-          fontSize={18}
-          fontFamily='heading'
-          color='maroon'
-          download={true}
-          href={pngLink}
-        >
-          PNG
+          Download
         </Link>
       </Flex>
     </Box>

@@ -25,39 +25,83 @@ import { IoIosMail } from "react-icons/io";
 
 const downloadableAssets = [
   {
-    src: "./knight.svg",
-    alt: "bitcoin knight",
-    svgLink: "./knight.svg",
-    pngLink: "./knight.png",
+    src: "./Acrobat.png",
+    alt: "bitcoin acrobat",
   },
   {
-    src: "./dracula.svg",
-    alt: "bitcoin dracula",
-    svgLink: "./dracula.svg",
-    pngLink: "./dracula.png",
+    src: "./Count.png",
+    alt: "bitcoin count",
   },
   {
-    src: "./flying.svg",
-    alt: "bitcoin flying",
-    svgLink: "./flying.svg",
-    pngLink: "./flying.png",
+    src: "./Fancy.png",
+    alt: "bitcoin fancy",
+  },
+  // {
+  //   src: "./Grumpy.png",
+  //   alt: "bitcoin grumpy",
+  // },
+  // {
+  //   src: "./Hungry.png",
+  //   alt: "bitcoin hungry",
+  // },
+  {
+    src: "./Mrs.png",
+    alt: "bitcoin mrs",
   },
   {
-    src: "./girl.svg",
-    alt: "bitcoin girl",
-    svgLink: "./girl.svg",
-    pngLink: "./girl.png",
+    src: "./Sir.png",
+    alt: "bitcoin sir",
+  },
+  {
+    src: "./Super.png",
+    alt: "bitcoin super",
+  },
+  {
+    src: "./surfer.png",
+    alt: "bitcoin surfing",
+  },
+  {
+    src: "./UFO.png",
+    alt: "bitcoin ufo",
   },
 ];
 
 const showcase = [
   {
-    src: "./gm.png",
-    alt: "bitcoin gm",
+    src: "./Alien.png",
+    alt: "bitcoin alien",
   },
   {
-    src: "./victory.png",
-    alt: "bitcoin gm",
+    src: "./beach.png",
+    alt: "bitcoin beach",
+  },
+  {
+    src: "./cooking.png",
+    alt: "bitcoin cooking",
+  },
+  {
+    src: "./Dracula.png",
+    alt: "bitcoin dracula",
+  },
+  {
+    src: "./Farmer.png",
+    alt: "bitcoin farmer",
+  },
+  {
+    src: "./Safari.png",
+    alt: "bitcoin safari",
+  },
+  {
+    src: "./Surfing.png",
+    alt: "bitcoin surfing",
+  },
+  // {
+  //   src: "./Victory.png",
+  //   alt: "bitcoin victory",
+  // },
+  {
+    src: "./Woods.png",
+    alt: "bitcoin woods",
   },
 ];
 
@@ -142,21 +186,6 @@ export default function Home() {
           />
         </ChakraLink>
       </Box>
-      {/* <Center mb={12}>
-        <Button
-          rightIcon={<ArrowForwardIcon fontSize={32} />}
-          color='maroon'
-          fontFamily='heading'
-          variant='outline'
-          borderColor='maroon'
-          size='lg'
-          py={8}
-          borderWidth={4}
-          fontSize={16}
-        >
-          Learn More About Bitcoin
-        </Button>
-      </Center> */}
       <BookmanHeading textAlign='center' mb={6} id='downloads'>
         Downloadable Assets
       </BookmanHeading>
@@ -166,13 +195,7 @@ export default function Home() {
       <Box display='flex' justifyContent='center' mb={12}>
         <Flex wrap='wrap' w='100%'>
           {downloadableAssets.map((asset, key) => (
-            <Asset
-              key={key}
-              src={asset.src}
-              alt={asset.alt}
-              svgLink={asset.svgLink}
-              pngLink={asset.pngLink}
-            />
+            <Asset key={key} src={asset.src} alt={asset.alt} />
           ))}
         </Flex>
       </Box>
