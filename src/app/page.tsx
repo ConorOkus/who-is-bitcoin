@@ -193,7 +193,7 @@ export default function Home() {
       <Text color='maroon' textAlign='center' px={8} mb={2}>
         Build your own Bitcoin adventure and share it with the world.
       </Text>
-      <Box display='flex' justifyContent='center' mb={12}>
+      <Box display='flex' justifyContent='center' mb={8}>
         <Flex wrap='wrap' w='100%'>
           {downloadableAssets.map((asset, key) => (
             <Asset key={key} src={asset.src} alt={asset.alt} />
