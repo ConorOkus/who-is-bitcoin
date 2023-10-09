@@ -15,14 +15,15 @@ function Asset({ src, alt }: Props) {
       w={["50%", "25%"]}
       p={3}
     >
-      <Flex justifyContent='space-around' alignItems='center'>
+      <Flex justifyContent='space-around' alignItems='center' mb={4}>
         <Image src={src} alt={alt} />
       </Flex>
       <Flex justifyContent='center' alignItems='center'>
         <Link
           fontSize={18}
-          fontFamily='heading'
+          fontFamily='body'
           color='maroon'
+          fontWeight='bold'
           download={true}
           href={src}
         >
