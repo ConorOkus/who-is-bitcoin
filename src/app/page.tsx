@@ -26,15 +26,15 @@ import { IoIosMail } from "react-icons/io";
 
 const downloadableAssets = [
   {
-    src: "./Acrobat.png",
+    src: "./assets/acrobat.png",
     alt: "bitcoin acrobat",
   },
   {
-    src: "./Count.png",
+    src: "./assets/count.png",
     alt: "bitcoin count",
   },
   {
-    src: "./Fancy.png",
+    src: "./assets/fancy.png",
     alt: "bitcoin fancy",
   },
   // {
@@ -46,54 +46,54 @@ const downloadableAssets = [
   //   alt: "bitcoin hungry",
   // },
   {
-    src: "./Mrs.png",
+    src: "./assets/mrs.png",
     alt: "bitcoin mrs",
   },
   {
-    src: "./Sir.png",
+    src: "./assets/sir.png",
     alt: "bitcoin sir",
   },
   {
-    src: "./Super.png",
+    src: "./assets/super.png",
     alt: "bitcoin super",
   },
   {
-    src: "./surfer.png",
+    src: "./assets/surfer.png",
     alt: "bitcoin surfing",
   },
   {
-    src: "./UFO.png",
+    src: "./assets/UFO.png",
     alt: "bitcoin ufo",
   },
 ];
 
 const showcase = [
   {
-    src: "./Alien.png",
+    src: "./assets/alien.png",
     alt: "bitcoin alien",
   },
   {
-    src: "./beach.png",
+    src: "./assets/beach.png",
     alt: "bitcoin beach",
   },
   {
-    src: "./cooking.png",
+    src: "./assets/cooking.png",
     alt: "bitcoin cooking",
   },
   {
-    src: "./Dracula.png",
+    src: "./assets/dracula.png",
     alt: "bitcoin dracula",
   },
   {
-    src: "./Farmer.png",
+    src: "./assets/farmer.png",
     alt: "bitcoin farmer",
   },
   {
-    src: "./Safari.png",
+    src: "./assets/safari.png",
     alt: "bitcoin safari",
   },
   {
-    src: "./Surfing.png",
+    src: "./assets/surfing.png",
     alt: "bitcoin surfing",
   },
   // {
@@ -101,7 +101,7 @@ const showcase = [
   //   alt: "bitcoin victory",
   // },
   {
-    src: "./Woods.png",
+    src: "./assets/woods.png",
     alt: "bitcoin woods",
   },
 ];
