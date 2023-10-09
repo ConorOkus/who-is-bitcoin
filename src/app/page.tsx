@@ -223,7 +223,7 @@ export default function Home() {
         <HStack spacing={4}>
           <Icon as={IoIosMail} w={8} h={8} color='maroon' />
           <Text fontWeight='bold' color='maroon'>
-            hello@whoisbitcoin.org
+            hello@herecomesbitcoin.com
           </Text>
         </HStack>
       </Flex>
