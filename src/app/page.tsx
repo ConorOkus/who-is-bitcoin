@@ -14,6 +14,7 @@ import {
   Icon,
   Link as ChakraLink,
   VStack,
+  HStack,
 } from "@chakra-ui/react";
 import HamburgerMenu, { MenuItems } from "../../components/HamburgerMenu";
 import NextLink from "next/link";
@@ -113,10 +114,44 @@ export default function Home() {
         lg: "192px",
       }}
       py={{
-        base: 6,
+        base: 8,
         lg: 12,
       }}
     >
+      <Flex
+        justifyContent='center'
+        mb={{
+          base: 8,
+          lg: 12,
+        }}
+      >
+        <HStack spacing={8}>
+          <ChakraLink
+            as={NextLink}
+            color='maroon'
+            fontWeight='bold'
+            href='#downloads'
+            fontSize={{
+              base: 16,
+              lg: 24,
+            }}
+          >
+            Discord
+          </ChakraLink>
+          <ChakraLink
+            as={NextLink}
+            color='maroon'
+            fontWeight='bold'
+            href='#downloads'
+            fontSize={{
+              base: 16,
+              lg: 24,
+            }}
+          >
+            Tik Tok
+          </ChakraLink>
+        </HStack>
+      </Flex>
       <AspectRatio
         width='100%'
         height={{
@@ -152,40 +187,6 @@ export default function Home() {
           Bitcoin? Who is bitcoin really?
         </Text>
       </Center>
-      <Box display='flex' justifyContent='center' mb={12}>
-        <ChakraLink
-          as={NextLink}
-          color='maroon'
-          fontWeight='bold'
-          href='#downloads'
-        >
-          <Icon
-            as={FaTiktok}
-            mr={2}
-            color='maroon'
-            fontSize={{
-              base: 24,
-              lg: 32,
-            }}
-          />
-        </ChakraLink>
-        <ChakraLink
-          as={NextLink}
-          color='maroon'
-          fontWeight='bold'
-          href='#downloads'
-        >
-          <Icon
-            as={IoIosMail}
-            mr={2}
-            color='maroon'
-            fontSize={{
-              base: 24,
-              lg: 32,
-            }}
-          />
-        </ChakraLink>
-      </Box>
       <BookmanHeading textAlign='center' mb={6} id='downloads'>
         Downloadable Assets
       </BookmanHeading>
@@ -205,7 +206,7 @@ export default function Home() {
       <Text color='maroon' textAlign='center' px={8} mb={2}>
         Build your own Bitcoin adventure and share it with the world.
       </Text>
-      <Box display='flex' justifyContent='center'>
+      <Box display='flex' justifyContent='center' mb={6}>
         <Flex wrap='wrap' w='100%'>
           {showcase.map((asset, key) => (
             <Image
@@ -218,6 +219,14 @@ export default function Home() {
           ))}
         </Flex>
       </Box>
+      <Flex justify='center'>
+        <HStack spacing={4}>
+          <Icon as={IoIosMail} w={8} h={8} color='maroon' />
+          <Text fontWeight='bold' color='maroon'>
+            hello@whoisbitcoin.org
+          </Text>
+        </HStack>
+      </Flex>
     </Box>
   );
 }
