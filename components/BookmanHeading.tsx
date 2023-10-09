@@ -8,7 +8,7 @@ interface ExtendedHeadingProps extends HeadingProps {
 export function BookmanHeading(props: ExtendedHeadingProps) {
   return (
     <Heading
-      fontFamily='heading'
+      fontFamily='Made'
       fontWeight={400}
       fontStyle='normal'
       fontSize={{
@@ -16,7 +16,7 @@ export function BookmanHeading(props: ExtendedHeadingProps) {
         md: "48px",
       }}
       background='linear-gradient(to bottom, #EFF68F, #DD7D6D)'
-      color='transparent'
+      // color='transparent'
       backgroundClip='text'
       lineHeight={1}
       sx={{

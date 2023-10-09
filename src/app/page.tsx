@@ -114,15 +114,15 @@ export default function Home() {
         lg: "192px",
       }}
       py={{
-        base: 8,
-        lg: 12,
+        base: 6,
+        lg: 10,
       }}
     >
       <Flex
         justifyContent='center'
         mb={{
-          base: 8,
-          lg: 12,
+          base: 6,
+          lg: 10,
         }}
       >
         <HStack spacing={8}>
@@ -172,7 +172,7 @@ export default function Home() {
         Here Comes Bitcoin
       </BookmanHeading>
 
-      <Center mb={6}>
+      <Center mb={8}>
         <Text
           color='maroon'
           maxW={600}
