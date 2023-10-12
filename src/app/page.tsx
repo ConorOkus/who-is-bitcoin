@@ -21,7 +21,7 @@ import NextLink from "next/link";
 import { ArrowForwardIcon } from "@chakra-ui/icons";
 import Asset from "../../components/Asset";
 import { BookmanHeading } from "../../components/BookmanHeading";
-import { FaTiktok } from "react-icons/fa6";
+import { FaDiscord, FaTiktok } from "react-icons/fa6";
 import { IoIosMail } from "react-icons/io";
 
 const downloadableAssets = [
@@ -120,53 +120,108 @@ export default function Home() {
     >
       <Flex justifyContent='center'>
         <HStack spacing={8}>
-          <ChakraLink
-            as={NextLink}
-            color='maroon'
-            href='#downloads'
-            fontSize={{
-              base: 16,
-              lg: 24,
-            }}
-            fontFamily='nav'
-          >
-            Discord
-          </ChakraLink>
-          <ChakraLink
-            as={NextLink}
-            color='maroon'
-            href='#downloads'
-            fontSize={{
-              base: 16,
-              lg: 24,
-            }}
-            fontFamily='nav'
-          >
-            TikTok
-          </ChakraLink>
-          <Text
-            color='maroon'
-            fontFamily='nav'
-            fontSize={{
-              base: 16,
-              lg: 24,
-            }}
+          <Flex alignItems='center'>
+            <Icon
+              as={FaDiscord}
+              mr={2}
+              color='maroon'
+              fontSize={{
+                base: 18,
+                lg: 24,
+              }}
+            />
+            <ChakraLink
+              as={NextLink}
+              color='maroon'
+              href='#downloads'
+              fontSize={{
+                base: 16,
+                lg: 24,
+              }}
+              fontFamily='nav'
+            >
+              Discord
+            </ChakraLink>
+          </Flex>
+
+          <Flex alignItems='center'>
+            <Icon
+              as={FaTiktok}
+              mr={2}
+              color='maroon'
+              fontSize={{
+                base: 18,
+                lg: 24,
+              }}
+            />
+            <ChakraLink
+              as={NextLink}
+              color='maroon'
+              href='#downloads'
+              fontSize={{
+                base: 16,
+                lg: 24,
+              }}
+              fontFamily='nav'
+            >
+              TikTok
+            </ChakraLink>
+          </Flex>
+
+          <Box
             display={{
               base: "none",
-              lg: "block",
+              lg: "flex",
             }}
+            alignItems='center'
           >
-            hello@herecomesbitcoin.com
-          </Text>
+            <Icon
+              as={IoIosMail}
+              mr={2}
+              color='maroon'
+              fontSize={{
+                base: 18,
+                lg: 24,
+              }}
+            />
+            <Text
+              color='maroon'
+              fontFamily='nav'
+              fontSize={{
+                base: 16,
+                lg: 24,
+              }}
+            >
+              hello@herecomesbitcoin.com
+            </Text>
+          </Box>
         </HStack>
       </Flex>
       <Flex
         justify='center'
+        alignItems='center'
         mb={{
           base: 6,
           lg: 10,
         }}
+        mt={{
+          base: 4,
+          lg: 0,
+        }}
       >
+        <Icon
+          as={IoIosMail}
+          mr={2}
+          color='maroon'
+          fontSize={{
+            base: 18,
+            lg: 24,
+          }}
+          display={{
+            base: "block",
+            lg: "none",
+          }}
+        />
         <Text
           color='maroon'
           fontFamily='nav'
