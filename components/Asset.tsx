@@ -19,14 +19,7 @@ function Asset({ src, alt }: Props) {
         <Image src={src} alt={alt} />
       </Flex>
       <Flex justifyContent='center' alignItems='center'>
-        <Link
-          fontSize={18}
-          fontFamily='body'
-          color='maroon'
-          fontWeight='bold'
-          download={true}
-          href={src}
-        >
+        <Link fontFamily='nav' color='maroon' download={true} href={src}>
           Download
         </Link>
       </Flex>

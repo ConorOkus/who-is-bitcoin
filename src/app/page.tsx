@@ -115,42 +115,47 @@ export default function Home() {
       }}
       py={{
         base: 6,
-        lg: 10,
+        lg: 8,
       }}
     >
-      <Flex
-        justifyContent='center'
-        mb={{
-          base: 6,
-          lg: 10,
-        }}
-      >
+      <Flex justifyContent='center'>
         <HStack spacing={8}>
           <ChakraLink
             as={NextLink}
             color='maroon'
-            fontWeight='bold'
             href='#downloads'
             fontSize={{
               base: 16,
               lg: 24,
             }}
+            fontFamily='nav'
           >
             Discord
           </ChakraLink>
           <ChakraLink
             as={NextLink}
             color='maroon'
-            fontWeight='bold'
             href='#downloads'
             fontSize={{
               base: 16,
               lg: 24,
             }}
+            fontFamily='nav'
           >
-            Tik Tok
+            TikTok
           </ChakraLink>
         </HStack>
+      </Flex>
+      <Flex
+        justify='center'
+        mb={{
+          base: 6,
+          lg: 10,
+        }}
+      >
+        <Text color='maroon' fontFamily='nav'>
+          hello@herecomesbitcoin.com
+        </Text>
       </Flex>
       <AspectRatio
         width='100%'
@@ -159,7 +164,7 @@ export default function Home() {
           lg: "600px",
         }}
         ratio={4 / 3}
-        mb={8}
+        mb={10}
       >
         <iframe
           title='rick'
@@ -168,11 +173,9 @@ export default function Home() {
         />
       </AspectRatio>
 
-      <BookmanHeading textAlign='center' mb={6}>
-        Here Comes Bitcoin
-      </BookmanHeading>
+      <Image src='./assets/who-is-bitcoin-title.png' mb={8} />
 
-      <Center mb={8}>
+      <Center mb={14}>
         <Text
           color='maroon'
           maxW={600}
@@ -193,7 +196,7 @@ export default function Home() {
       <Text color='maroon' textAlign='center' px={8} mb={2}>
         Build your own Bitcoin adventure and share it with the world.
       </Text>
-      <Box display='flex' justifyContent='center' mb={8}>
+      <Box display='flex' justifyContent='center' mb={14}>
         <Flex wrap='wrap' w='100%'>
           {downloadableAssets.map((asset, key) => (
             <Asset key={key} src={asset.src} alt={asset.alt} />
@@ -220,12 +223,9 @@ export default function Home() {
         </Flex>
       </Box>
       <Flex justify='center'>
-        <HStack spacing={4}>
-          <Icon as={IoIosMail} w={8} h={8} color='maroon' />
-          <Text fontWeight='bold' color='maroon'>
-            hello@herecomesbitcoin.com
-          </Text>
-        </HStack>
+        <Text fontWeight='bold' color='maroon'>
+          hello@herecomesbitcoin.com
+        </Text>
       </Flex>
     </Box>
   );

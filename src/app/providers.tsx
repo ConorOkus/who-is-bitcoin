@@ -11,8 +11,9 @@ const colors = {
 };
 
 const fonts = {
-  heading: "'Made', bookman-jf-pro, 'Georgia', 'Times New Roman', serif",
-  body: "bookman-jf-pro 'Georgia', 'Times New Roman', serif",
+  heading: "'Made', sans-serif",
+  nav: "'bookman-jf-pro', 'Georgia', sans-serif",
+  body: "'Georgia', 'Times New Roman', serif",
 };
 
 export const theme = extendTheme({ colors, fonts });
