@@ -144,6 +144,20 @@ export default function Home() {
           >
             TikTok
           </ChakraLink>
+          <Text
+            color='maroon'
+            fontFamily='nav'
+            fontSize={{
+              base: 16,
+              lg: 24,
+            }}
+            display={{
+              base: "none",
+              lg: "block",
+            }}
+          >
+            hello@herecomesbitcoin.com
+          </Text>
         </HStack>
       </Flex>
       <Flex
@@ -153,7 +167,14 @@ export default function Home() {
           lg: 10,
         }}
       >
-        <Text color='maroon' fontFamily='nav'>
+        <Text
+          color='maroon'
+          fontFamily='nav'
+          display={{
+            base: "block",
+            lg: "none",
+          }}
+        >
           hello@herecomesbitcoin.com
         </Text>
       </Flex>
