@@ -3,24 +3,16 @@
 import {
   AspectRatio,
   Box,
-  Heading,
-  Menu,
   Flex,
   Text,
-  Button,
   Center,
-  Grid,
   Image,
   Icon,
   Link as ChakraLink,
-  VStack,
   HStack,
 } from "@chakra-ui/react";
-import HamburgerMenu, { MenuItems } from "../../components/HamburgerMenu";
 import NextLink from "next/link";
-import { ArrowForwardIcon } from "@chakra-ui/icons";
 import Asset from "../../components/Asset";
-import { BookmanHeading } from "../../components/BookmanHeading";
 import { FaDiscord, FaTiktok } from "react-icons/fa6";
 import { IoIosMail } from "react-icons/io";
 
@@ -37,14 +29,14 @@ const downloadableAssets = [
     src: "./assets/fancy.png",
     alt: "bitcoin fancy",
   },
-  // {
-  //   src: "./Grumpy.png",
-  //   alt: "bitcoin grumpy",
-  // },
-  // {
-  //   src: "./Hungry.png",
-  //   alt: "bitcoin hungry",
-  // },
+  {
+    src: "./assets/grumpy.png",
+    alt: "bitcoin grumpy",
+  },
+  {
+    src: "./assets/hungry.png",
+    alt: "bitcoin hungry",
+  },
   {
     src: "./assets/mrs.png",
     alt: "bitcoin mrs",
@@ -118,16 +110,16 @@ export default function Home() {
         lg: 8,
       }}
     >
-      <Flex justifyContent='center'>
-        <HStack spacing={8}>
+      <Flex justifyContent='center' mb={6}>
+        <HStack spacing={4}>
           <Flex alignItems='center'>
             <Icon
               as={FaDiscord}
-              mr={2}
+              mr={0.5}
               color='maroon'
               fontSize={{
-                base: 18,
-                lg: 24,
+                base: 16,
+                lg: 18,
               }}
             />
             <ChakraLink
@@ -136,7 +128,7 @@ export default function Home() {
               href='#downloads'
               fontSize={{
                 base: 16,
-                lg: 24,
+                lg: 18,
               }}
               fontFamily='nav'
             >
@@ -147,11 +139,11 @@ export default function Home() {
           <Flex alignItems='center'>
             <Icon
               as={FaTiktok}
-              mr={2}
+              mr={0.5}
               color='maroon'
               fontSize={{
-                base: 18,
-                lg: 24,
+                base: 16,
+                lg: 18,
               }}
             />
             <ChakraLink
@@ -160,7 +152,7 @@ export default function Home() {
               href='#downloads'
               fontSize={{
                 base: 16,
-                lg: 24,
+                lg: 18,
               }}
               fontFamily='nav'
             >
@@ -168,71 +160,32 @@ export default function Home() {
             </ChakraLink>
           </Flex>
 
-          <Box
-            display={{
-              base: "none",
-              lg: "flex",
-            }}
-            alignItems='center'
-          >
+          <Flex alignItems='center'>
             <Icon
               as={IoIosMail}
-              mr={2}
+              mr={0.5}
               color='maroon'
-              fontSize={{
-                base: 18,
-                lg: 24,
-              }}
-            />
-            <Text
-              color='maroon'
-              fontFamily='nav'
               fontSize={{
                 base: 16,
-                lg: 24,
+                lg: 18,
               }}
+            />
+            <ChakraLink
+              as={NextLink}
+              color='maroon'
+              href='mailto:hello@herecomesbitcoin.org'
+              fontSize={{
+                base: 16,
+                lg: 18,
+              }}
+              fontFamily='nav'
             >
-              hello@herecomesbitcoin.com
-            </Text>
-          </Box>
+              Contact
+            </ChakraLink>
+          </Flex>
         </HStack>
       </Flex>
-      <Flex
-        justify='center'
-        alignItems='center'
-        mb={{
-          base: 6,
-          lg: 10,
-        }}
-        mt={{
-          base: 4,
-          lg: 0,
-        }}
-      >
-        <Icon
-          as={IoIosMail}
-          mr={2}
-          color='maroon'
-          fontSize={{
-            base: 18,
-            lg: 24,
-          }}
-          display={{
-            base: "block",
-            lg: "none",
-          }}
-        />
-        <Text
-          color='maroon'
-          fontFamily='nav'
-          display={{
-            base: "block",
-            lg: "none",
-          }}
-        >
-          hello@herecomesbitcoin.com
-        </Text>
-      </Flex>
+
       <AspectRatio
         width='100%'
         height={{
@@ -244,33 +197,47 @@ export default function Home() {
       >
         <iframe
           title='rick'
-          src='https://www.youtube.com/embed/QhBnZ6NPOY0'
+          src='https://www.youtube.com/embed/cGc_NfiTxng?si=1-5yxtE6NkVz3csT'
           allowFullScreen
         />
       </AspectRatio>
 
-      <Image src='./assets/who-is-bitcoin-title.png' mb={8} />
+      <Flex justifyContent='center'>
+        <Image
+          src='./assets/who-is-bitcoin-title.png'
+          mb={6}
+          maxW={{
+            base: "100%",
+            lg: "600px",
+          }}
+        />
+      </Flex>
 
       <Center mb={14}>
-        <Text
-          color='maroon'
-          maxW={600}
-          px={{
-            base: 4,
-            lg: 0,
-          }}
-          textAlign='center'
-        >
-          Bitcoin...you heard somebody on the news saying it’s for criminals.
-          Your friend’s friend made some money off it. But have you ever met
-          Bitcoin? Who is bitcoin really?
+        <Text color='maroon' textAlign='center'>
+          Here Comes Bitcoin is the central resource for all things Bitcoin
+          (puppet, not currency), including license-free creative assets that
+          you can use to make anything you want. And we hope you will. If what
+          you make is great, we’ll add it here.
         </Text>
       </Center>
-      <BookmanHeading textAlign='center' mb={6} id='downloads'>
-        Downloadable Assets
-      </BookmanHeading>
-      <Text color='maroon' textAlign='center' px={8} mb={2}>
-        Build your own Bitcoin adventure and share it with the world.
+
+      <Flex justifyContent='center'>
+        <Image
+          src='./assets/make-your-own-asset.png'
+          mb={2}
+          maxW={{
+            base: "100%",
+            lg: "400px",
+          }}
+        />
+      </Flex>
+
+      <Text color='maroon' textAlign='center' mb={2}>
+        Need a heavily caricatured bitcoin for your open-source project,
+        conference keynote, or frightening cardboard cutout that lives in your
+        attic? Grab a PNG and have at it. It’s all open-source and license-free.
+        Have a new idea? Submit your own.
       </Text>
       <Box display='flex' justifyContent='center' mb={14}>
         <Flex wrap='wrap' w='100%'>
@@ -279,13 +246,25 @@ export default function Home() {
           ))}
         </Flex>
       </Box>
-      <BookmanHeading textAlign='center' mb={6} id='showcase'>
-        Showcase
-      </BookmanHeading>
-      <Text color='maroon' textAlign='center' px={8} mb={2}>
-        Build your own Bitcoin adventure and share it with the world.
+
+      <Flex justifyContent='center'>
+        <Image
+          src='./assets/from-the-film.png'
+          mb={2}
+          maxW={{
+            base: "100%",
+            lg: "400px",
+          }}
+        />
+      </Flex>
+
+      <Text color='maroon' textAlign='center' mb={2}>
+        Enough people requested these during Who is Bitcoin?’s prerelease that
+        we knew they belonged here. While they aren’t as customizable as others
+        assets (yet), they make great wallpapers and rebuttals to anyone who
+        says bitcoiners don’t have a sense of humor about bitcoin.{" "}
       </Text>
-      <Box display='flex' justifyContent='center' mb={6}>
+      <Box display='flex' justifyContent='center' mb={4}>
         <Flex wrap='wrap' w='100%'>
           {showcase.map((asset, key) => (
             <Image
@@ -298,10 +277,80 @@ export default function Home() {
           ))}
         </Flex>
       </Box>
-      <Flex justify='center'>
-        <Text fontWeight='bold' color='maroon'>
-          hello@herecomesbitcoin.com
-        </Text>
+      <Flex justifyContent='center'>
+        <HStack spacing={4}>
+          <Flex alignItems='center'>
+            <Icon
+              as={FaDiscord}
+              mr={0.5}
+              color='maroon'
+              fontSize={{
+                base: 16,
+                lg: 18,
+              }}
+            />
+            <ChakraLink
+              as={NextLink}
+              color='maroon'
+              href='#downloads'
+              fontSize={{
+                base: 16,
+                lg: 18,
+              }}
+              fontFamily='nav'
+            >
+              Discord
+            </ChakraLink>
+          </Flex>
+
+          <Flex alignItems='center'>
+            <Icon
+              as={FaTiktok}
+              mr={0.5}
+              color='maroon'
+              fontSize={{
+                base: 16,
+                lg: 18,
+              }}
+            />
+            <ChakraLink
+              as={NextLink}
+              color='maroon'
+              href='#downloads'
+              fontSize={{
+                base: 16,
+                lg: 18,
+              }}
+              fontFamily='nav'
+            >
+              TikTok
+            </ChakraLink>
+          </Flex>
+
+          <Flex alignItems='center'>
+            <Icon
+              as={IoIosMail}
+              mr={0.5}
+              color='maroon'
+              fontSize={{
+                base: 16,
+                lg: 18,
+              }}
+            />
+            <ChakraLink
+              as={NextLink}
+              color='maroon'
+              href='mailto:hello@herecomesbitcoin.org'
+              fontSize={{
+                base: 16,
+                lg: 18,
+              }}
+              fontFamily='nav'
+            >
+              Contact
+            </ChakraLink>
+          </Flex>
+        </HStack>
       </Flex>
     </Box>
   );
