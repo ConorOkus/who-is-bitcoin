@@ -30,16 +30,16 @@ const downloadableAssets = [
     alt: "bitcoin fancy",
   },
   {
-    src: "./assets/grumpy.png",
-    alt: "bitcoin grumpy",
-  },
-  {
     src: "./assets/hungry.png",
     alt: "bitcoin hungry",
   },
   {
     src: "./assets/mrs.png",
     alt: "bitcoin mrs",
+  },
+  {
+    src: "./assets/grumpy.png",
+    alt: "bitcoin grumpy",
   },
   {
     src: "./assets/sir.png",
@@ -88,10 +88,6 @@ const showcase = [
     src: "./assets/surfing.png",
     alt: "bitcoin surfing",
   },
-  // {
-  //   src: "./Victory.png",
-  //   alt: "bitcoin victory",
-  // },
   {
     src: "./assets/woods.png",
     alt: "bitcoin woods",
@@ -214,7 +210,7 @@ export default function Home() {
       </Flex>
 
       <Center mb={14}>
-        <Text color='maroon' textAlign='center' maxW={600}>
+        <Text color='maroon' textAlign='center' maxW={800}>
           Here Comes Bitcoin is the central resource for all things Bitcoin
           (puppet, not currency), including license-free creative assets that
           you can use to make anything you want. And we hope you will. If what
@@ -233,7 +229,7 @@ export default function Home() {
       </Flex>
 
       <Center>
-        <Text color='maroon' textAlign='center' maxW={600} mb={4}>
+        <Text color='maroon' textAlign='center' maxW={800} mb={4}>
           Need a heavily caricatured bitcoin for your open-source project,
           conference keynote, or frightening cardboard cutout that lives in your
           attic? Grab a PNG and have at it. It’s all open-source and
@@ -260,7 +256,7 @@ export default function Home() {
       </Flex>
 
       <Center>
-        <Text color='maroon' textAlign='center' mb={4} maxW={600}>
+        <Text color='maroon' textAlign='center' mb={4} maxW={800}>
           Enough people requested these during Who is Bitcoin?’s prerelease that
           we knew they belonged here. While they aren’t as customizable as
           others assets (yet), they make great wallpapers and rebuttals to
