@@ -105,13 +105,14 @@ export default function Home() {
         base: 6,
         lg: "192px",
       }}
-      py={{
-        base: 6,
-        lg: 8,
-      }}
     >
-      <Flex justifyContent='center' mb={6}>
-        <HStack spacing={4}>
+      <Flex justifyContent='center' py={6}>
+        <HStack
+          spacing={{
+            base: 10,
+            lg: 12,
+          }}
+        >
           <Flex alignItems='center'>
             <Icon
               as={FaDiscord}
@@ -202,10 +203,9 @@ export default function Home() {
         />
       </AspectRatio>
 
-      <Flex justifyContent='center'>
+      <Flex justifyContent='center' mb={6}>
         <Image
           src='./assets/who-is-bitcoin-title.png'
-          mb={6}
           maxW={{
             base: "100%",
             lg: "600px",
@@ -214,7 +214,7 @@ export default function Home() {
       </Flex>
 
       <Center mb={14}>
-        <Text color='maroon' textAlign='center'>
+        <Text color='maroon' textAlign='center' maxW={600}>
           Here Comes Bitcoin is the central resource for all things Bitcoin
           (puppet, not currency), including license-free creative assets that
           you can use to make anything you want. And we hope you will. If what
@@ -222,10 +222,9 @@ export default function Home() {
         </Text>
       </Center>
 
-      <Flex justifyContent='center'>
+      <Flex justifyContent='center' mb={6}>
         <Image
           src='./assets/make-your-own-asset.png'
-          mb={2}
           maxW={{
             base: "100%",
             lg: "400px",
@@ -233,12 +232,15 @@ export default function Home() {
         />
       </Flex>
 
-      <Text color='maroon' textAlign='center' mb={2}>
-        Need a heavily caricatured bitcoin for your open-source project,
-        conference keynote, or frightening cardboard cutout that lives in your
-        attic? Grab a PNG and have at it. It’s all open-source and license-free.
-        Have a new idea? Submit your own.
-      </Text>
+      <Center>
+        <Text color='maroon' textAlign='center' maxW={600} mb={4}>
+          Need a heavily caricatured bitcoin for your open-source project,
+          conference keynote, or frightening cardboard cutout that lives in your
+          attic? Grab a PNG and have at it. It’s all open-source and
+          license-free. Have a new idea? Submit your own.
+        </Text>
+      </Center>
+
       <Box display='flex' justifyContent='center' mb={14}>
         <Flex wrap='wrap' w='100%'>
           {downloadableAssets.map((asset, key) => (
@@ -247,10 +249,9 @@ export default function Home() {
         </Flex>
       </Box>
 
-      <Flex justifyContent='center'>
+      <Flex justifyContent='center' mb={2}>
         <Image
           src='./assets/from-the-film.png'
-          mb={2}
           maxW={{
             base: "100%",
             lg: "400px",
@@ -258,27 +259,35 @@ export default function Home() {
         />
       </Flex>
 
-      <Text color='maroon' textAlign='center' mb={2}>
-        Enough people requested these during Who is Bitcoin?’s prerelease that
-        we knew they belonged here. While they aren’t as customizable as others
-        assets (yet), they make great wallpapers and rebuttals to anyone who
-        says bitcoiners don’t have a sense of humor about bitcoin.{" "}
-      </Text>
-      <Box display='flex' justifyContent='center' mb={4}>
+      <Center>
+        <Text color='maroon' textAlign='center' mb={4} maxW={600}>
+          Enough people requested these during Who is Bitcoin?’s prerelease that
+          we knew they belonged here. While they aren’t as customizable as
+          others assets (yet), they make great wallpapers and rebuttals to
+          anyone who says bitcoiners don’t have a sense of humor about bitcoin.{" "}
+        </Text>
+      </Center>
+
+      <Box display='flex' justifyContent='center'>
         <Flex wrap='wrap' w='100%'>
-          {showcase.map((asset, key) => (
+          {showcase.map((asset, index) => (
             <Image
               src={asset.src}
               alt={asset.alt}
-              key={key}
+              key={index}
               w={["100%", "50%"]}
               p={3}
             />
           ))}
         </Flex>
       </Box>
-      <Flex justifyContent='center'>
-        <HStack spacing={4}>
+      <Flex justifyContent='center' pt={3} pb={6}>
+        <HStack
+          spacing={{
+            base: 10,
+            lg: 12,
+          }}
+        >
           <Flex alignItems='center'>
             <Icon
               as={FaDiscord}
