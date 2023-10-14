@@ -184,7 +184,7 @@ export default function Home() {
         </HStack>
       </Flex>
 
-      <Flex justifyContent='center' mb={10}>
+      <Flex justifyContent='center' mb={8}>
         <Image
           src='./assets/who-is-bitcoin-title.png'
           maxW={{
@@ -203,10 +203,15 @@ export default function Home() {
         ratio={4 / 3}
         mb={10}
       >
-        <iframe
+        {/* <iframe
           title='rick'
           src='https://www.youtube.com/embed/cGc_NfiTxng?si=1-5yxtE6NkVz3csT'
           allowFullScreen
+        /> */}
+        <Image
+          src='./assets/placeholder.png'
+          alt='placeholder'
+          objectFit='cover'
         />
       </AspectRatio>
 
