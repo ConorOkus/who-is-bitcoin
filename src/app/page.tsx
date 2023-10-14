@@ -184,6 +184,16 @@ export default function Home() {
         </HStack>
       </Flex>
 
+      <Flex justifyContent='center' mb={6}>
+        <Image
+          src='./assets/who-is-bitcoin-title.png'
+          maxW={{
+            base: "100%",
+            lg: "600px",
+          }}
+        />
+      </Flex>
+
       <AspectRatio
         width='100%'
         height={{
@@ -199,16 +209,6 @@ export default function Home() {
           allowFullScreen
         />
       </AspectRatio>
-
-      <Flex justifyContent='center' mb={6}>
-        <Image
-          src='./assets/who-is-bitcoin-title.png'
-          maxW={{
-            base: "100%",
-            lg: "600px",
-          }}
-        />
-      </Flex>
 
       <Center mb={14}>
         <Text color='maroon' textAlign='center' maxW={800}>
