@@ -184,7 +184,7 @@ export default function Home() {
         </HStack>
       </Flex>
 
-      <Flex justifyContent='center' mb={6}>
+      <Flex justifyContent='center' mb={10}>
         <Image
           src='./assets/who-is-bitcoin-title.png'
           maxW={{
