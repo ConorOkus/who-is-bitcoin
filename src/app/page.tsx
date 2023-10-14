@@ -10,6 +10,7 @@ import {
   Icon,
   Link as ChakraLink,
   HStack,
+  Heading,
 } from "@chakra-ui/react";
 import NextLink from "next/link";
 import Asset from "../../components/Asset";
@@ -218,7 +219,7 @@ export default function Home() {
         </Text>
       </Center>
 
-      <Flex justifyContent='center' mb={6}>
+      {/* <Flex justifyContent='center' mb={6}>
         <Image
           src='./assets/make-your-own-asset.png'
           maxW={{
@@ -226,7 +227,11 @@ export default function Home() {
             lg: "400px",
           }}
         />
-      </Flex>
+      </Flex> */}
+
+      <Heading fontFamily='body' color='maroon' textAlign='center' mb={4}>
+        Make Your Own Asset
+      </Heading>
 
       <Center>
         <Text color='maroon' textAlign='center' maxW={800} mb={4}>
@@ -245,7 +250,7 @@ export default function Home() {
         </Flex>
       </Box>
 
-      <Flex justifyContent='center' mb={2}>
+      {/* <Flex justifyContent='center' mb={2}>
         <Image
           src='./assets/from-the-film.png'
           maxW={{
@@ -253,7 +258,10 @@ export default function Home() {
             lg: "400px",
           }}
         />
-      </Flex>
+      </Flex> */}
+      <Heading fontFamily='body' color='maroon' textAlign='center' mb={4}>
+        From The Film
+      </Heading>
 
       <Center>
         <Text color='maroon' textAlign='center' mb={4} maxW={800}>
