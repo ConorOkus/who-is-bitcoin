@@ -10,6 +10,7 @@ import {
   Icon,
   Link as ChakraLink,
   HStack,
+  Heading,
 } from "@chakra-ui/react";
 import NextLink from "next/link";
 import Asset from "../../components/Asset";
@@ -183,6 +184,16 @@ export default function Home() {
         </HStack>
       </Flex>
 
+      <Flex justifyContent='center' mb={8}>
+        <Image
+          src='./assets/who-is-bitcoin-title.png'
+          maxW={{
+            base: "100%",
+            lg: "600px",
+          }}
+        />
+      </Flex>
+
       <AspectRatio
         width='100%'
         height={{
@@ -192,22 +203,17 @@ export default function Home() {
         ratio={4 / 3}
         mb={10}
       >
-        <iframe
+        {/* <iframe
           title='rick'
           src='https://www.youtube.com/embed/cGc_NfiTxng?si=1-5yxtE6NkVz3csT'
           allowFullScreen
+        /> */}
+        <Image
+          src='./assets/placeholder.png'
+          alt='placeholder'
+          objectFit='cover'
         />
       </AspectRatio>
-
-      <Flex justifyContent='center' mb={6}>
-        <Image
-          src='./assets/who-is-bitcoin-title.png'
-          maxW={{
-            base: "100%",
-            lg: "600px",
-          }}
-        />
-      </Flex>
 
       <Center mb={14}>
         <Text color='maroon' textAlign='center' maxW={800}>
@@ -218,7 +224,7 @@ export default function Home() {
         </Text>
       </Center>
 
-      <Flex justifyContent='center' mb={6}>
+      {/* <Flex justifyContent='center' mb={6}>
         <Image
           src='./assets/make-your-own-asset.png'
           maxW={{
@@ -226,7 +232,11 @@ export default function Home() {
             lg: "400px",
           }}
         />
-      </Flex>
+      </Flex> */}
+
+      <Heading fontFamily='body' color='maroon' textAlign='center' mb={4}>
+        Make Your Own Asset
+      </Heading>
 
       <Center>
         <Text color='maroon' textAlign='center' maxW={800} mb={4}>
@@ -245,7 +255,7 @@ export default function Home() {
         </Flex>
       </Box>
 
-      <Flex justifyContent='center' mb={2}>
+      {/* <Flex justifyContent='center' mb={2}>
         <Image
           src='./assets/from-the-film.png'
           maxW={{
@@ -253,7 +263,10 @@ export default function Home() {
             lg: "400px",
           }}
         />
-      </Flex>
+      </Flex> */}
+      <Heading fontFamily='body' color='maroon' textAlign='center' mb={4}>
+        From The Film
+      </Heading>
 
       <Center>
         <Text color='maroon' textAlign='center' mb={4} maxW={800}>
