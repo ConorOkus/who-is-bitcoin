@@ -147,7 +147,7 @@ export default function Home() {
             <ChakraLink
               as={NextLink}
               color='maroon'
-              href='#downloads'
+              href='https://www.tiktok.com/@herecomesbitcoin'
               fontSize={{
                 base: 16,
                 lg: 18,
@@ -182,16 +182,6 @@ export default function Home() {
             </ChakraLink>
           </Flex>
         </HStack>
-      </Flex>
-
-      <Flex justifyContent='center' mb={8}>
-        <Image
-          src='./assets/who-is-bitcoin-title.png'
-          maxW={{
-            base: "100%",
-            lg: "600px",
-          }}
-        />
       </Flex>
 
       <AspectRatio
@@ -334,7 +324,7 @@ export default function Home() {
             <ChakraLink
               as={NextLink}
               color='maroon'
-              href='#downloads'
+              href='https://www.tiktok.com/@herecomesbitcoin'
               fontSize={{
                 base: 16,
                 lg: 18,
