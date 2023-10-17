@@ -123,7 +123,7 @@ export default function Home() {
             <ChakraLink
               as={NextLink}
               color='maroon'
-              href='#downloads'
+              href='https://discord.gg/QgdmfkWcZK'
               fontSize={{
                 base: 16,
                 lg: 18,
@@ -206,7 +206,14 @@ export default function Home() {
       </AspectRatio>
 
       <Center mb={14}>
-        <Text color='maroon' textAlign='center' maxW={800}>
+        <Text
+          color='maroon'
+          textAlign='center'
+          maxW={{
+            base: 600,
+            lg: 800,
+          }}
+        >
           Here Comes Bitcoin is the central resource for all things Bitcoin
           (puppet, not currency), including license-free creative assets that
           you can use to make anything you want. And we hope you will. If what
@@ -214,22 +221,20 @@ export default function Home() {
         </Text>
       </Center>
 
-      {/* <Flex justifyContent='center' mb={6}>
-        <Image
-          src='./assets/make-your-own-asset.png'
-          maxW={{
-            base: "100%",
-            lg: "400px",
-          }}
-        />
-      </Flex> */}
-
       <Heading fontFamily='body' color='maroon' textAlign='center' mb={4}>
         Make Your Own Asset
       </Heading>
 
       <Center>
-        <Text color='maroon' textAlign='center' maxW={800} mb={4}>
+        <Text
+          color='maroon'
+          textAlign='center'
+          maxW={{
+            base: 600,
+            lg: 800,
+          }}
+          mb={4}
+        >
           Need a heavily caricatured bitcoin for your open-source project,
           conference keynote, or frightening cardboard cutout that lives in your
           attic? Grab a PNG and have at it. It’s all open-source and
@@ -259,11 +264,19 @@ export default function Home() {
       </Heading>
 
       <Center>
-        <Text color='maroon' textAlign='center' mb={4} maxW={800}>
+        <Text
+          color='maroon'
+          textAlign='center'
+          mb={4}
+          maxW={{
+            base: 600,
+            lg: 800,
+          }}
+        >
           Enough people requested these during Who is Bitcoin?’s prerelease that
           we knew they belonged here. While they aren’t as customizable as
           others assets (yet), they make great wallpapers and rebuttals to
-          anyone who says bitcoiners don’t have a sense of humor about bitcoin.{" "}
+          anyone who says bitcoiners don’t have a sense of humor about bitcoin.
         </Text>
       </Center>
 
@@ -300,7 +313,7 @@ export default function Home() {
             <ChakraLink
               as={NextLink}
               color='maroon'
-              href='#downloads'
+              href='https://discord.gg/QgdmfkWcZK'
               fontSize={{
                 base: 16,
                 lg: 18,
