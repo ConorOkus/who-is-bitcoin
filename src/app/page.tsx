@@ -16,6 +16,7 @@ import NextLink from "next/link";
 import Asset from "../../components/Asset";
 import { FaDiscord, FaTiktok } from "react-icons/fa6";
 import { IoIosMail } from "react-icons/io";
+import { BsSignal } from "react-icons/bs";
 
 const downloadableAssets = [
   {
@@ -103,7 +104,13 @@ export default function Home() {
         lg: "192px",
       }}
     >
-      <Flex justifyContent='center' py={6}>
+      <Flex
+        justifyContent='center'
+        py={{
+          base: 4,
+          lg: 6,
+        }}
+      >
         <HStack
           spacing={{
             base: 10,
@@ -160,7 +167,7 @@ export default function Home() {
 
           <Flex alignItems='center'>
             <Icon
-              as={IoIosMail}
+              as={BsSignal}
               mr={0.5}
               color='maroon'
               fontSize={{
@@ -171,14 +178,14 @@ export default function Home() {
             <ChakraLink
               as={NextLink}
               color='maroon'
-              href='mailto:hello@herecomesbitcoin.org'
+              href='https://signal.art/addstickers/#pack_id=b765a06df1323b20db48ae8017d0eef7&pack_key=379672c407f0cfe2f563dd7f90b24e0bee50f3b17a60421cd657fb9c2c9c47c1'
               fontSize={{
                 base: 16,
                 lg: 18,
               }}
               fontFamily='nav'
             >
-              Contact
+              Stickers
             </ChakraLink>
           </Flex>
         </HStack>
@@ -193,15 +200,10 @@ export default function Home() {
         ratio={4 / 3}
         mb={10}
       >
-        {/* <iframe
+        <iframe
           title='rick'
-          src='https://www.youtube.com/embed/cGc_NfiTxng?si=1-5yxtE6NkVz3csT'
+          src='https://www.youtube.com/embed/DvHUOr8ruMw?si=eiuX2BQW0kk0r7TF'
           allowFullScreen
-        /> */}
-        <Image
-          src='./assets/placeholder.png'
-          alt='placeholder'
-          objectFit='cover'
         />
       </AspectRatio>
 
@@ -250,15 +252,6 @@ export default function Home() {
         </Flex>
       </Box>
 
-      {/* <Flex justifyContent='center' mb={2}>
-        <Image
-          src='./assets/from-the-film.png'
-          maxW={{
-            base: "100%",
-            lg: "400px",
-          }}
-        />
-      </Flex> */}
       <Heading fontFamily='body' color='maroon' textAlign='center' mb={4}>
         From The Film
       </Heading>
@@ -294,84 +287,29 @@ export default function Home() {
         </Flex>
       </Box>
       <Flex justifyContent='center' pt={3} pb={6}>
-        <HStack
-          spacing={{
-            base: 10,
-            lg: 12,
-          }}
-        >
-          <Flex alignItems='center'>
-            <Icon
-              as={FaDiscord}
-              mr={0.5}
-              color='maroon'
-              fontSize={{
-                base: 16,
-                lg: 18,
-              }}
-            />
-            <ChakraLink
-              as={NextLink}
-              color='maroon'
-              href='https://discord.gg/QgdmfkWcZK'
-              fontSize={{
-                base: 16,
-                lg: 18,
-              }}
-              fontFamily='nav'
-            >
-              Discord
-            </ChakraLink>
-          </Flex>
-
-          <Flex alignItems='center'>
-            <Icon
-              as={FaTiktok}
-              mr={0.5}
-              color='maroon'
-              fontSize={{
-                base: 16,
-                lg: 18,
-              }}
-            />
-            <ChakraLink
-              as={NextLink}
-              color='maroon'
-              href='https://www.tiktok.com/@herecomesbitcoin'
-              fontSize={{
-                base: 16,
-                lg: 18,
-              }}
-              fontFamily='nav'
-            >
-              TikTok
-            </ChakraLink>
-          </Flex>
-
-          <Flex alignItems='center'>
-            <Icon
-              as={IoIosMail}
-              mr={0.5}
-              color='maroon'
-              fontSize={{
-                base: 16,
-                lg: 18,
-              }}
-            />
-            <ChakraLink
-              as={NextLink}
-              color='maroon'
-              href='mailto:hello@herecomesbitcoin.org'
-              fontSize={{
-                base: 16,
-                lg: 18,
-              }}
-              fontFamily='nav'
-            >
-              Contact
-            </ChakraLink>
-          </Flex>
-        </HStack>
+        <Flex alignItems='center'>
+          <Icon
+            as={IoIosMail}
+            mr={0.5}
+            color='maroon'
+            fontSize={{
+              base: 16,
+              lg: 18,
+            }}
+          />
+          <ChakraLink
+            as={NextLink}
+            color='maroon'
+            href='mailto:hello@herecomesbitcoin.org'
+            fontSize={{
+              base: 16,
+              lg: 18,
+            }}
+            fontFamily='nav'
+          >
+            Contact
+          </ChakraLink>
+        </Flex>
       </Flex>
     </Box>
   );
