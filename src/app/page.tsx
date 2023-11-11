@@ -199,6 +199,9 @@ export default function Home() {
         }}
         ratio={4 / 3}
         mb={10}
+        _before={{
+          paddingBottom: 0,
+        }}
       >
         <iframe
           title='rick'
