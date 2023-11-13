@@ -306,7 +306,7 @@ export default function Home() {
         </Flex>
       </Box>
 
-      {/* <Heading fontFamily='body' color='maroon' textAlign='center' mb={4}>
+      <Heading fontFamily='body' color='maroon' textAlign='center' mb={4}>
         Gif Station
       </Heading>
 
@@ -339,7 +339,7 @@ export default function Home() {
             />
           ))}
         </Flex>
-      </Box> */}
+      </Box>
 
       <Heading fontFamily='body' color='maroon' textAlign='center' mb={4}>
         From The Film
