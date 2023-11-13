@@ -293,10 +293,10 @@ export default function Home() {
           }}
           mb={4}
         >
-          Need a heavily caricatured bitcoin for your open-source project,
+          {`Need a heavily caricatured bitcoin for your open-source project,
           conference keynote, or frightening cardboard cutout that lives in your
           attic? Grab a PNG and have at it. It’s all open-source and
-          license-free. Have a new idea? Submit your own.
+          license-free. Have a new idea? Submit your own.`}
         </Text>
       </Center>
 
