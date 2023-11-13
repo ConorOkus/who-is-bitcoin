@@ -8,11 +8,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en'>
-      <Head>
-        <title>Here Comes Bitcoin</title>
-      </Head>
+      <title>Here Comes Bitcoin</title>
       <link rel='stylesheet' href='https://use.typekit.net/gaq1ohg.css' />
-      <link rel='icon' type='image/png' href='./assets/favicon.jpeg'></link>
+      <link rel='icon' type='image/png' href='/favicon.jpeg'></link>
       <body>
         <Providers>{children}</Providers>
       </body>
