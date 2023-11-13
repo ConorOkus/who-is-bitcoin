@@ -61,6 +61,57 @@ const downloadableAssets = [
   },
 ];
 
+const gifs = [
+  {
+    src: "./assets/bitcoin-eats-pigeon.gif",
+    alt: "bitcoin eats pigeon",
+  },
+  {
+    src: "./assets/bitcoin-hands-on-head.gif",
+    alt: "bitcoin hands on head",
+  },
+  {
+    src: "./assets/bitcoin-hugs.gif",
+    alt: "bitcoin hugs",
+  },
+  {
+    src: "./assets/bitcoin-waving-pointing.gif",
+    alt: "bitcoin waving and pointing",
+  },
+  {
+    src: "./assets/bitcoin-pointing-mocoo.gif",
+    alt: "bitcoin pointing with mocoo dogs",
+  },
+  {
+    src: "./assets/bitcoin-dancing.gif",
+    alt: "bitcoin dancing",
+  },
+  {
+    src: "./assets/bitcoin-fan-selfie.gif",
+    alt: "bitcoin fan selfie",
+  },
+  {
+    src: "./assets/bitcoin-drinking-milk.gif",
+    alt: "bitcoin drinking milk",
+  },
+  {
+    src: "./assets/bitcoin-scratching-head.gif",
+    alt: "bitcoin scratching head",
+  },
+  {
+    src: "./assets/bitcoin-pointing.gif",
+    alt: "bitcoin pointing",
+  },
+  {
+    src: "./assets/bitcoin-dips-moocoo.gif",
+    alt: "bitcoin dips moocoo",
+  },
+  {
+    src: "./assets/bitcoin-dancing-pubkey.gif",
+    alt: "bitcoin dancing pubkey",
+  },
+];
+
 const showcase = [
   {
     src: "./assets/alien.png",
@@ -251,6 +302,41 @@ export default function Home() {
         <Flex wrap='wrap' w='100%'>
           {downloadableAssets.map((asset, key) => (
             <Asset key={key} src={asset.src} alt={asset.alt} />
+          ))}
+        </Flex>
+      </Box>
+
+      <Heading fontFamily='body' color='maroon' textAlign='center' mb={4}>
+        Gif Station
+      </Heading>
+
+      <Center>
+        <Text
+          color='maroon'
+          textAlign='center'
+          maxW={{
+            base: 600,
+            lg: 800,
+          }}
+          mb={4}
+        >
+          Many no longer have the attention span necessary to watch a 10-minute
+          video about the toll that being money's future takes on the mind. Our
+          team certainly didn't. So we made a bunch of gifs that people like you
+          and us could watch instead.
+        </Text>
+      </Center>
+
+      <Box display='flex' justifyContent='center' mb={14}>
+        <Flex wrap='wrap' w='100%'>
+          {gifs.map((asset, index) => (
+            <Image
+              src={asset.src}
+              alt={asset.alt}
+              key={index}
+              w={["100%", "50%"]}
+              p={3}
+            />
           ))}
         </Flex>
       </Box>
