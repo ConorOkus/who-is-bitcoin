@@ -250,8 +250,10 @@ export default function Home() {
         }}
         ratio={4 / 3}
         mb={10}
-        _before={{
-          paddingBottom: 0,
+        sx={{
+          "&::before": {
+            paddingBottom: ["75%", "75%", 0],
+          },
         }}
       >
         <iframe
@@ -306,7 +308,7 @@ export default function Home() {
         </Flex>
       </Box>
 
-      {/* <Heading fontFamily='body' color='maroon' textAlign='center' mb={4}>
+      <Heading fontFamily='body' color='maroon' textAlign='center' mb={4}>
         Gif Station
       </Heading>
 
@@ -339,7 +341,7 @@ export default function Home() {
             />
           ))}
         </Flex>
-      </Box> */}
+      </Box>
 
       <Heading fontFamily='body' color='maroon' textAlign='center' mb={4}>
         From The Film
