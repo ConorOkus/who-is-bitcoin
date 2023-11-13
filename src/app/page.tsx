@@ -320,10 +320,10 @@ export default function Home() {
           }}
           mb={4}
         >
-          Many no longer have the attention span necessary to watch a 10-minute
+          {`Many no longer have the attention span necessary to watch a 10-minute
           video about the toll that being money's future takes on the mind. Our
           team certainly didn't. So we made a bunch of gifs that people like you
-          and us could watch instead.
+          and us could watch instead.`}
         </Text>
       </Center>
 
