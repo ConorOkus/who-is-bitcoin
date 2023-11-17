@@ -10,7 +10,6 @@ export default function RootLayout({
     <html lang='en'>
       <title>Here Comes Bitcoin</title>
       <link rel='stylesheet' href='https://use.typekit.net/gaq1ohg.css' />
-      <link rel='icon' type='image/png' href='/favicon.jpeg'></link>
       <body>
         <Providers>{children}</Providers>
       </body>
