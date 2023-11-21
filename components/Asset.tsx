@@ -30,7 +30,7 @@ function Asset({ src, alt }: Props) {
         >
           svg
         </Link>
-        <Icon as={GiDiamonds} fontSize='xl' mx={6} color='#CCCCCC' />
+        <Icon as={GiDiamonds} fontSize='xl' mx={4} color='#CCCCCC' />
         <Link
           fontFamily='nav'
           color='maroon'
