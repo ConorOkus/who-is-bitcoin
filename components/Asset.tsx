@@ -26,18 +26,18 @@ function Asset({ src, alt }: Props) {
           download={true}
           href={`${src}.svg`}
           textTransform='uppercase'
-          fontSize='2xl'
+          fontSize='xl'
         >
           svg
         </Link>
-        <Icon as={GiDiamonds} fontSize='2xl' mx={6} color='#CCCCCC' />
+        <Icon as={GiDiamonds} fontSize='xl' mx={6} color='#CCCCCC' />
         <Link
           fontFamily='nav'
           color='maroon'
           download={true}
           href={`${src}.png`}
           textTransform='uppercase'
-          fontSize='2xl'
+          fontSize='xl'
         >
           png
         </Link>
