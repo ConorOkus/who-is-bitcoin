@@ -20,43 +20,43 @@ import { BsSignal } from "react-icons/bs";
 
 const downloadableAssets = [
   {
-    src: "./assets/acrobat.png",
+    src: "./assets/acrobat",
     alt: "bitcoin acrobat",
   },
   {
-    src: "./assets/count.png",
+    src: "./assets/count",
     alt: "bitcoin count",
   },
   {
-    src: "./assets/fancy.png",
+    src: "./assets/fancy",
     alt: "bitcoin fancy",
   },
   {
-    src: "./assets/hungry.png",
+    src: "./assets/hungry",
     alt: "bitcoin hungry",
   },
   {
-    src: "./assets/mrs.png",
+    src: "./assets/mrs",
     alt: "bitcoin mrs",
   },
   {
-    src: "./assets/grumpy.png",
+    src: "./assets/grumpy",
     alt: "bitcoin grumpy",
   },
   {
-    src: "./assets/sir.png",
+    src: "./assets/sir",
     alt: "bitcoin sir",
   },
   {
-    src: "./assets/super.png",
+    src: "./assets/super",
     alt: "bitcoin super",
   },
   {
-    src: "./assets/surfer.png",
+    src: "./assets/surfer",
     alt: "bitcoin surfing",
   },
   {
-    src: "./assets/UFO.png",
+    src: "./assets/UFO",
     alt: "bitcoin ufo",
   },
 ];
