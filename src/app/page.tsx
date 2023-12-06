@@ -59,6 +59,46 @@ const downloadableAssets = [
     src: "./assets/UFO",
     alt: "bitcoin ufo",
   },
+  {
+    src: "./assets/Astronaut",
+    alt: "bitcoin astronaut",
+  },
+  {
+    src: "./assets/Bitcoinbahama",
+    alt: "bitcoin bahama",
+  },
+  {
+    src: "./assets/Coder",
+    alt: "bitcoin coder",
+  },
+  {
+    src: "./assets/Fairy",
+    alt: "bitcoin fairy",
+  },
+  {
+    src: "./assets/Hydra",
+    alt: "bitcoin hydra",
+  },
+  {
+    src: "./assets/Nostrich",
+    alt: "bitcoin nostrich",
+  },
+  {
+    src: "./assets/Queen",
+    alt: "bitcoin queen",
+  },
+  {
+    src: "./assets/Sandwich",
+    alt: "bitcoin sandwich",
+  },
+  {
+    src: "./assets/Sorceress",
+    alt: "bitcoin sorceress",
+  },
+  {
+    src: "./assets/Triceratops",
+    alt: "bitcoin triceratops",
+  },
 ];
 
 const gifs = [
