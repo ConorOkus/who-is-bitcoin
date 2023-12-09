@@ -269,7 +269,7 @@ export default function Home() {
             <ChakraLink
               as={NextLink}
               color='maroon'
-              href='https://signal.art/addstickers/#pack_id=b765a06df1323b20db48ae8017d0eef7&pack_key=379672c407f0cfe2f563dd7f90b24e0bee50f3b17a60421cd657fb9c2c9c47c1'
+              href='https://signal.art/addstickers/#pack_id=3c055858be1f847c4f8e0d5b0e8020fe&pack_key=a39f77a206304697ba51b8507b9ca32b2299d3d2ae707a62a350c44ba52fe2c7'
               fontSize={{
                 base: 16,
                 lg: 18,
