@@ -17,6 +17,7 @@ import Asset from "../../components/Asset";
 import { FaDiscord, FaTiktok } from "react-icons/fa6";
 import { IoIosMail } from "react-icons/io";
 import { BsSignal } from "react-icons/bs";
+import { SiGiphy } from "react-icons/si";
 
 const downloadableAssets = [
   {
@@ -203,8 +204,9 @@ export default function Home() {
         }}
       >
         <HStack
+          justifyContent='center'
           spacing={{
-            base: 10,
+            base: 4,
             lg: 12,
           }}
         >
@@ -214,7 +216,7 @@ export default function Home() {
               mr={0.5}
               color='maroon'
               fontSize={{
-                base: 16,
+                base: 14,
                 lg: 18,
               }}
             />
@@ -223,7 +225,7 @@ export default function Home() {
               color='maroon'
               href='https://discord.gg/QgdmfkWcZK'
               fontSize={{
-                base: 16,
+                base: 14,
                 lg: 18,
               }}
               fontFamily='nav'
@@ -238,7 +240,7 @@ export default function Home() {
               mr={0.5}
               color='maroon'
               fontSize={{
-                base: 16,
+                base: 14,
                 lg: 18,
               }}
             />
@@ -247,7 +249,7 @@ export default function Home() {
               color='maroon'
               href='https://www.tiktok.com/@herecomesbitcoin'
               fontSize={{
-                base: 16,
+                base: 14,
                 lg: 18,
               }}
               fontFamily='nav'
@@ -262,7 +264,7 @@ export default function Home() {
               mr={0.5}
               color='maroon'
               fontSize={{
-                base: 16,
+                base: 14,
                 lg: 18,
               }}
             />
@@ -277,6 +279,30 @@ export default function Home() {
               fontFamily='nav'
             >
               Stickers
+            </ChakraLink>
+          </Flex>
+
+          <Flex alignItems='center'>
+            <Icon
+              as={SiGiphy}
+              mr={0.5}
+              color='maroon'
+              fontSize={{
+                base: 14,
+                lg: 18,
+              }}
+            />
+            <ChakraLink
+              as={NextLink}
+              color='maroon'
+              href='https://giphy.com/herecomesbitcoin'
+              fontSize={{
+                base: 14,
+                lg: 18,
+              }}
+              fontFamily='nav'
+            >
+              Giphy
             </ChakraLink>
           </Flex>
         </HStack>
