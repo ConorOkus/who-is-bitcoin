@@ -10,7 +10,7 @@ export default function RootLayout({
     <html lang='en'>
       <title>Here Comes Bitcoin</title>
       <link rel='stylesheet' href='https://use.typekit.net/gaq1ohg.css' />
-      <link rel='icon' href='/static/favicon.ico' />
+      <link rel='icon' href='/favicon.ico' />
       <meta property='og:title' content='Here Comes Bitcoin' />
       <meta property='og:image' content='/assets/acrobat.png' />
       <meta property='og:image:width' content='1200' />
