@@ -18,6 +18,7 @@ import { FaDiscord, FaTiktok } from "react-icons/fa6";
 import { IoIosMail } from "react-icons/io";
 import { BsSignal } from "react-icons/bs";
 import { SiGiphy } from "react-icons/si";
+import { FaTelegram } from "react-icons/fa";
 
 const downloadableAssets = [
   {
@@ -99,6 +100,42 @@ const downloadableAssets = [
   {
     src: "./assets/Triceratops",
     alt: "bitcoin triceratops",
+  },
+  {
+    src: "./assets/Mirror",
+    alt: "bitcoin mirror",
+  },
+  {
+    src: "./assets/Goth",
+    alt: "bitcoin goth",
+  },
+  {
+    src: "./assets/Anime",
+    alt: "bitcoin anime",
+  },
+  {
+    src: "./assets/Astrology",
+    alt: "bitcoin astrology",
+  },
+  {
+    src: "./assets/K-Pop",
+    alt: "bitcoin k-pop",
+  },
+  {
+    src: "./assets/Skater",
+    alt: "bitcoin skater",
+  },
+  {
+    src: "./assets/Construction",
+    alt: "bitcoin construction",
+  },
+  {
+    src: "./assets/Satoshi",
+    alt: "bitcoin satoshi",
+  },
+  {
+    src: "./assets/Vault",
+    alt: "bitcoin vault",
   },
 ];
 
@@ -271,9 +308,9 @@ export default function Home() {
             <ChakraLink
               as={NextLink}
               color='maroon'
-              href='https://signal.art/addstickers/#pack_id=3c055858be1f847c4f8e0d5b0e8020fe&pack_key=a39f77a206304697ba51b8507b9ca32b2299d3d2ae707a62a350c44ba52fe2c7'
+              href='https://signal.art/addstickers/#pack_id=ca5850baed03af918de78a9435ceb002&pack_key=91318e9dba74c6c0c2f841773628670c664ac6a523cb57142bbf74380aa65a5b'
               fontSize={{
-                base: 16,
+                base: 14,
                 lg: 18,
               }}
               fontFamily='nav'
@@ -307,6 +344,36 @@ export default function Home() {
           </Flex>
         </HStack>
       </Flex>
+
+      <Box
+        textAlign='center'
+        pb={{
+          base: 4,
+          lg: 6,
+        }}
+      >
+        <Icon
+          as={FaTelegram}
+          mr={0.5}
+          color='maroon'
+          fontSize={{
+            base: 14,
+            lg: 18,
+          }}
+        />
+        <ChakraLink
+          as={NextLink}
+          color='maroon'
+          href='https://t.me/addstickers/herecomesbitcoin'
+          fontSize={{
+            base: 14,
+            lg: 18,
+          }}
+          fontFamily='nav'
+        >
+          Telegram
+        </ChakraLink>
+      </Box>
 
       <AspectRatio
         width='100%'
@@ -409,40 +476,6 @@ export default function Home() {
         </Flex>
       </Box>
 
-      <Heading fontFamily='body' color='maroon' textAlign='center' mb={4}>
-        From The Film
-      </Heading>
-
-      <Center>
-        <Text
-          color='maroon'
-          textAlign='center'
-          mb={4}
-          maxW={{
-            base: 600,
-            lg: 800,
-          }}
-        >
-          Enough people requested these during Who is Bitcoin?’s prerelease that
-          we knew they belonged here. While they aren’t as customizable as
-          others assets (yet), they make great wallpapers and rebuttals to
-          anyone who says bitcoiners don’t have a sense of humor about bitcoin.
-        </Text>
-      </Center>
-
-      <Box display='flex' justifyContent='center'>
-        <Flex wrap='wrap' w='100%'>
-          {showcase.map((asset, index) => (
-            <Image
-              src={asset.src}
-              alt={asset.alt}
-              key={index}
-              w={["100%", "50%"]}
-              p={3}
-            />
-          ))}
-        </Flex>
-      </Box>
       <Flex justifyContent='center' pt={3} pb={6}>
         <Flex alignItems='center'>
           <Icon
