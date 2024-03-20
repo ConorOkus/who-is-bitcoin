@@ -342,11 +342,44 @@ export default function Home() {
               Giphy
             </ChakraLink>
           </Flex>
+
+          <Flex
+            alignItems='center'
+            display={{
+              base: "none",
+              lg: "flex",
+            }}
+          >
+            <Icon
+              as={FaTelegram}
+              mr={0.5}
+              color='maroon'
+              fontSize={{
+                base: 14,
+                lg: 18,
+              }}
+            />
+            <ChakraLink
+              as={NextLink}
+              color='maroon'
+              href='https://giphy.com/herecomesbitcoin'
+              fontSize={{
+                base: 14,
+                lg: 18,
+              }}
+              fontFamily='nav'
+            >
+              Telegram
+            </ChakraLink>
+          </Flex>
         </HStack>
       </Flex>
 
       <Box
         textAlign='center'
+        display={{
+          lg: "none",
+        }}
         pb={{
           base: 4,
           lg: 6,
