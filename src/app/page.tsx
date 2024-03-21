@@ -137,6 +137,10 @@ const downloadableAssets = [
     src: "./assets/Vault",
     alt: "bitcoin vault",
   },
+  {
+    src: "./assets/Robe",
+    alt: "bitcoin robe",
+  },
 ];
 
 const gifs = [
