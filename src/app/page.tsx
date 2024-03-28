@@ -366,7 +366,7 @@ export default function Home() {
             <ChakraLink
               as={NextLink}
               color='maroon'
-              href='https://giphy.com/herecomesbitcoin'
+              href='https://t.me/addstickers/herecomesbitcoin'
               fontSize={{
                 base: 14,
                 lg: 18,
