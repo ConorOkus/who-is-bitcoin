@@ -142,7 +142,7 @@ const downloadableAssets = [
     alt: "bitcoin robe",
   },
   {
-    src: "./assets/Halving",
+    src: "./assets/halving",
     alt: "bitcoin halving",
   },
 ];
