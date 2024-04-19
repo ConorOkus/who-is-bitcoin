@@ -140,11 +140,7 @@ const downloadableAssets = [
   {
     src: "./assets/Robe",
     alt: "bitcoin robe",
-  },
-  {
-    src: "./assets/halving",
-    alt: "bitcoin halving",
-  },
+  }
 ];
 
 const gifs = [
