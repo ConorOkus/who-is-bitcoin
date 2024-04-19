@@ -143,7 +143,7 @@ const downloadableAssets = [
   },
   {
     src: "./assets/halving",
-    alt: "bitcoin halving",
+    alt: "bitcoin-halving",
   },
 ];
 
