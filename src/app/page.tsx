@@ -363,8 +363,8 @@ export default function Home() {
               mr={0.5}
               color='maroon'
               fontSize={{
-                base: 14,
-                lg: 18,
+                base: 16,
+                lg: 20,
               }}
             />
             <ChakraLink
@@ -400,8 +400,8 @@ export default function Home() {
           mr={0.5}
           color='maroon'
           fontSize={{
-            base: 14,
-            lg: 18,
+            base: 16,
+            lg: 20,
           }}
         />
         <ChakraLink
