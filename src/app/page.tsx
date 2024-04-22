@@ -281,7 +281,7 @@ export default function Home() {
 
           <Flex alignItems='center'>
             <Icon
-              as={FaTiktok}
+              as={FaTelegram}
               mr={0.5}
               color='maroon'
               fontSize={{
@@ -292,14 +292,14 @@ export default function Home() {
             <ChakraLink
               as={NextLink}
               color='maroon'
-              href='https://www.tiktok.com/@herecomesbitcoin'
+              href='https://t.me/addstickers/herecomesbitcoin'
               fontSize={{
                 base: 14,
                 lg: 18,
               }}
               fontFamily='nav'
             >
-              TikTok
+              Telegram
             </ChakraLink>
           </Flex>
 
@@ -359,7 +359,7 @@ export default function Home() {
             }}
           >
             <Icon
-              as={FaTelegram}
+              as={IoIosMail}
               mr={0.5}
               color='maroon'
               fontSize={{
@@ -370,22 +370,24 @@ export default function Home() {
             <ChakraLink
               as={NextLink}
               color='maroon'
-              href='https://t.me/addstickers/herecomesbitcoin'
+              href='mailto:hello@herecomesbitcoin.org'
               fontSize={{
                 base: 14,
                 lg: 18,
               }}
               fontFamily='nav'
             >
-              Telegram
+              Contact
             </ChakraLink>
           </Flex>
         </HStack>
       </Flex>
 
-      <Box
-        textAlign='center'
+      <Flex
+        justifyContent='center'
+        alignItems='center'
         display={{
+          base: "flex",
           lg: "none",
         }}
         pb={{
@@ -394,7 +396,7 @@ export default function Home() {
         }}
       >
         <Icon
-          as={FaTelegram}
+          as={IoIosMail}
           mr={0.5}
           color='maroon'
           fontSize={{
@@ -405,16 +407,16 @@ export default function Home() {
         <ChakraLink
           as={NextLink}
           color='maroon'
-          href='https://t.me/addstickers/herecomesbitcoin'
+          href='mailto:hello@herecomesbitcoin.org'
           fontSize={{
             base: 14,
             lg: 18,
           }}
           fontFamily='nav'
         >
-          Telegram
+          Contacts
         </ChakraLink>
-      </Box>
+      </Flex>
 
       <AspectRatio
         width='100%'
