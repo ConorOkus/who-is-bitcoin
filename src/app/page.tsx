@@ -145,6 +145,90 @@ const downloadableAssets = [
     src: "./assets/halving",
     alt: "bitcoin halving",
   },
+  {
+    src: "./assets/bedford-football-club",
+    alt: "bitcoin football club",
+  },
+  {
+    src: "./assets/bedford-football-club-II",
+    alt: "bitcoin football club",
+  },
+  {
+    src: "./assets/Beholder",
+    alt: "bitcoin beholder",
+  },
+  {
+    src: "./assets/Cat",
+    alt: "bitcoin cat",
+  },
+  {
+    src: "./assets/Dad",
+    alt: "bitcoin dad",
+  },
+  {
+    src: "./assets/DJ",
+    alt: "bitcoin dj",
+  },
+  {
+    src: "./assets/Drums",
+    alt: "bitcoin drums",
+  },
+  {
+    src: "./assets/gator-wrestling",
+    alt: "bitcoin gator wrestling",
+  },
+  {
+    src: "./assets/Ghoul",
+    alt: "bitcoin ghoul",
+  },
+  {
+    src: "./assets/Graffiti",
+    alt: "bitcoin graffiti",
+  },
+  {
+    src: "./assets/Greenpeace",
+    alt: "bitcoin greenpeace",
+  },
+  {
+    src: "./assets/Hamlet",
+    alt: "bitcoin hamlet",
+  },
+  {
+    src: "./assets/hieronymus-bosch",
+    alt: "bitcoin hieronymus bosch",
+  },
+  {
+    src: "./assets/hot-air-balloon",
+    alt: "bitcoin hot air balloon",
+  },
+  {
+    src: "./assets/Judge",
+    alt: "bitcoin judge",
+  },
+  {
+    src: "./assets/night-out",
+    alt: "bitcoin night out",
+  },
+  {
+    src: "./assets/Pubkey",
+    alt: "bitcoin pubkey",
+  },
+  {
+    src: "./assets/SHAmory",
+    alt: "bitcoin SHAmory",
+  },
+  {
+    src: "./assets/Sushi",
+    alt: "bitcoin sushi",
+  },
+  {
+    src: "./assets/Unicorn",
+    alt: "bitcoin unicorn",
+  },
+  {
+    src: "./assets/Venus",
+    alt: "bitcoin venus",
+  },
 ];
 
 const gifs = [
