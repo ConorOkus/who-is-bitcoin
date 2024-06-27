@@ -210,8 +210,8 @@ const downloadableAssets = [
     alt: "bitcoin night out",
   },
   {
-    src: "./assets/Pubkey",
-    alt: "bitcoin pubkey",
+    src: "./assets/girls-night-out",
+    alt: "bitcoin girls night out",
   },
   {
     src: "./assets/SHAmory",
@@ -230,6 +230,10 @@ const downloadableAssets = [
     alt: "bitcoin venus",
   },
   {
+    src: "./assets/Pubkey",
+    alt: "bitcoin pubkey",
+  },
+  {
     src: "./assets/bitcoin-japan",
     alt: "bitcoin japan",
   },
@@ -240,10 +244,6 @@ const downloadableAssets = [
   {
     src: "./assets/Brink",
     alt: "bitcoin brink",
-  },
-  {
-    src: "./assets/girls-night-out",
-    alt: "bitcoin girls night out",
   },
   {
     src: "./assets/HRF",
