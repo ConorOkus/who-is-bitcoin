@@ -246,7 +246,7 @@ const downloadableAssets = [
     alt: "bitcoin girls night out",
   },
   {
-    src: "./assets/hrf",
+    src: "./assets/HRF",
     alt: "bitcoin hrf",
   },
   {
