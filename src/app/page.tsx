@@ -229,6 +229,54 @@ const downloadableAssets = [
     src: "./assets/Venus",
     alt: "bitcoin venus",
   },
+  {
+    src: "./assets/bitcoin-japan",
+    alt: "bitcoin japan",
+  },
+  {
+    src: "./assets/black-ops",
+    alt: "bitcoin ops",
+  },
+  {
+    src: "./assets/Brink",
+    alt: "bitcoin brink",
+  },
+  {
+    src: "./assets/girls-night-out",
+    alt: "bitcoin girls night out",
+  },
+  {
+    src: "./assets/hrf",
+    alt: "bitcoin hrf",
+  },
+  {
+    src: "./assets/jack-mallers",
+    alt: "bitcoin jack mallers",
+  },
+  {
+    src: "./assets/lightning-network",
+    alt: "bitcoin lightning network",
+  },
+  {
+    src: "./assets/opensats-arrow",
+    alt: "bitcoin opensats arrow",
+  },
+  {
+    src: "./assets/puppet-jack",
+    alt: "bitcoin pupppet jack",
+  },
+  {
+    src: "./assets/rockstar-dev",
+    alt: "bitcoin rockstar dev",
+  },
+  {
+    src: "./assets/stacker-news",
+    alt: "bitcoin stacker news",
+  },
+  {
+    src: "./assets/Miner",
+    alt: "bitcoin miner",
+  },
 ];
 
 const gifs = [
