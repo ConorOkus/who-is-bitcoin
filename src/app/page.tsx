@@ -235,7 +235,7 @@ const downloadableAssets = [
   },
   {
     src: "./assets/black-ops",
-    alt: "bitcoin ops",
+    alt: "bitcoin black ops",
   },
   {
     src: "./assets/Brink",
