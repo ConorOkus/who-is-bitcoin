@@ -257,10 +257,10 @@ const downloadableAssets = [
     src: "./assets/lightning-network",
     alt: "bitcoin lightning network",
   },
-  {
-    src: "./assets/opensats-arrow",
-    alt: "bitcoin opensats arrow",
-  },
+  // {
+  //   src: "./assets/opensats-arrow",
+  //   alt: "bitcoin opensats arrow",
+  // },
   {
     src: "./assets/puppet-jack",
     alt: "bitcoin pupppet jack",
