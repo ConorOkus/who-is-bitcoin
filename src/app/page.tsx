@@ -314,7 +314,7 @@ const downloadableAssets = [
     alt: "bitcoin girls night out part 3",
   },
   {
-    src: "./assets/Pyro-Bitcoin",
+    src: "./assets/Pyro",
     alt: "bitcoin pyro",
   },
   {
