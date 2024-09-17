@@ -306,12 +306,8 @@ const downloadableAssets = [
     alt: "bitcoin student network",
   },
   {
-    src: "./assets/Girls-night-out-3",
-    alt: "bitcoin girls night out part 3",
-  },
-  {
-    src: "./assets/Girls-night-out-3",
-    alt: "bitcoin girls night out part 3",
+    src: "./assets/girls-night-out-prison",
+    alt: "bitcoin girls night out part prison",
   },
   {
     src: "./assets/Pyro",
