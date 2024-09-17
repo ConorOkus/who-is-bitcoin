@@ -277,6 +277,90 @@ const downloadableAssets = [
     src: "./assets/Miner",
     alt: "bitcoin miner",
   },
+  {
+    src: "./assets/Flower-god",
+    alt: "bitcoin flower god",
+  },
+  {
+    src: "./assets/THNDR-games",
+    alt: "bitcoin THNDR games",
+  },
+  {
+    src: "./assets/Banjo-bitcoin",
+    alt: "bitcoin Banjo",
+  },
+  {
+    src: "./assets/Volcano-miner",
+    alt: "bitcoin volcano",
+  },
+  {
+    src: "./assets/Forest-god",
+    alt: "bitcoin forest",
+  },
+  {
+    src: "./assets/Bad-doctor",
+    alt: "bitcoin bad doctor",
+  },
+  {
+    src: "./assets/Student-network",
+    alt: "bitcoin student network",
+  },
+  {
+    src: "./assets/Girls-night-out-3",
+    alt: "bitcoin girls night out part 3",
+  },
+  {
+    src: "./assets/Girls-night-out-3",
+    alt: "bitcoin girls night out part 3",
+  },
+  {
+    src: "./assets/Pyro-Bitcoin",
+    alt: "bitcoin pyro",
+  },
+  {
+    src: "./assets/Cold-card",
+    alt: "bitcoin coldcard",
+  },
+  {
+    src: "./assets/Consensus-cleanup",
+    alt: "bitcoin consensus cleanup",
+  },
+  {
+    src: "./assets/Bitcoin-unit-01",
+    alt: "bitcoin unit",
+  },
+  {
+    src: "./assets/Bust-bitcoin",
+    alt: "bitcoin bust",
+  },
+  {
+    src: "./assets/Pet-adoption",
+    alt: "bitcoin pet adoption",
+  },
+  {
+    src: "./assets/Bitcoin-island",
+    alt: "bitcoin island",
+  },
+  {
+    src: "./assets/Headless-bitcoin",
+    alt: "bitcoin headless",
+  },
+  {
+    src: "./assets/Zeus-bitcoin",
+    alt: "bitcoin zeus",
+  },
+  {
+    src: "./assets/Bitcoin-Alby",
+    alt: "bitcoin alby",
+  },
+  {
+    src: "./assets/Bird-feeder-bitcoin",
+    alt: "bitcoin alby",
+  },
+  {
+    src: "./assets/Lyn-Alden",
+    alt: "bitcoin lyn alden",
+  },
 ];
 
 const gifs = [
