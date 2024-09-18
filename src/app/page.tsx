@@ -277,6 +277,86 @@ const downloadableAssets = [
     src: "./assets/Miner",
     alt: "bitcoin miner",
   },
+  {
+    src: "./assets/Flower-god",
+    alt: "bitcoin flower god",
+  },
+  {
+    src: "./assets/THNDR-games",
+    alt: "bitcoin THNDR games",
+  },
+  {
+    src: "./assets/Banjo-bitcoin",
+    alt: "bitcoin Banjo",
+  },
+  {
+    src: "./assets/Volcano-miner",
+    alt: "bitcoin volcano",
+  },
+  {
+    src: "./assets/Forest-god",
+    alt: "bitcoin forest",
+  },
+  {
+    src: "./assets/Bad-doctor",
+    alt: "bitcoin bad doctor",
+  },
+  {
+    src: "./assets/Student-network",
+    alt: "bitcoin student network",
+  },
+  {
+    src: "./assets/girls-night-out-prison",
+    alt: "bitcoin girls night out part prison",
+  },
+  {
+    src: "./assets/Pyro",
+    alt: "bitcoin pyro",
+  },
+  {
+    src: "./assets/Cold-card",
+    alt: "bitcoin coldcard",
+  },
+  {
+    src: "./assets/Consensus-cleanup",
+    alt: "bitcoin consensus cleanup",
+  },
+  {
+    src: "./assets/Bitcoin-unit-01",
+    alt: "bitcoin unit",
+  },
+  {
+    src: "./assets/Bust-bitcoin",
+    alt: "bitcoin bust",
+  },
+  {
+    src: "./assets/Pet-adoption",
+    alt: "bitcoin pet adoption",
+  },
+  {
+    src: "./assets/Bitcoin-island",
+    alt: "bitcoin island",
+  },
+  {
+    src: "./assets/Headless-bitcoin",
+    alt: "bitcoin headless",
+  },
+  {
+    src: "./assets/Zeus-bitcoin",
+    alt: "bitcoin zeus",
+  },
+  {
+    src: "./assets/Bitcoin-Alby",
+    alt: "bitcoin alby",
+  },
+  {
+    src: "./assets/Bird-feeder-bitcoin",
+    alt: "bitcoin alby",
+  },
+  {
+    src: "./assets/Lyn-Alden",
+    alt: "bitcoin lyn alden",
+  },
 ];
 
 const gifs = [
@@ -448,7 +528,7 @@ export default function Home() {
             <ChakraLink
               as={NextLink}
               color='maroon'
-              href='https://signal.art/addstickers/#pack_id=ae9f5f5c8e15e8d8f4c210732d1f3e09&pack_key=9b85f77d1a8c4dc628b576e91e040b8d97d75c763006becbd557f2f90420a963'
+              href='https://signal.art/addstickers/#pack_id=961a70b4646d38f98ebca674c2792262&pack_key=f6a446830125c12ba25bfe4e6138288b0babe1d54f3990465338cdd5a80fd7e9'
               fontSize={{
                 base: 14,
                 lg: 18,
