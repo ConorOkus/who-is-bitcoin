@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { Providers } from "./providers";
+import { Providers } from "../providers/ThemeProvider";
 
 export default function RootLayout({
   children,
