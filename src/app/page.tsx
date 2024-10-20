@@ -7,6 +7,7 @@ import Hero from "@/components/HeroSection/HeroSection";
 import AssetsSection from "@/components/AssetsSection/AssetsSection";
 import StickerSet from "@/components/StrickerSet/StickerSet";
 import GifsSection from "@/components/GifsSection/GifsSection";
+import Partners from "@/components/PartnerSection/Partners";
 
 const Home: React.FC = () => {
   return (
@@ -31,9 +32,9 @@ const Home: React.FC = () => {
         }}
       >
         <GifsSection />
-
-
+        <Partners/>
       </Box>
+
     </>
   );
 };
