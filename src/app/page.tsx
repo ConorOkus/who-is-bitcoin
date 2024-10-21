@@ -8,6 +8,7 @@ import AssetsSection from "@/components/AssetsSection/AssetsSection";
 import StickerSet from "@/components/StrickerSet/StickerSet";
 import GifsSection from "@/components/GifsSection/GifsSection";
 import Partners from "@/components/PartnerSection/Partners";
+import ProductShowcase from "@/components/ProductShowcase/ProductShowcase";
 
 const Home: React.FC = () => {
   return (
@@ -34,7 +35,7 @@ const Home: React.FC = () => {
         <GifsSection />
         <Partners/>
       </Box>
-
+      <ProductShowcase/>
     </>
   );
 };
