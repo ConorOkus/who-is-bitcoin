@@ -10,6 +10,7 @@ import GifsSection from "@/components/GifsSection/GifsSection";
 import Partners from "@/components/PartnerSection/Partners";
 import ProductShowcase from "@/components/ProductShowcase/ProductShowcase";
 import BitcoinVideoComponent from "@/components/MovieSection/BitcoinVideoComponent";
+import ColoringPages from "@/components/ColoringPagesSection/ColoringPages";
 
 const Home: React.FC = () => {
   return (
@@ -38,6 +39,7 @@ const Home: React.FC = () => {
       </Box>
       <ProductShowcase/>
       <BitcoinVideoComponent />
+      <ColoringPages/>
     </>
   );
 };
