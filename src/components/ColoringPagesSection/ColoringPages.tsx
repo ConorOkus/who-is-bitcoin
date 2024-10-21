@@ -33,9 +33,13 @@ const ColoringPages: React.FC = () => {
     }
   };
 
-  const handleDownload = (id: string) => {
-    console.log(`Downloading coloring page ${id}`);
-    // Implement actual download logic here
+  const handleDownload = (imageUrl: string, title: string) => {
+    const link = document.createElement('a');
+    link.href = imageUrl;
+    link.setAttribute('download', `${title}.png`); // Optional: You can set the filename dynamically
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
   };
 
   return (
@@ -50,34 +54,59 @@ const ColoringPages: React.FC = () => {
         lg: "140px",
       }}>
 
-<Heading
-        color="#14253d"
-        textAlign="center"
-        mb={6}
-        mt={20}
-        fontSize="48px"
-        fontWeight="500"
-        lineHeight="1.2"
-      >
-       Farts and crafts
-      </Heading>
-
-      <Center>
-        <Text
-          color="#4a5568"
+        <Heading
+          color="#14253d"
           textAlign="center"
-          maxW="700px"
-          mb={20}
-          fontSize="16px"
-          fontWeight="400"
-          lineHeight="1.5"
+          mb={6}
+          mt={20}
+          fontSize="48px"
+          fontWeight="500"
+          lineHeight="1.2"
         >
-         Rainy day at home? Kids looking For something other than yelling to do? Fire up the printer and sharpen the crayons. Then share their flatulent creations with @spiralbtc so that we can share them too.
-        </Text>
-      </Center>
-        <Box bg="white" overflow="hidden" mb={10} >
+          Farts and crafts
+        </Heading>
+
+        <Center>
+          <Text
+            color="#4a5568"
+            textAlign="center"
+            maxW="700px"
+            mb={20}
+            fontSize="16px"
+            fontWeight="400"
+            lineHeight="1.5"
+          >
+            Rainy day at home? Kids looking For something other than yelling to do? Fire up the printer and sharpen the crayons. Then share their flatulent creations with @spiralbtc so that we can share them too.
+          </Text>
+        </Center>
+        <Box bg="white" overflow="hidden" mb={10} position="relative">
           <Image src="/assets/ColoringCardsImages/ColoringCardOne.png" alt="Coloring Pages" w="100%" />
+
+          {/* Overlay Download Button */}
+          <Box
+            position="absolute"
+            top="0"
+            left="0"
+            right="0"
+            bottom="0"
+            bg="blackAlpha.600"
+            opacity="0"
+            transition="opacity 0.2s"
+            _hover={{ opacity: 1 }}
+            display="flex"
+            alignItems="center"
+            justifyContent="center"
+          >
+            <Button
+              leftIcon={<DownloadIcon />}
+              onClick={() => handleDownload('/assets/ColoringCardsImages/ColoringCardOne.png', 'ColoringCardOne')}
+              colorScheme="blue"
+            >
+              Download
+            </Button>
+          </Box>
         </Box>
+
         <Flex
           ref={scrollRef}
           overflowX="auto"
@@ -118,7 +147,7 @@ const ColoringPages: React.FC = () => {
               >
                 <Button
                   leftIcon={<DownloadIcon />}
-                  onClick={() => handleDownload(page.id)}
+                  onClick={() => handleDownload(page.imageUrl, page.title)}
                   colorScheme="blue"
                 >
                   Download
@@ -129,11 +158,11 @@ const ColoringPages: React.FC = () => {
         </Flex>
         <Center>
           <Box mt={20} mb={10}>
-        <CustomButton onClick={handleSeeMore} bg="#FFEFA6" color="#0C5156" fontSize='32px' padding='1.7rem 1.5rem'>
-          See more
-        </CustomButton>
-        </Box>
-</Center>
+            <CustomButton onClick={handleSeeMore} bg="#FFEFA6" color="#0C5156" fontSize='32px' padding='1.7rem 1.5rem'>
+              See more
+            </CustomButton>
+          </Box>
+        </Center>
       </Box>
       <Box position="relative" height="100px" zIndex={1}>
         <WaveBorderBottom color='#C1E8F3' />

@@ -15,7 +15,6 @@ const CustomButton: React.FC<CustomButtonProps> = ({
   padding = "0.5rem 1rem",
   ...props
 }) => {
-  // Memoize the maskImage style to prevent recalculations
   const maskStyles = useMemo(() => ({
     content: '""',
     position: "absolute",

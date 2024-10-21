@@ -35,8 +35,8 @@ const products: Product[] = [
 ];
 
 const ProductCard: React.FC<{ product: Product }> = ({ product }) => {
-  const imageSize = useBreakpointValue({ base: "200px", md: "250px" });
-  const containerHeight = useBreakpointValue({ base: "300px", md: "350px" });
+  const imageSize = useBreakpointValue({ base: '200px', md: '250px' });
+  const containerHeight = useBreakpointValue({ base: '400px', md: '450px' });
 
   return (
     <Box
@@ -45,27 +45,36 @@ const ProductCard: React.FC<{ product: Product }> = ({ product }) => {
       overflow="hidden"
       bg="white"
       p={4}
-      height={containerHeight}
+      height={containerHeight} // Increased height for larger card size
       display="flex"
       flexDirection="column"
       justifyContent="space-between"
     >
-      <Image src={product.imageUrl} alt={product.name} mb={4} w={imageSize} h={imageSize} objectFit="contain" />
+      <Center flex="1"> {/* Ensuring the image is centered vertically */}
+        <Image
+          src={product.imageUrl}
+          alt={product.name}
+          w={imageSize}
+          h={imageSize}
+          objectFit="cover" // Ensure all images maintain same size
+          mb={4}
+        />
+      </Center>
       <Box>
         <Heading size="md" mb={2} textAlign="center">{product.name}</Heading>
         <Center>
-        <CustomButton
-          bg="#FFEFA6"
-          color="#12334C"
-          fontSize="28px"
-          padding="1.7rem 1.9rem"
-          width="fit-content"
-          mb={4}
-          mt={4}
-          isDisabled={product.price === 'Coming Soon'}
-        >
-          {product.price === 'Coming Soon' ? 'Coming Soon' : product.price}
-        </CustomButton>
+          <CustomButton
+            bg="#FFEFA6"
+            color="#12334C"
+            fontSize="28px"
+            padding="1.7rem 1.9rem"
+            width="fit-content"
+            mb={4}
+            mt={4}
+            isDisabled={product.price === 'Coming Soon'}
+          >
+            {product.price === 'Coming Soon' ? 'Coming Soon' : product.price}
+          </CustomButton>
         </Center>
       </Box>
     </Box>
@@ -99,25 +108,25 @@ const ProductShowcase: React.FC = () => {
           It&rsquo;s only a matter of time until everything becomes a plushie, but in our case, it took even longer because Bitcoin kept eating our concepts. Grab your hungry guy today.
         </Text>
       </Center>
-      <Box px={{
-        base: 6,
-        lg: "120px",
-      }}
-        mb={20}>
+      <Box
+        px={{
+          base: 6,
+          lg: '120px',
+        }}
+        mb={20}
+      >
         <Swiper
-
           slidesPerView="auto"
           spaceBetween={20}
           centeredSlides={false}
           className="mySwiper"
-
           breakpoints={{
             320: { slidesPerView: 1.2, spaceBetween: 10 },
             768: { slidesPerView: 2.5, spaceBetween: 20 },
             1024: { slidesPerView: 2.5, spaceBetween: 40 },
           }}
           style={{
-            overflow: 'hidden',
+            overflow: 'visible', // Allow slides to not be cut off
           }}
         >
           {products.map((product) => (
@@ -125,10 +134,8 @@ const ProductShowcase: React.FC = () => {
               <ProductCard product={product} />
             </SwiperSlide>
           ))}
-
         </Swiper>
       </Box>
-
     </Container>
   );
 };
