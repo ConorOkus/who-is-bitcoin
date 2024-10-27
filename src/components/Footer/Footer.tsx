@@ -30,6 +30,7 @@ const Footer = () => {
                 </Text>
                 <CustomButton
                   bg="#FFD24C"
+                  href="mailto:hello@herecomesbitcoin.org"
                   color="#12334C"
                   fontSize="28px"
                   padding="1.7rem 1.5rem"
@@ -45,10 +46,10 @@ const Footer = () => {
                   Follow Us
                 </Heading>
                 <Flex mb={4}>
-                  <Link href="https://youtube.com" isExternal mr={6}>
+                  <Link href="https://www.youtube.com/@herecomesbitcoin" isExternal mr={6}>
                     <Icon as={FaYoutube} boxSize="40px" color="white" />
                   </Link>
-                  <Link href="https://discord.com" isExternal>
+                  <Link href="https://discord.gg/BChUGPzS5U" isExternal>
                     <Icon as={FaDiscord} boxSize="40px" color="white" />
                   </Link>
                 </Flex>

@@ -41,10 +41,10 @@ const Header = () => {
 
                     <Box display={{ base: "none", md: "block" }}>
                         <HStack spacing={16}>
-                            <CustomButton bg="#F7931A" color="white" fontSize='32px' padding='1.7rem 1.5rem'>
+                            <CustomButton bg="#F7931A" href="mailto:hello@herecomesbitcoin.org" color="white" fontSize='32px' padding='1.7rem 1.5rem'>
                                 Collaborate
                             </CustomButton>
-                            <CustomButton bg="#F7931A" color="white" fontSize='32px' padding='1.7rem 1.5rem'>
+                            <CustomButton bg="#F7931A" href="https://discord.gg/BChUGPzS5U" color="white" fontSize='32px' padding='1.7rem 1.5rem'>
                                 Join Discord
                             </CustomButton>
                         </HStack>

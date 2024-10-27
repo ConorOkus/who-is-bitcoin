@@ -1,10 +1,20 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import { Box, Text, Image, useMediaQuery } from '@chakra-ui/react';
 import CustomButton from '../CustomButton/CustomButton';
 
 const BitcoinVideoComponent = () => {
   const [isMobile] = useMediaQuery("(max-width: 480px)");
   const [isTablet] = useMediaQuery("(min-width: 481px) and (max-width: 768px)");
+  const iframeRef = useRef<HTMLIFrameElement>(null); // Specify the type explicitly
+
+  const handlePlayVideo = () => {
+    if (iframeRef.current && iframeRef.current.contentWindow) {
+      // Send play command to YouTube iframe
+      iframeRef.current.contentWindow.postMessage(
+        '{"event":"command","func":"playVideo","args":""}', '*'
+      );
+    }
+  };
 
   return (
     <Box
@@ -44,7 +54,8 @@ const BitcoinVideoComponent = () => {
       >
         <Box
           as="iframe"
-          src="https://www.youtube.com/embed/DvHUOr8ruMw"
+          ref={iframeRef}
+          src="https://www.youtube.com/embed/DvHUOr8ruMw?enablejsapi=1"
           width="100%"
           height="100%"
           border="none"
@@ -68,6 +79,7 @@ const BitcoinVideoComponent = () => {
         px={isMobile ? 4 : isTablet ? 6 : 8}
         mt={isMobile ? 5 : isTablet ? 7 : 10}
         mb={isMobile ? 24 : isTablet ? 24 : 36}
+        onClick={handlePlayVideo} // Play video on button click
       >
         Watch Now
       </CustomButton>
@@ -82,6 +94,8 @@ const BitcoinVideoComponent = () => {
         height="auto"
         objectFit="contain"
         zIndex={2}
+        onClick={handlePlayVideo} // Play video on image click
+        style={{ cursor: "pointer" }} // Make it look clickable
       />
     </Box>
   );

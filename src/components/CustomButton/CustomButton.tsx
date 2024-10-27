@@ -1,4 +1,5 @@
-import { Button, ButtonProps } from "@chakra-ui/react";
+import { Button, ButtonProps, Link as ChakraLink } from "@chakra-ui/react";
+import NextLink from "next/link";
 import { ReactNode, useMemo } from "react";
 
 interface CustomButtonProps extends ButtonProps {
@@ -6,6 +7,9 @@ interface CustomButtonProps extends ButtonProps {
   borderColor?: string;
   fontSize?: string;
   padding?: string;
+  href?: string; // Prop for link
+  hoverBackgroundColor?: string; // Prop for hover background color
+  hoverTextColor?: string; // Prop for hover text color
 }
 
 const CustomButton: React.FC<CustomButtonProps> = ({
@@ -13,21 +17,27 @@ const CustomButton: React.FC<CustomButtonProps> = ({
   borderColor = "black",
   fontSize = "16px",
   padding = "0.5rem 1rem",
+  href,
+  hoverBackgroundColor = "gray.300",
+  hoverTextColor = "black",
   ...props
 }) => {
-  const maskStyles = useMemo(() => ({
-    content: '""',
-    position: "absolute",
-    top: "50%",
-    transform: "translateY(-50%)",
-    height: "100%",
-    width: "10px",
-    backgroundColor: props.bg || "gray.200",
-    maskSize: "contain",
-    maskRepeat: "no-repeat",
-    maskPosition: "center",
-    transition: "background-color 0.2s ease",
-  }), [props.bg]);
+  const maskStyles = useMemo(
+    () => ({
+      content: '""',
+      position: "absolute",
+      top: "50%",
+      transform: "translateY(-50%)",
+      height: "100%",
+      width: "10px",
+      backgroundColor: props.bg || "gray.200",
+      maskSize: "contain",
+      maskRepeat: "no-repeat",
+      maskPosition: "center",
+      transition: "background-color 0.2s ease",
+    }),
+    [props.bg]
+  );
 
   const leftMask = {
     ...maskStyles,
@@ -41,7 +51,7 @@ const CustomButton: React.FC<CustomButtonProps> = ({
     maskImage: "url('/assets/CustomButtonAssets/ButtonRightBorder.svg')",
   };
 
-  return (
+  const buttonContent = (
     <Button
       {...props}
       position="relative"
@@ -57,9 +67,10 @@ const CustomButton: React.FC<CustomButtonProps> = ({
       overflow="visible"
       minHeight="40px"
       _hover={{
-        bg: "gray.300",
-        _before: { backgroundColor: "gray.300" },
-        _after: { backgroundColor: "gray.300" },
+        bg: hoverBackgroundColor,
+        color: hoverTextColor,
+        _before: { backgroundColor: hoverBackgroundColor },
+        _after: { backgroundColor: hoverBackgroundColor },
       }}
       _before={leftMask}
       _after={rightMask}
@@ -67,6 +78,25 @@ const CustomButton: React.FC<CustomButtonProps> = ({
       {children}
     </Button>
   );
+
+   // Determine if the link is internal or external
+   const isExternal = href?.startsWith("http") || href?.startsWith("mailto:");
+
+   // Wrap button in appropriate Link component based on `isExternal`
+   if (href) {
+     return isExternal ? (
+       <ChakraLink href={href} isExternal style={{ textDecoration: "none" }}>
+         {buttonContent}
+       </ChakraLink>
+     ) : (
+       <NextLink href={href} passHref>
+         <ChakraLink style={{ textDecoration: "none" }}>{buttonContent}</ChakraLink>
+       </NextLink>
+     );
+   }
+ 
+
+  return buttonContent;
 };
 
 export default CustomButton;

@@ -10,26 +10,30 @@ interface Product {
   name: string;
   price: string | 'Coming Soon';
   imageUrl: string;
+  url: string;
 }
 
 const products: Product[] = [
   {
     id: '1',
     name: 'The 21M Faces of Bitcoin Mug',
-    price: '14.00$',
+    price: '15.00$',
     imageUrl: '/assets/ProductImages/HCB-mug.png',
+    url: "https://www.spiralswag.xyz/product/the-21m-faces-of-bitcoin-mug/4?cp=true&sa=true&sbp=false&q=false",
   },
   {
     id: '2',
     name: 'Here Comes Bitcoin Plushi',
-    price: '50.00$',
+    price: '39.99$',
     imageUrl: '/assets/ProductImages/HCb-plushie.png',
+    url: "https://www.uncute.com/collections/all/products/here-comes-bitcoin"
   },
   {
     id: '3',
     name: 'Here Comes Bitcoin Satscard',
-    price: 'Coming Soon',
+    price: '8.99$',
     imageUrl: '/assets/ProductImages/HCB-satscard.png',
+    url: "https://store.coinkite.com/store/sc-hcb-1"
   },
   // Add more products if needed
 ];
@@ -71,6 +75,7 @@ const ProductCard: React.FC<{ product: Product }> = ({ product }) => {
             width="fit-content"
             mb={4}
             mt={4}
+            href={product.url}
             isDisabled={product.price === 'Coming Soon'}
           >
             {product.price === 'Coming Soon' ? 'Coming Soon' : product.price}
