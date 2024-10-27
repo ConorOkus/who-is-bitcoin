@@ -13,26 +13,26 @@ const Hero = () => {
             <Box bg={bgColor} pt={10} pb={24} px={{ base: 6, lg: "30px" }}>
                 <Container maxW="container.2xl">
                     <Flex
+                        direction={{ base: "column", md: "row" }}
                         align="center"
                         justify="space-between"
                         wrap="wrap"
-                        padding="2rem"
+                        padding={{lg: "2rem", md:"1rem"}}
                         position="relative"
+                        paddingBottom="7rem"
                     >
                         {/* Hero Text Section */}
-                        <Box maxW={{ base: "100%", md: "50%" }} zIndex={1}>
+                        <Box maxW={{ base: "100%", md: "50%" }} zIndex={1} textAlign="left" >
                             <Heading mb={6}
                                 fontSize={{ base: "4xl", md: "5xl", lg: "7xl" }}
                                 lineHeight={1.2}
                                 color="#13294b"
                                 fontWeight="medium">
-                                Bitcoin Stuff For <br />
-                                Your Bitcoin Stuff
+                                Making Bitcoin <br />
+                                Learning More Fun
                             </Heading>
-                            <Text mb={10} fontSize="3xl" lineHeight={1.2} color="#13294b" fontWeight="500">
-                                Here Comes Bitcoin is the central resource <br />for all things Bitcoin (mascot, not <br /> currency), including license-free creative <br />assets that
-                                you can use to make whatever <br />
-                                you want.
+                            <Text mb={10} fontSize={{ base: "md", md: "3xl" }} lineHeight={1.5} color="#13294b" fontWeight="500">
+                                HereComesBitcoin is the central resource <br />for all things Bitcoin (puppet, not currency), <br />including license-free creative assets <br />that you can use to make anything <br /> you want.
                             </Text>
                             <CustomButton
                                 bg="#F7931A"
@@ -47,6 +47,26 @@ const Hero = () => {
 
                         {/* Hero Image Section */}
                         <Box
+                            display={{ base: "block", md: "none" }}
+                            position="absolute"
+                            left="50%"
+                            bottom="-200px"
+                            transform="translateX(-50%)"
+                            width="100%"
+                            zIndex={2}
+                        >
+                            <Image
+                                src={heroImage}
+                                alt="Hero image"
+                                objectFit="contain"
+                                width="100%"
+                                height="100%"
+                            />
+                        </Box>
+
+                        {/* Desktop Hero Image Section */}
+                        <Box
+                            display={{ base: "none", md: "block" }}
                             position="absolute"
                             right="-6"
                             bottom="-240px"

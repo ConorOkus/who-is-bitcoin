@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Heading, Text, Flex, Image, VStack, HStack } from '@chakra-ui/react';
+import { Box, Heading, Text, Flex, Image, VStack, Stack } from '@chakra-ui/react';
 import CustomButton from '../CustomButton/CustomButton';
 
 const StickerSet = () => {
@@ -29,14 +29,14 @@ const StickerSet = () => {
             Orange up your Signal and Telegram chats with our Here Comes Bitcoin sticker set bundles, featuring all your favorite HCB Bitcoins
           </Text>
 
-          <HStack spacing={10} mt={6} w={{ base: 'full', md: 'auto' }} justifyContent={{ base: 'center', md: 'flex-start' }}>
-            <CustomButton bg="#FFEFA6" color="#0C5156" fontSize="24px" padding="1.7rem 2rem">
+          <Stack direction={{ base: 'column', md: 'row' }} spacing={{ base: 8, md: 6 }} mt={6} w={{ base: 'full', md: 'full' }} justifyContent={{ base: 'center', md: 'center' }}>
+            <CustomButton bg="#FFEFA6" href="https://t.me/addstickers/herecomesbitcoin" color="#0C5156" fontSize="24px" padding="1.7rem 2rem">
               Telegram Stickers
             </CustomButton>
-            <CustomButton bg="#FFEFA6"  href="https://signal.art/addstickers/#pack_id=961a70b4646d38f98ebca674c2792262&pack_key=f6a446830125c12ba25bfe4e6138288b0babe1d54f3990465338cdd5a80fd7e9" color="#0C5156" fontSize="24px" padding="1.7rem 2rem">
+            <CustomButton bg="#FFEFA6" href="https://signal.art/addstickers/#pack_id=961a70b4646d38f98ebca674c2792262&pack_key=f6a446830125c12ba25bfe4e6138288b0babe1d54f3990465338cdd5a80fd7e9" color="#0C5156" fontSize="24px" padding="1.7rem 2rem">
               Signal Stickers
             </CustomButton>
-          </HStack>
+          </Stack>
         </VStack>
 
         <Flex

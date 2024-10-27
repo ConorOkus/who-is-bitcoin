@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Flex, Stack, Text, Heading, Link, Image, Container, Grid, GridItem , Icon} from "@chakra-ui/react";
+import { Box, Flex, Stack, Text, Heading, Link, Image, Container, Grid, GridItem, Icon } from "@chakra-ui/react";
 import NextLink from "next/link";
 import { FaYoutube, FaDiscord } from 'react-icons/fa';
 import WaveBorderTop from '../Waveborder/WaveBorderTop';
@@ -41,7 +41,8 @@ const Footer = () => {
                   Contact Us
                 </CustomButton>
               </Stack>
-              <Stack spacing={6} width={{ base: "100%", lg: "auto" }} mt={8}>
+
+              <Stack spacing={6} width={{ base: "100%", lg: "auto" }} mt={8} display={{ base: "none", lg: "block" }}>
                 <Heading fontSize="6xl" fontWeight="medium" color="#8ED7E8">
                   Follow Us
                 </Heading>
@@ -54,28 +55,30 @@ const Footer = () => {
                   </Link>
                 </Flex>
               </Stack>
-              <Text mt={20} fontSize="16px" color="#A6B5C5">
+
+              <Text mt={20} fontSize="16px" color="#A6B5C5" display={{ base: "none", lg: "block" }}>
                 Copyright @ HereComesBitcoin Ltd.
               </Text>
             </GridItem>
+
             <GridItem>
               <Flex
                 direction={{ base: "column", lg: "row" }}
                 justifyContent="space-between"
                 alignItems={{ base: "flex-start", lg: "flex-start" }}
               >
-                <Stack spacing={4} width={{ base: "100%", lg: "auto" }}>
+                <Stack spacing={4} width={{ base: "100%", lg: "auto" }} display={{ base: "none", lg: "block" }}>
                   <Heading fontSize="6xl" fontWeight="medium" color="#8ED7E8" mb={2}>
                     Explore
                   </Heading>
                   <Stack spacing={2}>
-                    <NextLink href="/guidelines" passHref>
+                    <NextLink href="https://x.com/spiralbtc/status/1788239963626123600/">
                       <Link fontSize="20px" color="white">Usage Guidelines</Link>
                     </NextLink>
-                    <NextLink href="/built-with-hcb" passHref>
+                    <NextLink href="/built-with-hcb">
                       <Link fontSize="20px" color="white">Built With HCB</Link>
                     </NextLink>
-                    <NextLink href="/collab" passHref>
+                    <NextLink href="mailto:hello@herecomesbitcoin.org">
                       <Link fontSize="20px" color="white">Want To Collab ?</Link>
                     </NextLink>
                   </Stack>
@@ -91,14 +94,50 @@ const Footer = () => {
               </Flex>
             </GridItem>
 
+            {/* Mobile view adjustments */}
             <Box display={{ base: "block", lg: "none" }} position="relative" width="100%" height="auto" my={8}>
+              <Stack spacing={6} mt={8}>
+                <Heading fontSize="6xl" fontWeight="medium" color="#8ED7E8">
+                  Explore
+                </Heading>
+                <Stack spacing={2}>
+                  <NextLink href="https://x.com/spiralbtc/status/1788239963626123600/">
+                    <Link fontSize="20px" color="white">Usage Guidelines</Link>
+                  </NextLink>
+                  <NextLink href="/built-with-hcb">
+                    <Link fontSize="20px" color="white">Built With HCB</Link>
+                  </NextLink>
+                  <NextLink href="mailto:hello@herecomesbitcoin.org">
+                    <Link fontSize="20px" color="white">Want To Collab ?</Link>
+                  </NextLink>
+                </Stack>
+              </Stack>
+
+              <Stack spacing={6} mt={8}>
+                <Heading fontSize="6xl" fontWeight="medium" color="#8ED7E8">
+                  Follow Us
+                </Heading>
+                <Flex mb={4}>
+                  <Link href="https://www.youtube.com/@herecomesbitcoin" isExternal mr={6}>
+                    <Icon as={FaYoutube} boxSize="40px" color="white" />
+                  </Link>
+                  <Link href="https://discord.gg/BChUGPzS5U" isExternal>
+                    <Icon as={FaDiscord} boxSize="40px" color="white" />
+                  </Link>
+                </Flex>
+              </Stack>
+
               <Image
                 src="/assets/FooterImages/CatFooter.png"
                 alt="Bitcoin Cat"
                 width="100%"
                 maxW="300px"
                 mx="auto"
+                mt={8}
               />
+              <Text fontSize="16px" color="#A6B5C5" textAlign="center" mt={4}>
+                Copyright @ HereComesBitcoin Ltd.
+              </Text>
             </Box>
           </Grid>
         </Container>
