@@ -1,9 +1,10 @@
 import React from 'react';
-import { Box, Heading, Text, Flex, Image, useBreakpointValue, Center } from '@chakra-ui/react';
+import { Box, Heading, Text, Flex, useBreakpointValue, Center } from '@chakra-ui/react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
+import Image from 'next/image';
 import CircleBackground from '../../../public/assets/PartnersImages/CircleBackground.svg';
 
 const partnersData = [
@@ -15,20 +16,19 @@ const partnersData = [
   { name: 'OpenSats', logo: 'opensats-arrow.png', color: '#E6F3FF' },
 ];
 
-
 const StyledCircleBackground: React.FC<{ color: string }> = ({ color }) => (
   <Box
     as={CircleBackground}
     sx={{
       'circle, path': {
         fill: color,
-      }
+      },
     }}
   />
 );
 
 const Partners: React.FC = () => {
-  const imageSize = useBreakpointValue({ base: "220px", md: "210px" });
+  const imageSize = useBreakpointValue({ base: 220, md: 210 });
   const bgSize = useBreakpointValue({ base: "200px", md: "190px" });
   const containerHeight = useBreakpointValue({ base: "260px", md: "260px" });
 
@@ -95,15 +95,17 @@ const Partners: React.FC = () => {
               >
                 <StyledCircleBackground color={partner.color} />
               </Box>
-              <Image
-                src={`/assets/PartnersImages/${partner.logo}`}
-                alt={partner.name}
-                w={imageSize}
-                h={imageSize}
-                objectFit="contain"
-                position="relative"
-                zIndex={2}
-              />
+              <Box position="relative" zIndex={2} width={imageSize} height={imageSize}>
+                <Image
+                  src={`/assets/PartnersImages/${partner.logo}`}
+                  alt={partner.name}
+                  layout="responsive"
+                  width={imageSize}
+                  height={imageSize}
+                  objectFit="contain"
+                  priority
+                />
+              </Box>
             </Flex>
             <Text fontSize={{ base: "sm", md: "md" }} fontWeight="medium" color="gray.700">
               {partner.name}

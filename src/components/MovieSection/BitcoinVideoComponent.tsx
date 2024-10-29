@@ -1,15 +1,15 @@
 import React, { useRef } from 'react';
-import { Box, Text, Image, useMediaQuery } from '@chakra-ui/react';
+import { Box, Text, useMediaQuery } from '@chakra-ui/react';
 import CustomButton from '../CustomButton/CustomButton';
+import Image from 'next/image';
 
 const BitcoinVideoComponent = () => {
   const [isMobile] = useMediaQuery("(max-width: 480px)");
   const [isTablet] = useMediaQuery("(min-width: 481px) and (max-width: 768px)");
-  const iframeRef = useRef<HTMLIFrameElement>(null); // Specify the type explicitly
+  const iframeRef = useRef<HTMLIFrameElement>(null);
 
   const handlePlayVideo = () => {
     if (iframeRef.current && iframeRef.current.contentWindow) {
-      // Send play command to YouTube iframe
       iframeRef.current.contentWindow.postMessage(
         '{"event":"command","func":"playVideo","args":""}', '*'
       );
@@ -79,24 +79,35 @@ const BitcoinVideoComponent = () => {
         px={isMobile ? 4 : isTablet ? 6 : 8}
         mt={isMobile ? 5 : isTablet ? 7 : 10}
         mb={isMobile ? 24 : isTablet ? 24 : 36}
-        onClick={handlePlayVideo} // Play video on button click
+        onClick={handlePlayVideo}
       >
         Watch Now
       </CustomButton>
-      <Image
-        src={isMobile ? "/assets/HereComesBitcoinMovie/bitcoin-characters-mobile.png" : "/assets/HereComesBitcoinMovie/bitcoin-characters-desktop.png"}
-        alt="Bitcoin characters"
+      <Box
         position="absolute"
         bottom={isMobile ? "-50px" : isTablet ? "-140px" : "-180px"}
         left={0}
         right={0}
         width="100%"
         height="auto"
-        objectFit="contain"
         zIndex={2}
-        onClick={handlePlayVideo} // Play video on image click
-        style={{ cursor: "pointer" }} // Make it look clickable
-      />
+        onClick={handlePlayVideo}
+        style={{ cursor: "pointer" }}
+      >
+        <Image
+          src={
+            isMobile
+              ? "/assets/HereComesBitcoinMovie/bitcoin-characters-mobile.png"
+              : "/assets/HereComesBitcoinMovie/bitcoin-characters-desktop.png"
+          }
+          alt="Bitcoin characters"
+          layout="responsive"
+          width={1200} // Adjust width based on expected dimensions
+          height={800} // Adjust height based on expected dimensions
+          objectFit="contain"
+          priority
+        />
+      </Box>
     </Box>
   );
 };

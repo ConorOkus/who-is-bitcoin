@@ -1,6 +1,7 @@
 import React, { useRef } from 'react';
-import { Box, Image, Flex, Button, useBreakpointValue, Heading, Text, Center } from '@chakra-ui/react';
+import { Box, Flex, Button, useBreakpointValue, Heading, Text, Center } from '@chakra-ui/react';
 import { DownloadIcon } from '@chakra-ui/icons';
+import Image from 'next/image';
 import CustomButton from '../CustomButton/CustomButton';
 import WaveBorderTop from '../Waveborder/WaveBorderTop';
 import WaveBorderBottom from '../Waveborder/WaveBorderbottom';
@@ -22,13 +23,13 @@ const coloringPages: ColoringPage[] = [
 
 const ColoringPages: React.FC = () => {
   const scrollRef = useRef<HTMLDivElement>(null);
-  const cardWidth = useBreakpointValue({ base: 250, md: 300 }) ?? 250; // Provide a default value
+  const cardWidth = useBreakpointValue({ base: 250, md: 300 }) ?? 250;
 
   const handleSeeMore = () => {
     if (scrollRef.current) {
       scrollRef.current.scrollTo({
         left: scrollRef.current.scrollLeft + cardWidth,
-        behavior: 'smooth'
+        behavior: 'smooth',
       });
     }
   };
@@ -36,24 +37,19 @@ const ColoringPages: React.FC = () => {
   const handleDownload = (imageUrl: string, title: string) => {
     const link = document.createElement('a');
     link.href = imageUrl;
-    link.setAttribute('download', `${title}.png`); // Optional: You can set the filename dynamically
+    link.setAttribute('download', `${title}.png`);
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
   };
 
   return (
-
     <Box>
       <Box position="relative" height="100px" zIndex={1}>
-        <WaveBorderTop color='#C1E8F3' />
+        <WaveBorderTop color="#C1E8F3" />
       </Box>
 
-      <Box bg="#C1E8F3" p={4} px={{
-        base: 6,
-        lg: "140px",
-      }}>
-
+      <Box bg="#C1E8F3" p={4} px={{ base: 6, lg: "140px" }}>
         <Heading
           color="#14253d"
           textAlign="center"
@@ -76,11 +72,12 @@ const ColoringPages: React.FC = () => {
             fontWeight="400"
             lineHeight="1.5"
           >
-            Rainy day at home? Kids looking For something other than yelling to do? Fire up the printer and sharpen the crayons. Then share their flatulent creations with @spiralbtc so that we can share them too.
+            Rainy day at home? Kids looking for something other than yelling to do? Fire up the printer and sharpen the crayons. Then share their flatulent creations with @spiralbtc so that we can share them too.
           </Text>
         </Center>
+
         <Box bg="white" overflow="hidden" mb={10} position="relative">
-          <Image src="/assets/ColoringCardsImages/ColoringCardOne.png" alt="Coloring Pages" w="100%" />
+          <Image src="/assets/ColoringCardsImages/ColoringCardOne.png" alt="Coloring Pages" layout="responsive" width={800} height={600} />
 
           {/* Overlay Download Button */}
           <Box
@@ -114,8 +111,8 @@ const ColoringPages: React.FC = () => {
             '&::-webkit-scrollbar': {
               display: 'none',
             },
-            'scrollbarWidth': 'none',
-            'msOverflowStyle': 'none',
+            scrollbarWidth: 'none',
+            msOverflowStyle: 'none',
           }}
         >
           {coloringPages.map((page) => (
@@ -130,7 +127,8 @@ const ColoringPages: React.FC = () => {
               bg="white"
               flexShrink={0}
             >
-              <Image src={page.imageUrl} alt={page.title} objectFit="cover" w="100%" h="100%" />
+              <Image src={page.imageUrl} alt={page.title} layout="fill" objectFit="cover" />
+
               <Box
                 position="absolute"
                 top="0"
@@ -156,18 +154,19 @@ const ColoringPages: React.FC = () => {
             </Box>
           ))}
         </Flex>
+
         <Center>
           <Box mt={20} mb={10}>
-            <CustomButton onClick={handleSeeMore} bg="#FFEFA6" color="#0C5156" fontSize='32px' padding='1.7rem 1.5rem'>
+            <CustomButton onClick={handleSeeMore} bg="#FFEFA6" color="#0C5156" fontSize="32px" padding="1.7rem 1.5rem">
               See more
             </CustomButton>
           </Box>
         </Center>
       </Box>
-      <Box position="relative" height="100px" zIndex={1}>
-        <WaveBorderBottom color='#C1E8F3' />
-      </Box>
 
+      <Box position="relative" height="100px" zIndex={1}>
+        <WaveBorderBottom color="#C1E8F3" />
+      </Box>
     </Box>
   );
 };
