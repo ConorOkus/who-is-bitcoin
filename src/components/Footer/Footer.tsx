@@ -1,10 +1,10 @@
 import React from 'react';
 import { Box, Flex, Stack, Text, Heading, Link, Container, Grid, GridItem, Icon } from "@chakra-ui/react";
 import Image from 'next/image';
-import NextLink from "next/link";
 import { FaYoutube, FaDiscord } from 'react-icons/fa';
 import WaveBorderTop from '../Waveborder/WaveBorderTop';
 import CustomButton from '../CustomButton/CustomButton';
+import NextLink from "next/link";
 
 const Footer = () => {
   return (
@@ -42,10 +42,10 @@ const Footer = () => {
                   Follow Us
                 </Heading>
                 <Flex mb={4}>
-                  <Link href="https://www.youtube.com/@herecomesbitcoin" isExternal mr={6}>
+                  <Link as={NextLink} href="https://www.youtube.com/@herecomesbitcoin" isExternal mr={6}>
                     <Icon as={FaYoutube} boxSize="40px" color="white" />
                   </Link>
-                  <Link href="https://discord.gg/BChUGPzS5U" isExternal>
+                  <Link as={NextLink} href="https://discord.gg/BChUGPzS5U" isExternal>
                     <Icon as={FaDiscord} boxSize="40px" color="white" />
                   </Link>
                 </Flex>
@@ -67,15 +67,15 @@ const Footer = () => {
                     Explore
                   </Heading>
                   <Stack spacing={2}>
-                    <NextLink href="https://x.com/spiralbtc/status/1788239963626123600/" passHref>
-                      <Link fontSize="20px" color="white">Usage Guidelines</Link>
-                    </NextLink>
-                    <NextLink href="/built-with-hcb" passHref>
-                      <Link fontSize="20px" color="white">Built With HCB</Link>
-                    </NextLink>
-                    <NextLink href="mailto:hello@herecomesbitcoin.org" passHref>
-                      <Link fontSize="20px" color="white">Want To Collab?</Link>
-                    </NextLink>
+                    <Link as={NextLink} href="https://x.com/spiralbtc/status/1788239963626123600/" fontSize="20px" color="white">
+                      Usage Guidelines
+                    </Link>
+                    <Link as={NextLink} href="/built-with-hcb" fontSize="20px" color="white">
+                      Built With HCB
+                    </Link>
+                    <Link as={NextLink} href="mailto:hello@herecomesbitcoin.org" fontSize="20px" color="white">
+                      Want To Collab?
+                    </Link>
                   </Stack>
                 </Stack>
 
@@ -98,15 +98,15 @@ const Footer = () => {
                   Explore
                 </Heading>
                 <Stack spacing={2}>
-                  <NextLink href="https://x.com/spiralbtc/status/1788239963626123600/" passHref>
-                    <Link fontSize="20px" color="white">Usage Guidelines</Link>
-                  </NextLink>
-                  <NextLink href="/built-with-hcb" passHref>
-                    <Link fontSize="20px" color="white">Built With HCB</Link>
-                  </NextLink>
-                  <NextLink href="mailto:hello@herecomesbitcoin.org" passHref>
-                    <Link fontSize="20px" color="white">Want To Collab?</Link>
-                  </NextLink>
+                  <Link as={NextLink} href="https://x.com/spiralbtc/status/1788239963626123600/" fontSize="20px" color="white">
+                    Usage Guidelines
+                  </Link>
+                  <Link as={NextLink} href="/built-with-hcb" fontSize="20px" color="white">
+                    Built With HCB
+                  </Link>
+                  <Link as={NextLink} href="mailto:hello@herecomesbitcoin.org" fontSize="20px" color="white">
+                    Want To Collab?
+                  </Link>
                 </Stack>
               </Stack>
 
@@ -115,10 +115,10 @@ const Footer = () => {
                   Follow Us
                 </Heading>
                 <Flex mb={4}>
-                  <Link href="https://www.youtube.com/@herecomesbitcoin" isExternal mr={6}>
+                  <Link as={NextLink} href="https://www.youtube.com/@herecomesbitcoin" isExternal mr={6}>
                     <Icon as={FaYoutube} boxSize="40px" color="white" />
                   </Link>
-                  <Link href="https://discord.gg/BChUGPzS5U" isExternal>
+                  <Link as={NextLink} href="https://discord.gg/BChUGPzS5U" isExternal>
                     <Icon as={FaDiscord} boxSize="40px" color="white" />
                   </Link>
                 </Flex>
