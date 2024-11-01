@@ -8,7 +8,7 @@ const Hero = () => {
     const { bgColor, heroImage } = useContext(ColorContext); // Ensure bgColor is reactive
 
     return (
-        <Box position="relative" overflow="hidden">
+        <Box position="relative" overflow="hidden" >
             {/* Main Hero Section */}
             <Box bg={bgColor} pt={10} pb={24} px={{ base: 6, lg: "30px" }}>
                 <Container maxW="container.2xl">
@@ -85,7 +85,7 @@ const Hero = () => {
                     </Flex>
                 </Container>
             </Box>
-            <Box position="relative" height="100px" zIndex={1}>
+            <Box position="relative" height="100px" zIndex={1} mb={10}>
                 <WaveBorderBottom color={bgColor} />
             </Box>
         </Box>
