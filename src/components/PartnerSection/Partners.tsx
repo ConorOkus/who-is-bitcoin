@@ -11,9 +11,7 @@ const partnersData = [
   { name: 'Shamory', logo: 'SHAmory.png', color: '#E6FFF2' },
   { name: 'HRF', logo: 'HRF.png', color: '#FFF5E6' },
   { name: 'OpenSats', logo: 'opensats-arrow.png', color: '#E6F3FF' },
-  { name: 'Shamory', logo: 'SHAmory.png', color: '#E6FFF2' },
-  { name: 'HRF', logo: 'HRF.png', color: '#FFF5E6' },
-  { name: 'OpenSats', logo: 'opensats-arrow.png', color: '#E6F3FF' },
+  // add more partners in future
 ];
 
 const StyledCircleBackground: React.FC<{ color: string }> = ({ color }) => (
@@ -72,7 +70,7 @@ const Partners: React.FC = () => {
         breakpoints={{
           320: { slidesPerView: 1.3, spaceBetween: 20 },
           768: { slidesPerView: 2.6, spaceBetween: 15 },
-          1024: { slidesPerView: 3.6, spaceBetween: 30 },
+          1024: { slidesPerView: 3, spaceBetween: 30 },
         }}
         style={{
           overflow: 'hidden',
