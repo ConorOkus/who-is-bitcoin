@@ -80,7 +80,7 @@ const CustomButton: React.FC<CustomButtonProps> = ({
   );
 
    // Determine if the link is internal or external
-   const isExternal = href?.startsWith("http") || href?.startsWith("mailto:");
+   const isExternal = href?.startsWith("https") || href?.startsWith("mailto:");
 
    // Wrap button in appropriate Link component based on `isExternal`
    if (href) {

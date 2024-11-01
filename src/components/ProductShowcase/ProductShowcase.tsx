@@ -17,21 +17,21 @@ const products: Product[] = [
   {
     id: '1',
     name: 'The 21M Faces of Bitcoin Mug',
-    price: '15.00$',
+    price: '$15.00',
     imageUrl: '/assets/ProductImages/HCB-mug.png',
     url: "https://www.spiralswag.xyz/product/the-21m-faces-of-bitcoin-mug/4?cp=true&sa=true&sbp=false&q=false",
   },
   {
     id: '2',
     name: 'Here Comes Bitcoin Plushi',
-    price: '39.99$',
+    price: '$39.99',
     imageUrl: '/assets/ProductImages/HCb-plushie.png',
     url: "https://www.uncute.com/collections/all/products/here-comes-bitcoin"
   },
   {
     id: '3',
     name: 'Here Comes Bitcoin Satscard',
-    price: '8.99$',
+    price: '$8.99',
     imageUrl: '/assets/ProductImages/HCB-satscard.png',
     url: "https://store.coinkite.com/store/sc-hcb-1"
   },

@@ -40,6 +40,7 @@ const Hero = () => {
                                 fontSize='30px'
                                 padding='1.9rem 1.5rem'
                                 borderRadius="full"
+                                href="https://www.uncute.com/collections/everything-else/products/here-comes-bitcoin"
                             >
                                 Shop Now
                             </CustomButton>

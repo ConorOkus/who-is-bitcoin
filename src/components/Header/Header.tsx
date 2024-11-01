@@ -55,10 +55,10 @@ const Header = () => {
             {isOpen && (
                 <Box pb={4} display={{ md: "none" }}>
                     <VStack spacing={4} align="stretch">
-                        <CustomButton bg="#F7931A" color="white" fontSize='20px'>
+                        <CustomButton bg="#F7931A" color="white" fontSize='20px' href="mailto:hello@herecomesbitcoin.org">
                             Collaborate
                         </CustomButton>
-                        <CustomButton bg="#F7931A" color="white" fontSize='20px' >
+                        <CustomButton bg="#F7931A" color="white" fontSize='20px' href="https://discord.gg/BChUGPzS5U"  >
                             Join Discord
                         </CustomButton>
                     </VStack>
