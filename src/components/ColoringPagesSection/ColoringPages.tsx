@@ -59,14 +59,14 @@ const ColoringPages: React.FC = () => {
           fontWeight="500"
           lineHeight="1.2"
         >
-          Farts and crafts
+          Farts and Crafts
         </Heading>
 
         <Center>
           <Text
             color="#4a5568"
             textAlign="center"
-            maxW="700px"
+            maxW="800px"
             mb={20}
             fontSize="16px"
             fontWeight="400"
@@ -158,7 +158,7 @@ const ColoringPages: React.FC = () => {
         <Center>
           <Box mt={20} mb={10}>
             <CustomButton onClick={handleSeeMore} bg="#FFEFA6" color="#0C5156" fontSize="32px" padding="1.7rem 1.5rem">
-              See more
+              See More
             </CustomButton>
           </Box>
         </Center>

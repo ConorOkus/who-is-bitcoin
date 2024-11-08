@@ -22,8 +22,10 @@ const StickerSet = () => {
           mb={{ base: 8, md: 0 }}
           w={{ base: 'full', md: '40%' }}
         >
-          <Heading as="h1" size="2xl" color="navy.700" textAlign={{ base: 'center', md: 'left' }}>
-            Make chats stickier
+          <Heading
+            fontSize={{ base: "4xl", md: "5xl", lg: "6xl" }}
+            fontWeight="medium">
+            Make Chats Stickier
           </Heading>
           <Text fontSize="lg" color="gray.600" textAlign={{ base: 'center', md: 'left' }}>
             Orange up your Signal and Telegram chats with our Here Comes Bitcoin sticker set bundles, featuring all your favorite HCB Bitcoins

@@ -28,11 +28,11 @@ const Hero = () => {
                                 lineHeight={1.2}
                                 color="#13294b"
                                 fontWeight="medium">
-                                Bitcoin Stuff For <br />
+                                Bitcoin Stuff for <br />
                                 Your Bitcoin Stuff
                             </Heading>
                             <Text mb={10} fontSize={{ base: "md", md: "3xl" }} lineHeight={1.5} color="#13294b" fontWeight="500">
-                                HereComesBitcoin is the central resource <br />for all things Bitcoin (puppet, not currency), <br />including license-free creative assets <br />that you can use to make whatever <br /> you want.
+                                HereComesBitcoin is the central resource <br />for all things Bitcoin (puppet, not currency), <br />including license-free creative assets that <br /> you can use to make whatever you want.
                             </Text>
                             <CustomButton
                                 bg="#F7931A"

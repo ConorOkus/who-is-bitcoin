@@ -98,7 +98,7 @@ const ProductShowcase: React.FC = () => {
         fontWeight="500"
         lineHeight="1.2"
       >
-        Here comes your bitcoin
+        Here Comes Your Bitcoin
       </Heading>
       <Center>
         <Text
@@ -110,7 +110,7 @@ const ProductShowcase: React.FC = () => {
           fontWeight="400"
           lineHeight="1.5"
         >
-          It&rsquo;s only a matter of time until everything becomes a plushie, but in our case, it took even longer because Bitcoin kept eating our concepts. Grab your hungry guy today.
+          It&rsquo;s only a matter of time until everything becomes a Plushi, but in our case, it took even longer because Bitcoin kept eating our concepts. Grab your hungry guy today.
         </Text>
       </Center>
       <Box

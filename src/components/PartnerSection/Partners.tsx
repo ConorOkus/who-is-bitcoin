@@ -41,7 +41,7 @@ const Partners: React.FC = () => {
         fontWeight="500"
         lineHeight="1.2"
       >
-        Partners in code
+       Partners in Code
       </Heading>
       <Center>
         <Text

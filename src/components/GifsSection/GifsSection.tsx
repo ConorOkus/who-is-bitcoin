@@ -72,7 +72,7 @@ const GifsSection: React.FC = () => {
         fontWeight="500"
         lineHeight="1.2"
       >
-        The perfect gif
+       The Perfect Gif
       </Heading>
 
       <Center>
