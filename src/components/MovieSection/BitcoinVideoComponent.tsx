@@ -82,7 +82,7 @@ const BitcoinVideoComponent = () => {
         mb={isMobile ? 24 : isTablet ? 24 : 36}
         onClick={handlePlayVideo}
       >
-        Watch "Who is Bitcoin"
+        Watch &ldquo;Who is Bitcoin&rdquo;
       </CustomButton>
       <Box
         position="absolute"
@@ -103,8 +103,8 @@ const BitcoinVideoComponent = () => {
           }
           alt="Bitcoin characters"
           layout="responsive"
-          width={1200} // Adjust width based on expected dimensions
-          height={800} // Adjust height based on expected dimensions
+          width={1200}
+          height={800}
           objectFit="contain"
           priority
         />
@@ -114,3 +114,4 @@ const BitcoinVideoComponent = () => {
 };
 
 export default BitcoinVideoComponent;
+ 
