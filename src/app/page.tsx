@@ -1,5 +1,6 @@
-"use client";
+"use client"; 
 
+import React, { useRef } from "react";
 import { Box } from "@chakra-ui/react";
 import { ColorProvider } from "@/providers/ColorProvider";
 import Header from "@/components/Header/Header";
@@ -13,35 +14,29 @@ import BitcoinVideoComponent from "@/components/MovieSection/BitcoinVideoCompone
 import ColoringPages from "@/components/ColoringPagesSection/ColoringPages";
 import Footer from "@/components/Footer/Footer";
 
-const Home: React.FC = () => {
+const Home = () => {
+  const productRef = useRef(null);
+
   return (
     <>
       <ColorProvider>
         <Header />
-        <Hero />
+        <Hero productRef={productRef} />
       </ColorProvider>
-      <Box
-        px={{
-          base: 6,
-          lg: "192px",
-        }}
-      >
+      <Box px={{ base: 6, lg: "192px" }}>
         <AssetsSection />
       </Box>
       <StickerSet />
-      <Box
-        px={{
-          base: 6,
-          lg: "192px",
-        }}
-      >
+      <Box px={{ base: 6, lg: "192px" }}>
         <GifsSection />
-        <Partners/>
+        <Partners />
       </Box>
-      <ProductShowcase/>
+      <div ref={productRef}>
+        <ProductShowcase />
+      </div>
       <BitcoinVideoComponent />
-      <ColoringPages/>
-      <Footer/>
+      <ColoringPages />
+      <Footer />
     </>
   );
 };
