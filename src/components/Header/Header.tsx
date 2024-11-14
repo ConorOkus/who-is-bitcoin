@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { Box, Flex, Image, IconButton, VStack, useDisclosure, HStack } from '@chakra-ui/react';
+import { Box, Flex, Image, IconButton, VStack, HStack, useDisclosure } from '@chakra-ui/react';
 import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
 import { ColorContext } from '../../providers/ColorProvider';
 import CustomButton from '../CustomButton/CustomButton';
@@ -17,7 +17,7 @@ const Header = () => {
                 as="nav"
                 align="center"
                 justify="space-between"
-                wrap="wrap"
+                wrap="nowrap" 
                 padding={{ base: "1rem", md: "1.5rem", lg: "2.9rem" }}
                 color="gray.800"
             >
@@ -40,11 +40,29 @@ const Header = () => {
                     </Box>
 
                     <Box display={{ base: "none", md: "block" }}>
-                        <HStack spacing={16}>
-                            <CustomButton bg="#F7931A" href="mailto:hello@herecomesbitcoin.org" color="white" fontSize='32px' padding='1.7rem 1.5rem'>
+                        <HStack spacing={16} align="center">
+                            <CustomButton
+                                bg="#F7931A"
+                                href="mailto:hello@herecomesbitcoin.org"
+                                color="white"
+                                fontSize='32px'
+                                padding='1.7rem 1.5rem'
+                                w={{ base: "full", md: "auto" }}
+                                display="inline-flex"
+                                alignItems="center"
+                            >
                                 Collaborate
                             </CustomButton>
-                            <CustomButton bg="#F7931A" href="https://discord.gg/BChUGPzS5U" color="white" fontSize='32px' padding='1.7rem 1.5rem'>
+                            <CustomButton
+                                bg="#F7931A"
+                                href="https://discord.gg/BChUGPzS5U"
+                                color="white"
+                                fontSize='32px'
+                                padding='1.7rem 1.5rem'
+                                w={{ base: "full", md: "auto" }}
+                                display="inline-flex"
+                                alignItems="center"
+                            >
                                 Join Discord
                             </CustomButton>
                         </HStack>
@@ -55,10 +73,26 @@ const Header = () => {
             {isOpen && (
                 <Box pb={4} display={{ md: "none" }}>
                     <VStack spacing={4} align="stretch">
-                        <CustomButton bg="#F7931A" color="white" fontSize='20px' href="mailto:hello@herecomesbitcoin.org" >
+                        <CustomButton
+                            bg="#F7931A"
+                            color="white"
+                            fontSize='20px'
+                            href="mailto:hello@herecomesbitcoin.org"
+                            display="inline-flex"
+                            alignItems="center"
+                            w="full"
+                        >
                             Collaborate
                         </CustomButton>
-                        <CustomButton bg="#F7931A" color="white" fontSize='20px' href="https://discord.gg/BChUGPzS5U"  >
+                        <CustomButton
+                            bg="#F7931A"
+                            color="white"
+                            fontSize='20px'
+                            href="https://discord.gg/BChUGPzS5U"
+                            display="inline-flex"
+                            alignItems="center"
+                            w="full"
+                        >
                             Join Discord
                         </CustomButton>
                     </VStack>
