@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { Box, Flex, Button, Image, IconButton, VStack, useDisclosure, HStack } from '@chakra-ui/react';
+import { Box, Flex, Image, IconButton, VStack, useDisclosure, HStack } from '@chakra-ui/react';
 import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
 import { ColorContext } from '../../providers/ColorProvider';
 import CustomButton from '../CustomButton/CustomButton';
@@ -55,7 +55,7 @@ const Header = () => {
             {isOpen && (
                 <Box pb={4} display={{ md: "none" }}>
                     <VStack spacing={4} align="stretch">
-                        <CustomButton bg="#F7931A" color="white" fontSize='20px' href="mailto:hello@herecomesbitcoin.org">
+                        <CustomButton bg="#F7931A" color="white" fontSize='20px' href="mailto:hello@herecomesbitcoin.org" >
                             Collaborate
                         </CustomButton>
                         <CustomButton bg="#F7931A" color="white" fontSize='20px' href="https://discord.gg/BChUGPzS5U"  >

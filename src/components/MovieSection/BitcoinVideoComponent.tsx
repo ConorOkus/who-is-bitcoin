@@ -75,13 +75,14 @@ const BitcoinVideoComponent = () => {
         bg="#FFD24C"
         color="#12334C"
         fontSize={isMobile ? "md" : isTablet ? "lg" : "xl"}
+        padding="1.7rem 1.5rem"
         py={isMobile ? 2 : isTablet ? 3 : 4}
         px={isMobile ? 4 : isTablet ? 6 : 8}
         mt={isMobile ? 5 : isTablet ? 7 : 10}
         mb={isMobile ? 24 : isTablet ? 24 : 36}
         onClick={handlePlayVideo}
       >
-        Watch Now
+        Watch "Who is Bitcoin"
       </CustomButton>
       <Box
         position="absolute"

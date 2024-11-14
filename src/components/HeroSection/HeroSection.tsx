@@ -1,6 +1,8 @@
+// Hero.js
 import React, { useContext } from 'react';
-import { Box, Flex, Heading, Text, Image, Container } from '@chakra-ui/react';
+import { Box, Flex, Heading, Text, Container } from '@chakra-ui/react';
 import { ColorContext } from '../../providers/ColorProvider';
+import Image from "next/image";
 import CustomButton from '../CustomButton/CustomButton';
 import WaveBorderBottom from '../Waveborder/WaveBorderbottom';
 
@@ -46,7 +48,7 @@ const Hero = () => {
                             </CustomButton>
                         </Box>
 
-                        {/* Hero Image Section */}
+                        {/* Hero Image Section for Mobile */}
                         <Box
                             display={{ base: "block", md: "none" }}
                             position="absolute"
@@ -60,12 +62,14 @@ const Hero = () => {
                                 src={heroImage}
                                 alt="Hero image"
                                 objectFit="contain"
-                                width="100%"
-                                height="100%"
+                                layout="responsive"
+                                width={700} 
+                                height={700} 
+                                priority 
                             />
                         </Box>
 
-                        {/* Desktop Hero Image Section */}
+                        {/* Hero Image Section for Desktop */}
                         <Box
                             display={{ base: "none", md: "block" }}
                             position="absolute"
@@ -79,14 +83,16 @@ const Hero = () => {
                                 src={heroImage}
                                 alt="Hero image"
                                 objectFit="contain"
-                                width="100%"
-                                height="100%"
+                                layout="responsive"
+                                width={1200} 
+                                height={840} 
+                                priority 
                             />
                         </Box>
                     </Flex>
                 </Container>
             </Box>
-            <Box position="relative" height="100px" zIndex={1} mb={10}>
+            <Box position="relative" height="100px" zIndex={1} mb={14}>
                 <WaveBorderBottom color={bgColor} />
             </Box>
         </Box>
