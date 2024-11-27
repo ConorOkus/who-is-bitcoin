@@ -6,11 +6,11 @@ import CustomButton from '../CustomButton/CustomButton';
 import WaveBorderBottom from '../Waveborder/WaveBorderbottom';
 
 interface HeroProps {
-  productRef: React.RefObject<HTMLDivElement>; 
+    productRef: React.RefObject<HTMLDivElement>;
 }
 
 const Hero: React.FC<HeroProps> = ({ productRef }) => {
-    const { bgColor, heroImage } = useContext(ColorContext); 
+    const { bgColor, heroImage } = useContext(ColorContext);
 
     const scrollToProducts = () => {
         if (productRef.current) {
@@ -28,7 +28,7 @@ const Hero: React.FC<HeroProps> = ({ productRef }) => {
                         align="center"
                         justify="space-between"
                         wrap="wrap"
-                        padding={{lg: "2rem", md:"1rem"}}
+                        padding={{ lg: "2rem", md: "1rem" }}
                         position="relative"
                         paddingBottom="7rem"
                     >
@@ -42,16 +42,25 @@ const Hero: React.FC<HeroProps> = ({ productRef }) => {
                                 Bitcoin Stuff for <br />
                                 Your Bitcoin Stuff
                             </Heading>
-                            <Text mb={10} fontSize={{ base: "md", md: "3xl" }} lineHeight={1.5} color="#13294b" fontWeight="500">
-                                HereComesBitcoin is the central resource <br />for all things Bitcoin (puppet, not currency), <br />including license-free creative assets that <br /> you can use to make whatever you want.
+                            <Text
+                                mb={10}
+                                fontSize={{ base: "md", md: "3xl" }}
+                                lineHeight={1.5} // Reduces the space between lines
+                                color="#13294b"
+                                fontWeight="500"
+                                maxW={{ base: "100%", md: "90%" }} // Sets a maximum width for better control
+                            >
+                                HereComesBitcoin is the central resource for all things Bitcoin (puppet, not currency), including license-free creative assets that you can use to make whatever you want.
                             </Text>
+
+
                             <CustomButton
                                 bg="#F7931A"
                                 color="white"
                                 fontSize='30px'
                                 padding='1.9rem 1.5rem'
                                 borderRadius="full"
-                                onClick={scrollToProducts} 
+                                onClick={scrollToProducts}
                             >
                                 Shop Now
                             </CustomButton>
@@ -72,9 +81,9 @@ const Hero: React.FC<HeroProps> = ({ productRef }) => {
                                 alt="Hero image"
                                 objectFit="contain"
                                 layout="responsive"
-                                width={700} 
-                                height={700} 
-                                priority 
+                                width={700}
+                                height={700}
+                                priority
                             />
                         </Box>
 
@@ -93,9 +102,9 @@ const Hero: React.FC<HeroProps> = ({ productRef }) => {
                                 alt="Hero image"
                                 objectFit="contain"
                                 layout="responsive"
-                                width={1200} 
-                                height={840} 
-                                priority 
+                                width={1200}
+                                height={840}
+                                priority
                             />
                         </Box>
                     </Flex>

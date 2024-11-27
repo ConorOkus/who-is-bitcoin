@@ -82,7 +82,7 @@ const BitcoinVideoComponent = () => {
         mb={isMobile ? 24 : isTablet ? 24 : 36}
         onClick={handlePlayVideo}
       >
-        Watch &ldquo;Who is Bitcoin&rdquo;
+        Watch &ldquo;Who is Bitcoin?&rdquo;
       </CustomButton>
       <Box
         position="absolute"

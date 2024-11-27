@@ -30,7 +30,7 @@ const Footer = () => {
                   fontSize="28px"
                   padding="1.7rem 1.5rem"
                   width="fit-content"
-                  mb={8}
+                  mb={{ base: "4", md:"8" }}
                   mt={6}
                 >
                   Contact Us
@@ -93,7 +93,7 @@ const Footer = () => {
 
             {/* Mobile view adjustments */}
             <Box display={{ base: "block", lg: "none" }} position="relative" width="100%" height="auto" my={8}>
-              <Stack spacing={6} mt={8}>
+              <Stack spacing={6}>
                 <Heading fontSize="6xl" fontWeight="medium" color="#8ED7E8">
                   Explore
                 </Heading>

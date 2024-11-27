@@ -354,7 +354,7 @@ const AssetsSection: React.FC = () => {
         textAlign="center"
         mb={8}
         mt={20}
-        fontSize="48px"
+        fontSize={{ base: "3xl", md: "5xl", lg: "6xl" }}
         fontWeight="500"
         lineHeight="1.2"
       >

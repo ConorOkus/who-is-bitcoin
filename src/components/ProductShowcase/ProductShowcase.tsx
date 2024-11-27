@@ -94,7 +94,7 @@ const ProductShowcase: React.FC = () => {
         textAlign="center"
         mb={6}
         mt={20}
-        fontSize="48px"
+        fontSize={{ base: "3xl", md: "5xl", lg: "6xl" }}
         fontWeight="500"
         lineHeight="1.2"
       >
@@ -105,7 +105,7 @@ const ProductShowcase: React.FC = () => {
           color="#4a5568"
           textAlign="center"
           maxW="700px"
-          mb={20}
+          mb={{ base: "10", md: "20" }}
           fontSize="16px"
           fontWeight="400"
           lineHeight="1.5"

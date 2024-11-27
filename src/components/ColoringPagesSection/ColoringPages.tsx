@@ -1,5 +1,14 @@
 import React, { useRef } from 'react';
-import { Box, Flex, Button, useBreakpointValue, Heading, Text, Center } from '@chakra-ui/react';
+import {
+  Box,
+  Flex,
+  Button,
+  useBreakpointValue,
+  Heading,
+  Text,
+  Center,
+  AspectRatio,
+} from '@chakra-ui/react';
 import { DownloadIcon } from '@chakra-ui/icons';
 import Image from 'next/image';
 import CustomButton from '../CustomButton/CustomButton';
@@ -49,7 +58,7 @@ const ColoringPages: React.FC = () => {
         <WaveBorderTop color="#C1E8F3" />
       </Box>
 
-      <Box bg="#C1E8F3" p={4} px={{ base: 6, lg: "140px" }}>
+      <Box bg="#C1E8F3" p={4} px={{ base: 6, lg: '140px' }}>
         <Heading
           color="#14253d"
           textAlign="center"
@@ -72,12 +81,21 @@ const ColoringPages: React.FC = () => {
             fontWeight="400"
             lineHeight="1.5"
           >
-            Rainy day at home? Kids looking for something other than yelling to do? Fire up the printer and sharpen the crayons. Then share their flatulent creations with @spiralbtc so that we can share them too.
+            Rainy day at home? Kids looking for something other than yelling to
+            do? Fire up the printer and sharpen the crayons. Then share their
+            flatulent creations with @spiralbtc so that we can share them too.
           </Text>
         </Center>
 
+        {/* Hero Image */}
         <Box bg="white" overflow="hidden" mb={10} position="relative">
-          <Image src="/assets/ColoringCardsImages/ColoringCardOne.png" alt="Coloring Pages" layout="responsive" width={800} height={600} />
+          <Image
+            src="/assets/ColoringCardsImages/ColoringCardOne.png"
+            alt="Coloring Pages"
+            layout="responsive"
+            width={800}
+            height={600}
+          />
 
           {/* Overlay Download Button */}
           <Box
@@ -96,7 +114,12 @@ const ColoringPages: React.FC = () => {
           >
             <Button
               leftIcon={<DownloadIcon />}
-              onClick={() => handleDownload('/assets/ColoringCardsImages/ColoringCardOne.png', 'ColoringCardOne')}
+              onClick={() =>
+                handleDownload(
+                  '/assets/ColoringCardsImages/ColoringCardOne.png',
+                  'ColoringCardOne'
+                )
+              }
               colorScheme="blue"
             >
               Download
@@ -104,6 +127,7 @@ const ColoringPages: React.FC = () => {
           </Box>
         </Box>
 
+        {/* Cards Section */}
         <Flex
           ref={scrollRef}
           overflowX="auto"
@@ -116,48 +140,34 @@ const ColoringPages: React.FC = () => {
           }}
         >
           {coloringPages.map((page) => (
-            <Box
+            <AspectRatio
               key={page.id}
+              ratio={3 / 4} 
               minW={`${cardWidth}px`}
-              h="400px"
               mr={4}
-              borderWidth={1}
-              overflow="hidden"
-              position="relative"
               bg="white"
+              borderWidth={1}
               flexShrink={0}
             >
-              <Image src={page.imageUrl} alt={page.title} layout="fill" objectFit="cover" />
-
-              <Box
-                position="absolute"
-                top="0"
-                left="0"
-                right="0"
-                bottom="0"
-                bg="blackAlpha.600"
-                opacity="0"
-                transition="opacity 0.2s"
-                _hover={{ opacity: 1 }}
-                display="flex"
-                alignItems="center"
-                justifyContent="center"
-              >
-                <Button
-                  leftIcon={<DownloadIcon />}
-                  onClick={() => handleDownload(page.imageUrl, page.title)}
-                  colorScheme="blue"
-                >
-                  Download
-                </Button>
-              </Box>
-            </Box>
+              <Image
+                src={page.imageUrl}
+                alt={page.title}
+                layout="fill"
+                objectFit="cover"
+              />
+            </AspectRatio>
           ))}
         </Flex>
 
         <Center>
           <Box mt={20} mb={10}>
-            <CustomButton onClick={handleSeeMore} bg="#FFEFA6" color="#0C5156" fontSize="32px" padding="1.7rem 1.5rem">
+            <CustomButton
+              onClick={handleSeeMore}
+              bg="#FFEFA6"
+              color="#0C5156"
+              fontSize="32px"
+              padding="1.7rem 1.5rem"
+            >
               See More
             </CustomButton>
           </Box>

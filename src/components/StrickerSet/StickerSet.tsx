@@ -25,9 +25,9 @@ const StickerSet = () => {
           w={{ base: 'full', md: '40%' }}
         >
           <Heading
-            fontSize={{ base: "4xl", md: "5xl", lg: "6xl" }}
+            fontSize={{ base: "3xl", md: "5xl", lg: "6xl" }}
             fontWeight="medium"
-            textAlign="center"
+            textAlign={{ base: 'center', md: 'left' }}
           >
             Make Chats Stickier
           </Heading>
@@ -47,7 +47,7 @@ const StickerSet = () => {
               href="https://t.me/addstickers/herecomesbitcoin"
               color="#0C5156"
               fontSize="24px"
-              padding="1.7rem 2rem"
+              padding="1.7rem 1.6rem"
               w="full" 
             >
               Telegram Stickers
@@ -57,7 +57,7 @@ const StickerSet = () => {
               href="https://signal.art/addstickers/#pack_id=961a70b4646d38f98ebca674c2792262&pack_key=f6a446830125c12ba25bfe4e6138288b0babe1d54f3990465338cdd5a80fd7e9"
               color="#0C5156"
               fontSize="24px"
-              padding="1.7rem 2rem"
+              padding="1.7rem 1.6rem"
               w="full" 
             >
               Signal Stickers
