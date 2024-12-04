@@ -23,7 +23,7 @@ const products: Product[] = [
   },
   {
     id: '2',
-    name: 'Here Comes Bitcoin Plushi',
+    name: 'Here Comes Bitcoin Plushie',
     price: '$39.99',
     imageUrl: '/assets/ProductImages/HCb-plushie.png',
     url: "https://www.uncute.com/collections/all/products/here-comes-bitcoin"
@@ -110,7 +110,7 @@ const ProductShowcase: React.FC = () => {
           fontWeight="400"
           lineHeight="1.5"
         >
-          It&rsquo;s only a matter of time until everything becomes a Plushi, but in our case, it took even longer because Bitcoin kept eating our concepts. Grab your hungry guy today.
+          It&rsquo;s only a matter of time until everything becomes a Plushie, but in our case, it took even longer because Bitcoin kept eating our concepts. Grab your hungry guy today.
         </Text>
       </Center>
       <Box

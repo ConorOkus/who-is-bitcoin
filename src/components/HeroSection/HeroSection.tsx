@@ -21,44 +21,48 @@ const Hero: React.FC<HeroProps> = ({ productRef }) => {
     return (
         <Box position="relative" overflow="hidden">
             {/* Main Hero Section */}
-            <Box bg={bgColor} pt={10} pb={24} px={{ base: 6, lg: "30px" }}>
+            <Box bg={bgColor} pt={10} pb={24} px={{ base: 6, md: 10, lg: "30px" }}>
                 <Container maxW="container.2xl">
                     <Flex
                         direction={{ base: "column", md: "row" }}
                         align="center"
                         justify="space-between"
                         wrap="wrap"
-                        padding={{ lg: "2rem", md: "1rem" }}
+                        padding={{ base: 0, md: "1rem", lg: "2rem" }}
                         position="relative"
-                        paddingBottom="7rem"
+                        paddingBottom={{ base: "7rem", md: "10rem" }}
                     >
                         {/* Hero Text Section */}
-                        <Box maxW={{ base: "100%", md: "50%" }} zIndex={1} textAlign="left">
-                            <Heading mb={6}
+                        <Box width={{ base: "100%", md: "50%" }} zIndex={1} textAlign={{ base: "left", md: "left" }}>
+                            <Heading 
+                                mb={6}
                                 fontSize={{ base: "4xl", md: "5xl", lg: "7xl" }}
                                 lineHeight={1.2}
                                 color="#13294b"
-                                fontWeight="medium">
+                                fontWeight="medium"
+                            >
                                 Bitcoin Stuff for <br />
                                 Your Bitcoin Stuff
                             </Heading>
-                            <Text
-                                mb={10}
-                                fontSize={{ base: "md", md: "3xl" }}
-                                lineHeight={1.5} // Reduces the space between lines
-                                color="#13294b"
-                                fontWeight="500"
-                                maxW={{ base: "100%", md: "90%" }} // Sets a maximum width for better control
-                            >
-                                HereComesBitcoin is the central resource for all things Bitcoin (puppet, not currency), including license-free creative assets that you can use to make whatever you want.
-                            </Text>
-
+                            <Box width={{ base: "100%", md: "600px" }} maxWidth="100%" margin={{ base: 0, md: "0 auto 0 0" }}>
+                                <Text
+                                    mb={10}
+                                    fontSize={{ base: "md", md: "xl", lg: "3xl" }}
+                                    lineHeight="1.5"
+                                    color="#13294b"
+                                    fontWeight="500"
+                                    whiteSpace="normal"
+                                    wordBreak="break-word"
+                                >
+                                    HereComesBitcoin is the central resource for all things Bitcoin (puppet, not currency), including license-free creative assets that you can use to make whatever you want.
+                                </Text>
+                            </Box>
 
                             <CustomButton
                                 bg="#F7931A"
                                 color="white"
-                                fontSize='30px'
-                                padding='1.9rem 1.5rem'
+                                fontSize="30px"
+                                padding= "1.9rem 1.5rem"
                                 borderRadius="full"
                                 onClick={scrollToProducts}
                             >
@@ -87,14 +91,14 @@ const Hero: React.FC<HeroProps> = ({ productRef }) => {
                             />
                         </Box>
 
-                        {/* Hero Image Section for Desktop */}
+                        {/* Hero Image Section for Desktop and Tablet */}
                         <Box
                             display={{ base: "none", md: "block" }}
                             position="absolute"
-                            right="-6"
-                            bottom="-240px"
-                            width="60%"
-                            height="840px"
+                            right={{ md: "-10%", lg: "-6%" }}
+                            bottom={{ md: "-180px", lg: "-240px" }}
+                            width={{ md: "65%", lg: "60%" }}
+                            height={{ md: "700px", lg: "840px" }}
                             zIndex={2}
                         >
                             <Image
@@ -110,7 +114,7 @@ const Hero: React.FC<HeroProps> = ({ productRef }) => {
                     </Flex>
                 </Container>
             </Box>
-            <Box position="relative" height="100px" zIndex={1} mb={14}>
+            <Box position="relative" height={{ base: "50px", md: "100px" }} zIndex={1} mb={{ base: 7, md: 14 }}>
                 <WaveBorderBottom color={bgColor} />
             </Box>
         </Box>
@@ -118,3 +122,4 @@ const Hero: React.FC<HeroProps> = ({ productRef }) => {
 };
 
 export default Hero;
+

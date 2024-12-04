@@ -345,6 +345,88 @@ const downloadableAssets = [
     src: "/assets/HereComesBitcoinAssets/Lyn-Alden",
     alt: "bitcoin lyn alden",
   },
+  {
+    src: "/assets/HereComesBitcoinAssets/Disgusting-brunch-bitcoin",
+    alt: "Disgusting brunch bitcoin"
+  },
+  {
+    src: "/assets/HereComesBitcoinAssets/Orange-man",
+    alt: "Orange man"
+  },
+  {
+    src: "/assets/HereComesBitcoinAssets/Bucolic-bitcoin",
+    alt: "Bucolic bitcoin"
+  },
+  {
+    src: "/assets/HereComesBitcoinAssets/Bannerman-bitcoin",
+    alt: "Bannerman bitcoin"
+  },
+  {
+    src: "/assets/HereComesBitcoinAssets/ATL-bitLab-bitcoin",
+    alt: "ATL bitLab bitcoin"
+  },
+  {
+    src: "/assets/HereComesBitcoinAssets/Brrr-cat",
+    alt: "Brrr cat"
+  },
+  {
+    src: "/assets/HereComesBitcoinAssets/Bitcoin-the-breezeborn",
+    alt: "Bitcoin the breezeborn"
+  },
+  {
+    src: "/assets/HereComesBitcoinAssets/Summoning-the-circle",
+    alt: "Summoning the circle"
+  },
+  {
+    src: "/assets/HereComesBitcoinAssets/American-gothic-bitcoin",
+    alt: "American gothic bitcoin"
+  },
+  {
+    src: "/assets/HereComesBitcoinAssets/Bablo-bicasso",
+    alt: "Bablo bicasso"
+  },
+  {
+    src: "/assets/HereComesBitcoinAssets/Beefcake-bitkey",
+    alt: "Beefcake bitkey"
+  },
+  {
+    src: "/assets/HereComesBitcoinAssets/Da-boy-bitcoin",
+    alt: "Da boy bitcoin"
+  },
+  {
+    src: "/assets/HereComesBitcoinAssets/Honey-badger-bitcoin",
+    alt: "Honey badger bitcoin"
+  },
+  {
+    src: "/assets/HereComesBitcoinAssets/Boltface-voltage-bitcoin",
+    alt: "Boltface voltage bitcoin"
+  },
+  {
+    src: "/assets/HereComesBitcoinAssets/blowhole-bitcoin",
+    alt: "blowhole bitcoin"
+  },
+  {
+    src: "/assets/HereComesBitcoinAssets/The-unstoppable",
+    alt: "The unstoppable"
+  },
+  {
+    src: "/assets/HereComesBitcoinAssets/Bthulu-bitcoin",
+    alt: "Bthulu bitcoin"
+  },
+  {
+    src: "/assets/HereComesBitcoinAssets/Baghetti",
+    alt: "Baghetti"
+  },
+  {
+    src: "/assets/HereComesBitcoinAssets/Cozy-little-guy",
+    alt: "Cozy little guy"
+  },
+  {
+    src: "/assets/HereComesBitcoinAssets/The-sun-soaker",
+    alt: "The sun soaker"
+  }
+
+
 ];
 const AssetsSection: React.FC = () => {
   return (
