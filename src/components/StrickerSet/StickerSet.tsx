@@ -18,20 +18,20 @@ const StickerSet = () => {
         py={{ base: 8, md: 0 }} 
       >
         <VStack
-          align="center" 
+          align="left" 
           spacing={4}
-          p={8}
+          p={6}
           mb={{ base: 8, md: 0 }}
-          w={{ base: 'full', md: '40%' }}
+          w={{ base: 'full', md: '55%' }}
         >
           <Heading
-            fontSize={{ base: "3xl", md: "5xl", lg: "6xl" }}
+            fontSize={{ base: "3xl", md: "3xl", lg: "6xl" }}
             fontWeight="medium"
             textAlign={{ base: 'center', md: 'left' }}
           >
             Make Chats Stickier
           </Heading>
-          <Text fontSize="lg" color="gray.600">
+          <Text fontSize="lg" color="gray.600" maxW={"500px"}>
             Orange up your Signal and Telegram chats with our Here Comes Bitcoin sticker set bundles, featuring all your favorite HCB Bitcoins
           </Text>
 
@@ -40,7 +40,7 @@ const StickerSet = () => {
             spacing={{ base: 8, md: 6 }} 
             mt={6} 
             w={{ base: 'full', md: 'full' }}
-            justifyContent="center"
+            justifyContent="left"
           >
             <CustomButton
               bg="#FFEFA6"
@@ -66,7 +66,7 @@ const StickerSet = () => {
         </VStack>
 
         <Flex
-          w={{ base: 'full', md: '55%' }}
+          w={{ base: 'full', md: '40%' }}
           position="relative"
           justify="center" 
           align="center"

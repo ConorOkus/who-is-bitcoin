@@ -21,7 +21,7 @@ const Footer = () => {
                   Get In Touch
                 </Heading>
                 <Text fontSize="20px" maxW="300px" lineHeight="1.5" color="white">
-                  For shop support, business, and licensing enquiries, please click below to get in touch!
+                  For shop support, business, and licensing enquiries, please click below to get in touch.
                 </Text>
                 <CustomButton
                   bg="#FFD24C"
@@ -71,10 +71,10 @@ const Footer = () => {
                       Usage Guidelines
                     </Link>
                     <Link as={NextLink} href="/built-with-hcb" fontSize="20px" color="white">
-                      Built With HCB
+                      Built with HCB
                     </Link>
                     <Link as={NextLink} href="mailto:hello@herecomesbitcoin.org" fontSize="20px" color="white">
-                      Want To Collab?
+                      Want to Collab?
                     </Link>
                   </Stack>
                 </Stack>
@@ -102,10 +102,10 @@ const Footer = () => {
                     Usage Guidelines
                   </Link>
                   <Link as={NextLink} href="/built-with-hcb" fontSize="20px" color="white">
-                    Built With HCB
+                    Built with HCB
                   </Link>
                   <Link as={NextLink} href="mailto:hello@herecomesbitcoin.org" fontSize="20px" color="white">
-                    Want To Collab?
+                    Want to Collab?
                   </Link>
                 </Stack>
               </Stack>

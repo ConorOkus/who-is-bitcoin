@@ -67,7 +67,7 @@ const BitcoinVideoComponent = () => {
         textAlign="center"
         my={4}
         color="#12334C"
-        maxWidth={isMobile ? "90%" : isTablet ? "80%" : "600px"}
+        maxWidth={isMobile ? "90%" : isTablet ? "80%" : "400px"}
       >
         Many have asked the question, &ldquo;What is Bitcoin?&rdquo; Few have ever dared to ask, &ldquo;Who is Bitcoin?&rdquo;
       </Text>
