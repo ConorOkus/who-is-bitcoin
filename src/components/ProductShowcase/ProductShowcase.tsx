@@ -1,9 +1,13 @@
-import React from 'react';
-import { Box, Heading, Text, Button, Image, Container, Center, useBreakpointValue } from '@chakra-ui/react';
+'use client'
+
+import React, { useRef } from 'react';
+import { Box, Heading, Text, Image, Container, Center, useBreakpointValue, IconButton } from '@chakra-ui/react';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation } from 'swiper/modules';
 import 'swiper/css';
-import 'swiper/css/pagination';
+import 'swiper/css/navigation';
 import CustomButton from '../CustomButton/CustomButton';
+import { ChevronLeftIcon, ChevronRightIcon } from '@chakra-ui/icons';
 
 interface Product {
   id: string;
@@ -49,18 +53,18 @@ const ProductCard: React.FC<{ product: Product }> = ({ product }) => {
       overflow="hidden"
       bg="white"
       p={4}
-      height={containerHeight} // Increased height for larger card size
+      height={containerHeight}
       display="flex"
       flexDirection="column"
       justifyContent="space-between"
     >
-      <Center flex="1"> {/* Ensuring the image is centered vertically */}
+      <Center flex="1">
         <Image
           src={product.imageUrl}
           alt={product.name}
           w={imageSize}
           h={imageSize}
-          objectFit="cover" // Ensure all images maintain same size
+          objectFit="contain"
           mb={4}
         />
       </Center>
@@ -87,8 +91,10 @@ const ProductCard: React.FC<{ product: Product }> = ({ product }) => {
 };
 
 const ProductShowcase: React.FC = () => {
+  const swiperRef = useRef<any>(null);
+
   return (
-    <Container maxW="container.2xl" py={10} px={4} mb={24} bg="#FFF4EC">
+    <Container maxW="container.2xl" py={10} px={4} mb={24} bg="#FFF4EC" position="relative">
       <Heading
         color="#14253d"
         textAlign="center"
@@ -121,6 +127,7 @@ const ProductShowcase: React.FC = () => {
         mb={20}
       >
         <Swiper
+          modules={[Navigation]}
           slidesPerView="auto"
           spaceBetween={20}
           centeredSlides={false}
@@ -131,7 +138,10 @@ const ProductShowcase: React.FC = () => {
             1024: { slidesPerView: 2.5, spaceBetween: 40 },
           }}
           style={{
-            overflow: 'visible', // Allow slides to not be cut off
+            overflow: 'visible',
+          }}
+          onSwiper={(swiper) => {
+            swiperRef.current = swiper;
           }}
         >
           {products.map((product) => (
@@ -141,8 +151,49 @@ const ProductShowcase: React.FC = () => {
           ))}
         </Swiper>
       </Box>
+      <IconButton
+        aria-label="Previous slide"
+        icon={<ChevronLeftIcon boxSize="1.5em" />}
+        position="absolute"
+        left={{ base: "5px", md: "20px" }}
+        top="60%"
+        transform="translateY(-50%)"
+        borderRadius="50%"
+        zIndex="1"
+        bg="white"
+        color="#14253d"
+        width="60px"
+        height="60px"
+        display={useBreakpointValue({ base: "none", md: "flex" })}
+        onClick={() => swiperRef.current?.slidePrev()}
+        boxShadow="0 4px 6px rgba(0, 0, 0, 0.1)"
+        _hover={{ bg: "#FFEFA6" }}
+        transition="all 0.3s"
+      />
+
+      <IconButton
+        aria-label="Next slide"
+        icon={<ChevronRightIcon boxSize="1.5em" />}
+        position="absolute"
+        right={{ base: "10px", md: "40px" }}
+        top="60%"
+        transform="translateY(-50%)"
+        borderRadius="50%"
+        zIndex="1"
+        bg="white"
+        color="#14253d"
+        width="60px"
+        height="60px"
+        display={useBreakpointValue({ base: "none", md: "flex" })}
+        onClick={() => swiperRef.current?.slideNext()}
+        boxShadow="0 4px 6px rgba(0, 0, 0, 0.1)"
+        _hover={{ bg: "#FFEFA6" }}
+        transition="all 0.3s"
+      />
+
     </Container>
   );
 };
 
 export default ProductShowcase;
+

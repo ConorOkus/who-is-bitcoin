@@ -48,7 +48,7 @@ const BitcoinVideoComponent = () => {
         zIndex={2}
         aspectRatio={16 / 9}
         mt={isMobile ? 10 : isTablet ? 15 : 20}
-        mb={isMobile ? 10 : isTablet ? 15 : 20}
+        mb={10}
         overflow="hidden"
         borderRadius="md"
       >
