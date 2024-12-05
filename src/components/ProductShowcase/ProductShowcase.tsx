@@ -29,7 +29,7 @@ const products: Product[] = [
     id: '2',
     name: 'Here Comes Bitcoin Plushie',
     price: '$39.99',
-    imageUrl: '/assets/ProductImages/HCb-plushie.png',
+    imageUrl: '/assets/ProductImages/HCB-plushie.png',
     url: "https://www.uncute.com/collections/all/products/here-comes-bitcoin"
   },
   {
