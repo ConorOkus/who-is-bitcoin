@@ -1,13 +1,15 @@
 import React from 'react';
 import { Box, Heading, Text, Flex, Image, VStack, Stack } from '@chakra-ui/react';
 import CustomButton from '../CustomButton/CustomButton';
+import { loadGetInitialProps } from 'next/dist/shared/lib/utils';
 
 const StickerSet = () => {
   return (
     <Box bg="#FFF1E5" w="full" overflow="hidden" px={{
       base: 6,
       lg: "100px",
-    }}>
+    }}
+>
       <Flex
         direction={{ base: 'column', md: 'row' }}
         mx="auto"
@@ -77,9 +79,10 @@ const StickerSet = () => {
           <Box
             position="relative"
             w={{ base: 'full', md: 'auto' }}
-            maxW={{ base: '200px', md: '250px' }}
-            mr={{ base: 0, md: '5%' }}
-            mt={{ base: 0, md: '100px' }}
+            maxW={{ base: '200px', md: '300px' }}
+            mr={{ base: 0, md: '3%' }}
+            mt={{ base: 0, md: '180px' }}
+            mb={{ base: 0, md: '-10px' }}
           >
             <Image
               src="/assets/StrickerSetImages/Mobile-preview-One.png"
@@ -94,9 +97,9 @@ const StickerSet = () => {
           <Box
             position="relative"
             w={{ base: 'full', md: 'auto' }}
-            maxW={{ base: '200px', md: '250px' }}
+            maxW={{ base: '200px', md: '300px' }}
             ml={{ base: 0, md: '10%' }}
-            mt={{ base: 0, md: '-100px' }}
+            mt={{ base: 0, md: '-170px' }}
           >
             <Image
               src="/assets/StrickerSetImages/Mobile-preview-Two.png"
