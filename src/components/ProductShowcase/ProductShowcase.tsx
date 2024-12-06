@@ -1,7 +1,7 @@
 'use client'
 
 import React, { useRef } from 'react';
-import { Box, Heading, Text, Image, Container, Center, useBreakpointValue, IconButton } from '@chakra-ui/react';
+import { Box, Heading, Text, Image, Container, Center, useBreakpointValue, IconButton, baseTheme } from '@chakra-ui/react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
 import 'swiper/css';
@@ -99,7 +99,7 @@ const ProductShowcase: React.FC = () => {
         color="#14253d"
         textAlign="center"
         mb={6}
-        mt={20}
+        mt={{ base: 4, md: 20, lg: 20 }}
         fontSize={{ base: "3xl", md: "5xl", lg: "6xl" }}
         fontWeight="500"
         lineHeight="1.2"
@@ -124,7 +124,7 @@ const ProductShowcase: React.FC = () => {
           base: 6,
           lg: '120px',
         }}
-        mb={20}
+        mb={{ base: 6, md: 20, lg: 20 }}
       >
         <Swiper
           modules={[Navigation]}

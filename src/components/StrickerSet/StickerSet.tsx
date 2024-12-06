@@ -34,7 +34,7 @@ const StickerSet = () => {
             Make Chats Stickier
           </Heading>
           <Text fontSize="lg" color="gray.600" maxW={"500px"}>
-            Orange up your Signal and Telegram chats with our Here Comes Bitcoin sticker set bundles, featuring all your favorite HCB Bitcoins
+            Orange up your Signal and Telegram chats with our Here Comes Bitcoin sticker set bundles, featuring all your favorite HCB Bitcoins.
           </Text>
 
           <Stack

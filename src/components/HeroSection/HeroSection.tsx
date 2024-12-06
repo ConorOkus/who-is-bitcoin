@@ -21,7 +21,7 @@ const Hero: React.FC<HeroProps> = ({ productRef }) => {
     return (
         <Box position="relative" overflow="hidden">
             {/* Main Hero Section */}
-            <Box bg={bgColor} pt={10} pb={24} px={{ base: 6, md: 10, lg: "30px" }}>
+            <Box bg={bgColor} pt={10} pb={{ base: 36, md: 24, lg: 24 }} px={{ base: 6, md: 10, lg: "30px" }}>
                 <Container maxW="container.2xl">
                     <Flex
                         direction={{ base: "column", md: "row" }}
@@ -34,7 +34,7 @@ const Hero: React.FC<HeroProps> = ({ productRef }) => {
                     >
                         {/* Hero Text Section */}
                         <Box width={{ base: "100%", md: "50%" }} zIndex={1} textAlign={{ base: "left", md: "left" }}>
-                            <Heading 
+                            <Heading
                                 mb={6}
                                 fontSize={{ base: "4xl", md: "5xl", lg: "7xl" }}
                                 lineHeight={1.2}
@@ -62,7 +62,7 @@ const Hero: React.FC<HeroProps> = ({ productRef }) => {
                                 bg="#F7931A"
                                 color="white"
                                 fontSize="30px"
-                                padding= "1.9rem 1.5rem"
+                                padding="1.9rem 1.5rem"
                                 borderRadius="full"
                                 onClick={scrollToProducts}
                             >

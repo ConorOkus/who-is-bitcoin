@@ -63,8 +63,8 @@ const ColoringPages: React.FC = () => {
           color="#14253d"
           textAlign="center"
           mb={6}
-          mt={20}
-          fontSize="48px"
+          mt={{ base: 6, md: 20, lg: 20 }}
+          fontSize={{ base: "3xl", md: "5xl", lg: "6xl" }}
           fontWeight="500"
           lineHeight="1.2"
         >

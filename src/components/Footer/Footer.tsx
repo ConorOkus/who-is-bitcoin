@@ -18,10 +18,10 @@ const Footer = () => {
             <GridItem>
               <Stack spacing={6} width={{ base: "100%", lg: "auto" }}>
                 <Heading fontSize="6xl" fontWeight="medium" color="#8ED7E8">
-                  Get In Touch
+                  Get in Touch
                 </Heading>
                 <Text fontSize="20px" maxW="300px" lineHeight="1.5" color="white">
-                  For shop support, business, and licensing enquiries, please click below to get in touch.
+                  For shop support, business, and licensing enquiries, please click or tap below to get in touch.
                 </Text>
                 <CustomButton
                   bg="#FFD24C"
