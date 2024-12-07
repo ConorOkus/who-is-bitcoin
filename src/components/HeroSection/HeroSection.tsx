@@ -97,7 +97,7 @@ const Hero: React.FC<HeroProps> = ({ productRef }) => {
                             position="absolute"
                             right={{ md: "-10%", lg: "-6%" }}
                             bottom={{ md: "-180px", lg: "-240px" }}
-                            width={{ md: "65%", lg: "60%" }}
+                            width={{ md: "65%", lg: "840px" }}
                             height={{ md: "700px", lg: "840px" }}
                             zIndex={2}
                         >
