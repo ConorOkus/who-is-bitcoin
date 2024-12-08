@@ -9,18 +9,18 @@ const StickerSet = () => {
       base: 6,
       lg: "100px",
     }}
->
+    >
       <Flex
         direction={{ base: 'column', md: 'row' }}
         mx="auto"
         align="center"
-        justify="center" 
+        justify="center"
         overflow="hidden"
-        textAlign={{ base: 'center', md: 'left' }} 
-        py={{ base: 8, md: 0 }} 
+        textAlign={{ base: 'center', md: 'left' }}
+        py={{ base: 8, md: 0 }}
       >
         <VStack
-          align="left" 
+          align="left"
           spacing={4}
           p={6}
           mb={{ base: 8, md: 0 }}
@@ -38,9 +38,9 @@ const StickerSet = () => {
           </Text>
 
           <Stack
-            direction={{ base: 'column', md: 'row' }} 
-            spacing={{ base: 8, md: 6 }} 
-            mt={6} 
+            direction={{ base: 'column', md: 'row' }}
+            spacing={{ base: 8, md: 6 }}
+            mt={6}
             w={{ base: 'full', md: 'full' }}
             justifyContent="left"
           >
@@ -50,7 +50,7 @@ const StickerSet = () => {
               color="#0C5156"
               fontSize="24px"
               padding="1.7rem 1.6rem"
-              w="full" 
+              w="full"
             >
               Telegram Stickers
             </CustomButton>
@@ -60,7 +60,7 @@ const StickerSet = () => {
               color="#0C5156"
               fontSize="24px"
               padding="1.7rem 1.6rem"
-              w="full" 
+              w="full"
             >
               Signal Stickers
             </CustomButton>
@@ -70,7 +70,7 @@ const StickerSet = () => {
         <Flex
           w={{ base: 'full', md: '40%' }}
           position="relative"
-          justify="center" 
+          justify="center"
           align="center"
           mt={{ base: 4, md: 0 }}
           mb={{ base: 4, md: 0 }}
@@ -79,10 +79,10 @@ const StickerSet = () => {
           <Box
             position="relative"
             w={{ base: 'full', md: 'auto' }}
-            maxW={{ base: '200px', md: '300px' }}
+            maxW={{ base: '300px', md: '300px' }}
             mr={{ base: 0, md: '3%' }}
             mt={{ base: 0, md: '180px' }}
-            mb={{ base: 0, md: '-10px' }}
+            mb={{ base: "-60px", md: '-10px' }}
           >
             <Image
               src="/assets/StrickerSetImages/Mobile-preview-One.png"
@@ -100,6 +100,7 @@ const StickerSet = () => {
             maxW={{ base: '200px', md: '300px' }}
             ml={{ base: 0, md: '10%' }}
             mt={{ base: 0, md: '-170px' }}
+            display={{ base: 'none', md: 'block' }} // Hide on mobile, show on larger screens
           >
             <Image
               src="/assets/StrickerSetImages/Mobile-preview-Two.png"
@@ -111,9 +112,10 @@ const StickerSet = () => {
               border="2px solid transparent"
             />
           </Box>
-        </Flex>
+
       </Flex>
-    </Box>
+    </Flex>
+    </Box >
   );
 };
 
