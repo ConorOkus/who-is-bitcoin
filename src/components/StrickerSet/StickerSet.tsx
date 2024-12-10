@@ -56,7 +56,7 @@ const StickerSet = () => {
             </CustomButton>
             <CustomButton
               bg="#FFEFA6"
-              href="https://signal.art/addstickers/#pack_id=961a70b4646d38f98ebca674c2792262&pack_key=f6a446830125c12ba25bfe4e6138288b0babe1d54f3990465338cdd5a80fd7e9"
+              href="https://signal.art/addstickers/#pack_id=8fa42aa13ec8f0efebe4b038f41afbd1&pack_key=ef7c64b27126e1fed904c2ccaacf78d312a3f8dd846cd2e146c749fe2e51f335"
               color="#0C5156"
               fontSize="24px"
               padding="1.7rem 1.6rem"
