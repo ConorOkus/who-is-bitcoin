@@ -50,10 +50,6 @@ const Footer = () => {
                   </Link>
                 </Flex>
               </Stack>
-
-              <Text mt={20} fontSize="16px" color="#A6B5C5" display={{ base: "none", lg: "block" }}>
-                Copyright @ HereComesBitcoin Ltd.
-              </Text>
             </GridItem>
 
             <GridItem>
@@ -133,9 +129,6 @@ const Footer = () => {
                 objectFit="contain"
                 style={{ marginTop: '2rem' }}
               />
-              <Text fontSize="16px" color="#A6B5C5" textAlign="center" mt={4}>
-                Copyright @ HereComesBitcoin Ltd.
-              </Text>
             </Box>
           </Grid>
         </Container>
