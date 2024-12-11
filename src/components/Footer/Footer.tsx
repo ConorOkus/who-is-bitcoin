@@ -30,7 +30,7 @@ const Footer = () => {
                   fontSize="28px"
                   padding="1.7rem 1.5rem"
                   width="fit-content"
-                  mb={{ base: "4", md:"8" }}
+                  mb={{ base: "4", md: "8" }}
                   mt={6}
                 >
                   Contact Us
@@ -52,7 +52,7 @@ const Footer = () => {
               </Stack>
 
               <Text mt={20} fontSize="16px" color="#A6B5C5" display={{ base: "none", lg: "block" }}>
-                Copyright @ HereComesBitcoin Ltd.
+                No Copyright — Make Whatever You Want
               </Text>
             </GridItem>
 
@@ -134,7 +134,7 @@ const Footer = () => {
                 style={{ marginTop: '2rem' }}
               />
               <Text fontSize="16px" color="#A6B5C5" textAlign="center" mt={4}>
-                Copyright @ HereComesBitcoin Ltd.
+                No Copyright — Make Whatever You Want
               </Text>
             </Box>
           </Grid>
