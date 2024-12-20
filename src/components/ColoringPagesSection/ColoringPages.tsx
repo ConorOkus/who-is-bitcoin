@@ -140,22 +140,46 @@ const ColoringPages: React.FC = () => {
           }}
         >
           {coloringPages.map((page) => (
-            <AspectRatio
-              key={page.id}
-              ratio={3 / 4} 
-              minW={`${cardWidth}px`}
-              mr={4}
-              bg="white"
-              borderWidth={1}
-              flexShrink={0}
-            >
-              <Image
-                src={page.imageUrl}
-                alt={page.title}
-                layout="fill"
-                objectFit="cover"
-              />
-            </AspectRatio>
+            <Box key={page.id} position="relative" minW={`${cardWidth}px`} mr={4}>
+              <AspectRatio
+                ratio={3 / 4}
+                bg="white"
+                borderWidth={1}
+                flexShrink={0}
+              >
+                <Image
+                  src={page.imageUrl}
+                  alt={page.title}
+                  layout="fill"
+                  objectFit="cover"
+                />
+              </AspectRatio>
+              
+              {/* Overlay Download Button for each card */}
+              <Box
+                position="absolute"
+                top="0"
+                left="0"
+                right="0"
+                bottom="0"
+                bg="blackAlpha.600"
+                opacity="0"
+                transition="opacity 0.2s"
+                _hover={{ opacity: 1 }}
+                display="flex"
+                alignItems="center"
+                justifyContent="center"
+              >
+                <Button
+                  leftIcon={<DownloadIcon />}
+                  onClick={() => handleDownload(page.imageUrl, page.title)}
+                  colorScheme="blue"
+                  size="sm"
+                >
+                  Download
+                </Button>
+              </Box>
+            </Box>
           ))}
         </Flex>
 

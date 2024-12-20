@@ -138,14 +138,14 @@ const ProductShowcase: React.FC = () => {
             1024: { slidesPerView: 2.5, spaceBetween: 40 },
           }}
           style={{
-            overflow: 'visible',
+            overflow: 'hidden',
           }}
           onSwiper={(swiper) => {
             swiperRef.current = swiper;
           }}
         >
           {products.map((product) => (
-            <SwiperSlide key={product.id} style={{ overflow: 'visible' }}>
+            <SwiperSlide key={product.id} style={{ overflow: 'hidden' }}>
               <ProductCard product={product} />
             </SwiperSlide>
           ))}
