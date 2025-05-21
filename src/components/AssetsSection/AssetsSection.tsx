@@ -424,9 +424,71 @@ const downloadableAssets = [
   {
     src: "/assets/HereComesBitcoinAssets/The-sun-soaker",
     alt: "The sun soaker"
+  },
+  {
+    src: "/assets/HereComesBitcoinAssets/tokyo-bitcoin-base",
+    alt: "Tokyo Bitcoin Base"
+  },
+  {
+    src: "/assets/HereComesBitcoinAssets/vinteum",
+    alt: "vinteum"
+  },
+  {
+    src: "/assets/HereComesBitcoinAssets/presidio-one",
+    alt: "presidio one"
+  },
+  {
+    src: "/assets/HereComesBitcoinAssets/presidio-two",
+    alt: "presidio two"
+  },
+  {
+    src: "/assets/HereComesBitcoinAssets/basketball",
+    alt: "basketball"
+  },
+  {
+    src: "/assets/HereComesBitcoinAssets/metal-band",
+    alt: "metal band"
+  },
+  {
+    src: "/assets/HereComesBitcoinAssets/summer",
+    alt: "summer"
+  },
+  {
+    src: "/assets/HereComesBitcoinAssets/manga",
+    alt: "manga"
+  },
+  {
+    src: "/assets/HereComesBitcoinAssets/dragon",
+    alt: "dragon"
+  },
+  {
+    src: "/assets/HereComesBitcoinAssets/japan",
+    alt: "japan"
+  },
+  {
+    src: "/assets/HereComesBitcoinAssets/vitruvian",
+    alt: "vitruvian"
+  },
+  {
+    src: "/assets/HereComesBitcoinAssets/kaiju",
+    alt: "kaiju"
+  },
+  {
+    src: "/assets/HereComesBitcoinAssets/vibe-coding",
+    alt: "vibe coding"
+  },
+  {
+    src: "/assets/HereComesBitcoinAssets/bitcoin-standard",
+    alt: "bitcoin standard"
+  },
+   {
+    src: "/assets/HereComesBitcoinAssets/mythology",
+    alt: "mythology"
+  },
+  {
+    src: "/assets/HereComesBitcoinAssets/roman",
+    alt: "roman"
   }
-
-
 ];
 const AssetsSection: React.FC = () => {
   return (
