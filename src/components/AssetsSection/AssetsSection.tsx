@@ -488,6 +488,18 @@ const downloadableAssets = [
   {
     src: "/assets/HereComesBitcoinAssets/roman",
     alt: "roman"
+  },
+  {
+    src: "/assets/HereComesBitcoinAssets/bitaxe",
+    alt: "bitaxe"
+  },
+  {
+    src: "/assets/HereComesBitcoinAssets/planet",
+    alt: "planet"
+  },
+  {
+    src: "/assets/HereComesBitcoinAssets/cat-two",
+    alt: "cat two"
   }
 ];
 const AssetsSection: React.FC = () => {
