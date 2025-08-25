@@ -31,6 +31,7 @@ export default function RootLayout({
           content='License-free creative assets that you can use to make anything you want'
         />
         <meta name='twitter:image' content='/assets/acrobat.png' />
+        <script defer src="https://cloud.umami.is/script.js" data-website-id="87a54702-028a-4e54-b167-0e03f396feca"></script>
       </Head>
 
       <body>
