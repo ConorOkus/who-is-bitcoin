@@ -15,7 +15,7 @@ import ColoringPages from "@/components/ColoringPagesSection/ColoringPages";
 import Footer from "@/components/Footer/Footer";
 
 const Home = () => {
-  const productRef = useRef(null);
+  const productRef = useRef<HTMLDivElement>(null);
 
   return (
     <>

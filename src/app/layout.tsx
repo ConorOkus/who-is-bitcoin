@@ -1,6 +1,31 @@
-import Head from "next/head";
 import { Providers } from "../providers/ThemeProvider";
 import Script from "next/script";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Here Comes Bitcoin",
+  description: "Here Comes Bitcoin is the central resource for all things Bitcoin (puppet, not currency), including license-free creative assets that you can use to make anything you want",
+  icons: {
+    icon: '/favicon.ico',
+  },
+  openGraph: {
+    title: "Here Comes Bitcoin",
+    images: [
+      {
+        url: '/assets/acrobat.png',
+        width: 1200,
+        height: 630,
+      },
+    ],
+    url: 'https://www.herecomesbitcoin.org/',
+  },
+  twitter: {
+    site: '@spiralbtc',
+    card: 'summary_large_image',
+    images: ['/assets/acrobat.png'],
+  },
+  viewport: 'width=device-width, minimum-scale=1.0, maximum-scale=1.0',
+};
 
 export default function RootLayout({
   children,
@@ -9,38 +34,16 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en'>
-      <Head>
-        <title>Here Comes Bitcoin</title>
+      <head>
         <link rel='stylesheet' href='https://use.typekit.net/gaq1ohg.css' />
-        <link rel='icon' href='/favicon.ico' />
-        <meta property='og:title' content='Here Comes Bitcoin' />
-        <meta property='og:image' content='/assets/acrobat.png' />
-        <meta property='og:image:width' content='1200' />
-        <meta property='og:image:height' content='630' />
-        <meta
-          name='description'
-          content='Here Comes Bitcoin is the central resource for all things Bitcoin (puppet, not currency), including license-free creative assets that you can use to make anything you want'
-        />
-        <meta
-          name='viewport'
-          content='width=device-width, minimum-scale=1.0, maximum-scale=1.0'
-        />
-        <meta property='og:url' content='https://www.herecomesbitcoin.org/' />
-        <meta name='twitter:site' content='@spiralbtc' />
-        <meta
-          name='twitter:card'
-          content='License-free creative assets that you can use to make anything you want'
-        />
-        <meta name='twitter:image' content='/assets/acrobat.png' />
+      </head>
+      <body>
+        <Providers>{children}</Providers>
         <Script
           src="https://cloud.umami.is/script.js"
           data-website-id="87a54702-028a-4e54-b167-0e03f396feca"
           strategy="afterInteractive"
         />
-      </Head>
-
-      <body>
-        <Providers>{children}</Providers>
       </body>
     </html>
   );

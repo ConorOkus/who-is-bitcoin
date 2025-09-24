@@ -6,7 +6,7 @@ import CustomButton from '../CustomButton/CustomButton';
 import WaveBorderBottom from '../Waveborder/WaveBorderbottom';
 
 interface HeroProps {
-    productRef: React.RefObject<HTMLDivElement>;
+    productRef: React.RefObject<HTMLDivElement | null>;
 }
 
 const Hero: React.FC<HeroProps> = ({ productRef }) => {
