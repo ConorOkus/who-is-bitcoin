@@ -500,6 +500,86 @@ const downloadableAssets = [
   {
     src: "/assets/HereComesBitcoinAssets/cat-two",
     alt: "cat two"
+  },
+  {
+    src: "/assets/HereComesBitcoinAssets/pollockbitty",
+    alt: "pollock bitty"
+  },
+  {
+    src: "/assets/HereComesBitcoinAssets/ittybittybaseball",
+    alt: "itty bitty baseball"
+  },
+  {
+    src: "/assets/HereComesBitcoinAssets/balancebitty",
+    alt: "balance bitty"
+  },
+  {
+    src: "/assets/HereComesBitcoinAssets/murdermystery",
+    alt: "murder mystery"
+  },
+  {
+    src: "/assets/HereComesBitcoinAssets/bonesbitty",
+    alt: "bones bitty"
+  },
+  {
+    src: "/assets/HereComesBitcoinAssets/therapistbitty",
+    alt: "therapist bitty"
+  },
+  {
+    src: "/assets/HereComesBitcoinAssets/bushidob",
+    alt: "bushido bitty"
+  },
+  {
+    src: "/assets/HereComesBitcoinAssets/clawmachineittybitty",
+    alt: "claw machine bitty"
+  },
+  {
+    src: "/assets/HereComesBitcoinAssets/dandbittycrew",
+    alt: "dand bitty crew"
+  },
+  {
+    src: "/assets/HereComesBitcoinAssets/tokyostreetwearbittys",
+    alt: "tokyo streetwear bittys"
+  },
+  {
+    src: "/assets/HereComesBitcoinAssets/buffbitty",
+    alt: "buff bitty"
+  },
+  {
+    src: "/assets/HereComesBitcoinAssets/legendaryfighterbitty",
+    alt: "legendary fighter bitty"
+  },
+  {
+    src: "/assets/HereComesBitcoinAssets/bittyversuslobster",
+    alt: "bitty versus lobster"
+  },
+  {
+    src: "/assets/HereComesBitcoinAssets/moebittyusstrip",
+    alt: "moe bitty us strip"
+  },
+  {
+    src: "/assets/HereComesBitcoinAssets/btrustbitty",
+    alt: "btrust bitty"
+  },
+  {
+    src: "/assets/HereComesBitcoinAssets/catflapbitty",
+    alt: "cat flap bitty"
+  },
+  {
+    src: "/assets/HereComesBitcoinAssets/kintsugibitty",
+    alt: "kintsugi bitty"
+  },
+  {
+    src: "/assets/HereComesBitcoinAssets/bittyversusdollar",
+    alt: "bitty versus dollar"
+  },
+  {
+    src: "/assets/HereComesBitcoinAssets/bip177bitty",
+    alt: "bip177 bitty"
+  },
+  {
+    src: "/assets/HereComesBitcoinAssets/maidcafebitcoin",
+    alt: "maid cafe bitcoin"
   }
 ];
 const AssetsSection: React.FC = () => {
