@@ -1,0 +1,271 @@
+# Here Comes Bitcoin
+
+> Here Comes Bitcoin (herecomesbitcoin.org) is the central resource for all things Bitcoin (puppet, not currency) — over 160 license-free, open-source illustrated character assets: PNGs, SVGs, animated GIFs, coloring pages, and sticker sets, free for any purpose, no attribution required.
+
+The site features a lovable caricatured Bitcoin puppet character illustrated in 130+ unique scenarios and styles. Created by Spiral (a Bitcoin-focused subsidiary of Block, Inc.) and supported by HRF, OpenSats, and SHAmory. Everything on this site is completely open-source and license-free.
+
+## Site Structure
+
+The site is a single-page application. Page sections appear in the following order top to bottom.
+
+### Header
+
+Sticky top navigation bar with the Here Comes Bitcoin logo and two call-to-action buttons.
+
+- [Collaborate](mailto:hello@herecomesbitcoin.org): Reach out for partnerships or custom work
+- [Join Discord](https://discord.gg/BChUGPzS5U): Community Discord server
+
+### Hero — "Bitcoin Stuff for Your Bitcoin Stuff"
+
+The landing section. Introduces the site as the central resource for Bitcoin puppet creative assets — all license-free, usable for anything. A "Shop Now" button scrolls users to the Product Showcase section.
+
+### Illustrations — "Your Project, Our Assets"
+
+The main asset gallery. 160+ Bitcoin character illustrations each available as both PNG and SVG. Includes a "Download All" button that downloads every illustration as a ZIP file.
+
+- [Full Asset Catalog JSON](/api/assets): Machine-readable JSON manifest listing every asset with direct download URLs, categories, and available formats. Use this to programmatically discover and fetch assets.
+- [Illustration files folder](/assets/HereComesBitcoinAssets/): Direct folder access to all character PNGs and SVGs.
+
+Each illustration is available at:
+- PNG: `/assets/HereComesBitcoinAssets/{name}.png`
+- SVG: `/assets/HereComesBitcoinAssets/{name}.svg`
+
+Individual characters (PNG + SVG unless noted):
+
+- [Bitcoin Acrobat](/assets/HereComesBitcoinAssets/acrobat.png): Bitcoin puppet performing circus acrobatic stunts
+- [Bitcoin Alien](/assets/HereComesBitcoinAssets/alien.png): Bitcoin puppet dressed as a space alien
+- [American Gothic Bitcoin](/assets/HereComesBitcoinAssets/American-gothic-bitcoin.png): Bitcoin puppet parody of Grant Wood's American Gothic painting
+- [Bitcoin Anime](/assets/HereComesBitcoinAssets/Anime.png): Bitcoin puppet drawn in Japanese anime art style
+- [Anti Credit Card Cat](/assets/HereComesBitcoinAssets/Anti-credit-card-cat.png): Cat Bitcoin puppet holding a sign opposing credit cards
+- [Bitcoin Astrology](/assets/HereComesBitcoinAssets/Astrology.png): Bitcoin puppet surrounded by astrological zodiac symbols
+- [Bitcoin Astronaut](/assets/HereComesBitcoinAssets/Astronaut.png): Bitcoin puppet in a full astronaut spacesuit
+- [ATL BitLab Bitcoin](/assets/HereComesBitcoinAssets/ATL-bitLab-bitcoin.png): Bitcoin puppet in Atlanta BitLab Bitcoin hackerspace branding
+- [Bablo Bicasso](/assets/HereComesBitcoinAssets/Bablo-bicasso.png): Bitcoin puppet as Pablo Picasso painting in cubist art style
+- [Bad Doctor Bitcoin](/assets/HereComesBitcoinAssets/Bad-doctor.png): Bitcoin puppet as a shady or incompetent doctor
+- [Baghetti](/assets/HereComesBitcoinAssets/Baghetti.png): Bitcoin puppet gleefully eating a giant bowl of spaghetti
+- [Balance Bitty](/assets/HereComesBitcoinAssets/balancebitty.png): Bitcoin puppet sitting balanced on a scale
+- [Banjo Bitcoin](/assets/HereComesBitcoinAssets/Banjo-bitcoin.png): Bitcoin puppet strumming a banjo
+- [Banker Attack](/assets/HereComesBitcoinAssets/Banker-attack.png): Bitcoin puppet fighting off a suited banker character
+- [Bannerman Bitcoin](/assets/HereComesBitcoinAssets/Bannerman-bitcoin.png): Bitcoin puppet proudly carrying a banner or flag
+- [Basketball Bitcoin](/assets/HereComesBitcoinAssets/basketball.png): Bitcoin puppet playing basketball
+- [Beach Bitcoin](/assets/HereComesBitcoinAssets/beach.png): Bitcoin puppet relaxing on a sunny beach
+- [Bedford Football Club](/assets/HereComesBitcoinAssets/bedford-football-club.png): Bitcoin puppet in Bedford Football Club team kit
+- [Bedford Football Club II](/assets/HereComesBitcoinAssets/bedford-football-club-II.png): Bitcoin puppet in Bedford Football Club kit, alternate design
+- [Beefcake Bitkey](/assets/HereComesBitcoinAssets/Beefcake-bitkey.png): Muscular beefcake Bitcoin puppet in Bitkey hardware wallet branding
+- [Bitcoin Beholder](/assets/HereComesBitcoinAssets/Beholder.png): Bitcoin puppet as the classic D&D Beholder monster with many eyes
+- [BIP177 Bitty](/assets/HereComesBitcoinAssets/bip177bitty.png): Bitcoin puppet themed around the Bitcoin BIP-177 proposal
+- [Bird Feeder Bitcoin](/assets/HereComesBitcoinAssets/Bird-feeder-bitcoin.png): Bitcoin puppet tending to a garden bird feeder
+- [Bitaxe](/assets/HereComesBitcoinAssets/bitaxe.png): Bitcoin puppet themed around the Bitaxe open-source mining hardware
+- [Bitcoin Alby](/assets/HereComesBitcoinAssets/Bitcoin-Alby.png): Bitcoin puppet in Alby Lightning wallet branding
+- [Bitcoin Faucet](/assets/HereComesBitcoinAssets/Bitcoin-faucet.png): Bitcoin puppet as a dripping faucet dispensing Bitcoin
+- [Bitcoin Island](/assets/HereComesBitcoinAssets/Bitcoin-island.png): Bitcoin puppet relaxing on a deserted tropical island
+- [Bitcoin Japan](/assets/HereComesBitcoinAssets/bitcoin-japan.png): Bitcoin puppet in Japanese cultural aesthetic and styling
+- [Bitcoin Standard](/assets/HereComesBitcoinAssets/bitcoin-standard.png): Bitcoin puppet parody of The Bitcoin Standard book cover
+- [Bitcoin Breezeborn](/assets/HereComesBitcoinAssets/Bitcoin-the-breezeborn.png): Bitcoin puppet as a wind elemental breezeborn fantasy creature
+- [Bitcoin Unit 01](/assets/HereComesBitcoinAssets/Bitcoin-unit-01.png): Bitcoin puppet in Unit-01 mecha style from Neon Genesis Evangelion
+- [Bitcoin Bahama](/assets/HereComesBitcoinAssets/Bitcoinbahama.png): Bitcoin puppet on a tropical Bahamas vacation
+- [Bitty vs Dollar](/assets/HereComesBitcoinAssets/bittyversusdollar.png): Bitcoin puppet in a battle against a US dollar bill character
+- [Bitty vs Lobster](/assets/HereComesBitcoinAssets/bittyversuslobster.png): Bitcoin puppet fighting a giant lobster
+- [Black Ops Bitcoin](/assets/HereComesBitcoinAssets/black-ops.png): Bitcoin puppet in military black ops tactical gear and balaclava
+- [Blowhole Bitcoin](/assets/HereComesBitcoinAssets/blowhole-bitcoin.png): Bitcoin puppet as a whale spouting water from a blowhole
+- [Boltface Voltage Bitcoin](/assets/HereComesBitcoinAssets/Boltface-voltage-bitcoin.png): Bitcoin puppet with a lightning bolt face, Lightning Network themed
+- [Bones Bitty](/assets/HereComesBitcoinAssets/bonesbitty.png): Bitcoin puppet as a skeleton in bones and skull costume
+- [Bitcoin Brink](/assets/HereComesBitcoinAssets/Brink.png): Bitcoin puppet in Brink.dev open-source Bitcoin development branding
+- [Brrr Cat](/assets/HereComesBitcoinAssets/Brrr-cat.png): Cat Bitcoin puppet referencing the money printer go brrr inflation meme
+- [Bthulu Bitcoin](/assets/HereComesBitcoinAssets/Bthulu-bitcoin.png): Bitcoin puppet as Cthulhu, the H.P. Lovecraft cosmic horror deity
+- [Btrust Bitty](/assets/HereComesBitcoinAssets/btrustbitty.png): Bitcoin puppet in Btrust Bitcoin developer grants fund branding
+- [Bucolic Bitcoin](/assets/HereComesBitcoinAssets/Bucolic-bitcoin.png): Bitcoin puppet in a peaceful pastoral countryside scene
+- [Buff Bitty](/assets/HereComesBitcoinAssets/buffbitty.png): Extremely muscular bodybuilder Bitcoin puppet flexing
+- [Bushido Bitty](/assets/HereComesBitcoinAssets/bushidob.png): Bitcoin puppet as a samurai warrior in feudal Japanese armor
+- [Bust Bitcoin](/assets/HereComesBitcoinAssets/Bust-bitcoin.png): Bitcoin puppet as a classical marble or bronze bust sculpture
+- [Bitcoin Cat](/assets/HereComesBitcoinAssets/Cat.png): Bitcoin puppet styled as a house cat
+- [Cat Two](/assets/HereComesBitcoinAssets/cat-two.png): Bitcoin puppet as a second cat character variant
+- [Cat Flap Bitty](/assets/HereComesBitcoinAssets/catflapbitty.png): Bitcoin puppet squeezing through a cat door flap
+- [Claw Machine Bitty](/assets/HereComesBitcoinAssets/clawmachineittybitty.png): Bitcoin puppet trapped inside an arcade claw machine
+- [Bitcoin Coder](/assets/HereComesBitcoinAssets/Coder.png): Bitcoin puppet as a programmer typing at a computer
+- [Cold Card Bitcoin](/assets/HereComesBitcoinAssets/Cold-card.png): Bitcoin puppet in Coldcard hardware wallet branding
+- [Confused Cat](/assets/HereComesBitcoinAssets/Confused-cat.png): Cat Bitcoin puppet with a baffled and confused expression
+- [Consensus Cleanup](/assets/HereComesBitcoinAssets/Consensus-cleanup.png): Bitcoin puppet themed around the Bitcoin consensus cleanup soft fork
+- [Bitcoin Construction](/assets/HereComesBitcoinAssets/Construction.png): Bitcoin puppet wearing a hard hat and construction worker gear
+- [Couch Dweller](/assets/HereComesBitcoinAssets/Couch-dweller.png): Bitcoin puppet lounging lazily on a couch
+- [Bitcoin Count](/assets/HereComesBitcoinAssets/count.png): Bitcoin puppet as Count Dracula in a vampire cape
+- [Cozy Little Guy](/assets/HereComesBitcoinAssets/Cozy-little-guy.png): Bitcoin puppet bundled up cozily in warm clothes
+- [Da Boy Bitcoin](/assets/HereComesBitcoinAssets/Da-boy-bitcoin.png): Bitcoin puppet as a cool street-style youth character
+- [Bitcoin Dad](/assets/HereComesBitcoinAssets/Dad.png): Bitcoin puppet dressed as a stereotypical dad
+- [DnD Bitty Crew](/assets/HereComesBitcoinAssets/dandbittycrew.png): Group of Bitcoin puppets as a Dungeons and Dragons adventuring party
+- [Disgusting Brunch Bitcoin](/assets/HereComesBitcoinAssets/Disgusting-brunch-bitcoin.png): Bitcoin puppet at an over-the-top lavish brunch spread
+- [Bitcoin DJ](/assets/HereComesBitcoinAssets/DJ.png): Bitcoin puppet as a DJ spinning records at turntables
+- [Dragon Bitcoin](/assets/HereComesBitcoinAssets/dragon.png): Bitcoin puppet transformed into a fire-breathing dragon
+- [Bitcoin Drums](/assets/HereComesBitcoinAssets/Drums.png): Bitcoin puppet rocking out behind a full drum kit
+- [Eldritch Meow](/assets/HereComesBitcoinAssets/Eldritch-meow.png): Cat Bitcoin puppet as a tentacled cosmic eldritch horror
+- [Bitcoin Fairy](/assets/HereComesBitcoinAssets/Fairy.png): Bitcoin puppet with delicate fairy wings and a magic wand
+- [Bitcoin Fancy](/assets/HereComesBitcoinAssets/fancy.png): Bitcoin puppet dressed in extravagant formal attire
+- [Fishin For Gold](/assets/HereComesBitcoinAssets/Fishin-for-gold.png): Bitcoin puppet fishing with a gold coin dangling as bait
+- [Flower God](/assets/HereComesBitcoinAssets/Flower-god.png): Bitcoin puppet as a nature deity crowned with blooming flowers
+- [Forest God](/assets/HereComesBitcoinAssets/Forest-god.png): Bitcoin puppet as a forest spirit deity surrounded by trees
+- [Genius Cat](/assets/HereComesBitcoinAssets/Genius-cat.png): Cat Bitcoin puppet depicted as a brilliant intellectual genius
+- [Bitcoin Ghoul](/assets/HereComesBitcoinAssets/Ghoul.png): Bitcoin puppet as a Halloween ghoul or undead creature
+- [Gift Bitcoin](/assets/HereComesBitcoinAssets/Gift.png): Bitcoin puppet wrapped up as a cheerful gift
+- [Girls Night Out](/assets/HereComesBitcoinAssets/girls-night-out.png): Group of Bitcoin puppet characters celebrating on a girls night out
+- [Girls Night Out Prison](/assets/HereComesBitcoinAssets/girls-night-out-prison.png): Bitcoin puppet characters on girls night out behind prison bars
+- [Bitcoin Goth](/assets/HereComesBitcoinAssets/Goth.png): Bitcoin puppet in full goth subculture fashion with dark makeup
+- [Bitcoin Graffiti](/assets/HereComesBitcoinAssets/Graffiti.png): Bitcoin puppet rendered as bold street graffiti spray-paint art
+- [Bitcoin Greenpeace](/assets/HereComesBitcoinAssets/Greenpeace.png): Bitcoin puppet in Greenpeace environmental protest branding
+- [Greetings Cat](/assets/HereComesBitcoinAssets/Greetings-cat.png): Cat Bitcoin puppet waving cheerfully in a greeting pose
+- [Bitcoin Grumpy](/assets/HereComesBitcoinAssets/grumpy.png): Bitcoin puppet with a deeply grumpy and displeased expression
+- [Bitcoin Halving](/assets/HereComesBitcoinAssets/halving.png): Bitcoin puppet celebrating the Bitcoin block reward halving event
+- [Bitcoin Hamlet](/assets/HereComesBitcoinAssets/Hamlet.png): Bitcoin puppet as Shakespeare's Hamlet holding a skull
+- [Headless Bitcoin](/assets/HereComesBitcoinAssets/Headless-bitcoin.png): Bitcoin puppet depicted as an eerie headless figure
+- [Hieronymus Bosch Bitcoin](/assets/HereComesBitcoinAssets/hieronymus-bosch.png): Bitcoin puppet in the surreal nightmarish style of Hieronymus Bosch
+- [Honey Badger Bitcoin](/assets/HereComesBitcoinAssets/Honey-badger-bitcoin.png): Bitcoin puppet as a fearless honey badger referencing the don't care meme
+- [Hooray Cat](/assets/HereComesBitcoinAssets/Hooray-cat.png): Cat Bitcoin puppet with arms raised in joyful celebration
+- [Hot Air Balloon Bitcoin](/assets/HereComesBitcoinAssets/hot-air-balloon.png): Bitcoin puppet soaring in a hot air balloon
+- [HRF Bitcoin](/assets/HereComesBitcoinAssets/HRF.png): Bitcoin puppet in Human Rights Foundation branding and colors
+- [Bitcoin Hungry](/assets/HereComesBitcoinAssets/hungry.png): Bitcoin puppet with a wide-open hungry mouth ready to eat
+- [Bitcoin Hydra](/assets/HereComesBitcoinAssets/Hydra.png): Bitcoin puppet as a multi-headed Hydra serpent from Greek mythology
+- [In-Person Discourse](/assets/HereComesBitcoinAssets/In-person-discourse.png): Two Bitcoin puppets engaged in heated face-to-face debate
+- [Itty Bitty Baseball](/assets/HereComesBitcoinAssets/ittybittybaseball.png): Tiny Bitcoin puppet playing baseball in full uniform
+- [Jack Mallers Bitcoin](/assets/HereComesBitcoinAssets/jack-mallers.png): Bitcoin puppet caricature of Jack Mallers, founder and CEO of Strike
+- [Japan Bitcoin](/assets/HereComesBitcoinAssets/japan.png): Bitcoin puppet in traditional Japanese kimono and cultural clothing
+- [Bitcoin Judge](/assets/HereComesBitcoinAssets/Judge.png): Bitcoin puppet in judge's robes, wig, and holding a gavel
+- [Bitcoin K-Pop](/assets/HereComesBitcoinAssets/K-Pop.png): Bitcoin puppet dressed as a Korean K-Pop idol
+- [Kaiju Bitcoin](/assets/HereComesBitcoinAssets/kaiju.png): Bitcoin puppet as a giant city-stomping kaiju monster
+- [Keyboard Cat](/assets/HereComesBitcoinAssets/Keyboard-cat.png): Bitcoin puppet as the Keyboard Cat internet meme playing a keyboard
+- [Kintsugi Bitty](/assets/HereComesBitcoinAssets/kintsugibitty.png): Bitcoin puppet decorated in Japanese kintsugi gold-seam repair art
+- [Kitty Bitties](/assets/HereComesBitcoinAssets/Kitty-bitties.png): Group of small cat-styled Bitcoin puppet characters
+- [Legendary Fighter Bitty](/assets/HereComesBitcoinAssets/legendaryfighterbitty.png): Bitcoin puppet as a legendary fighting game character in battle stance
+- [Lightning Network](/assets/HereComesBitcoinAssets/lightning-network.png): Bitcoin puppet themed around the Bitcoin Lightning Network payment layer
+- [Lyn Alden Bitcoin](/assets/HereComesBitcoinAssets/Lyn-Alden.png): Bitcoin puppet caricature of Lyn Alden, macroeconomist and Bitcoin author
+- [Maid Cafe Bitcoin](/assets/HereComesBitcoinAssets/maidcafebitcoin.png): Bitcoin puppet in a Japanese maid cafe frilly apron costume
+- [Manga Bitcoin](/assets/HereComesBitcoinAssets/manga.png): Bitcoin puppet drawn in Japanese manga comic book style
+- [Meow Cheeks](/assets/HereComesBitcoinAssets/Meow-cheeks.png): Cat Bitcoin puppet with exaggerated chubby cheeks
+- [Metal Band Bitcoin](/assets/HereComesBitcoinAssets/metal-band.png): Bitcoin puppet as a heavy metal rock band performer
+- [Bitcoin Miner](/assets/HereComesBitcoinAssets/Miner.png): Bitcoin puppet as a Bitcoin miner with a pickaxe
+- [Bitcoin Mirror](/assets/HereComesBitcoinAssets/Mirror.png): Bitcoin puppet gazing at its own reflection in a mirror
+- [Moe Bitty Us Strip](/assets/HereComesBitcoinAssets/moebittyusstrip.png): Bitcoin puppet in a moe-style comic strip panel layout
+- [Bitcoin Mrs](/assets/HereComesBitcoinAssets/mrs.png): Bitcoin puppet styled as a Mrs. or female character
+- [Murder Mystery Bitcoin](/assets/HereComesBitcoinAssets/murdermystery.png): Bitcoin puppet characters at a murder mystery dinner party
+- [Mythology Bitcoin](/assets/HereComesBitcoinAssets/mythology.png): Bitcoin puppet depicted in ancient Greek or Roman mythology style
+- [Night Out Bitcoin](/assets/HereComesBitcoinAssets/night-out.png): Bitcoin puppet dressed up for a glamorous night on the town
+- [Bitcoin Nostrich](/assets/HereComesBitcoinAssets/Nostrich.png): Bitcoin puppet as an ostrich referencing the Nostr protocol mascot
+- [Online Discourse](/assets/HereComesBitcoinAssets/Online-discourse.png): Bitcoin puppet characters arguing in an online social media thread
+- [OpenSats Arrow](/assets/HereComesBitcoinAssets/opensats-arrow.png): Bitcoin puppet in OpenSats Bitcoin grants organization branding
+- [Orange Man](/assets/HereComesBitcoinAssets/Orange-man.png): Bitcoin puppet as an intensely orange man character
+- [Panic At The Meow](/assets/HereComesBitcoinAssets/Panic-at-the-meow.png): Cat Bitcoin puppet in a Panic! at the Disco band parody
+- [Pet Adoption Bitcoin](/assets/HereComesBitcoinAssets/Pet-adoption.png): Bitcoin puppet choosing a pet at an animal adoption center
+- [Planet Bitcoin](/assets/HereComesBitcoinAssets/planet.png): Bitcoin puppet floating near a ringed planet in outer space
+- [Pollock Bitty](/assets/HereComesBitcoinAssets/pollockbitty.png): Bitcoin puppet in the chaotic drip-painting style of Jackson Pollock
+- [Presidio One](/assets/HereComesBitcoinAssets/presidio-one.png): Bitcoin puppet in Presidio-themed illustration, first variant
+- [Presidio Two](/assets/HereComesBitcoinAssets/presidio-two.png): Bitcoin puppet in Presidio-themed illustration, second variant
+- [Prrrroto Cat](/assets/HereComesBitcoinAssets/Prrrroto-cat.png): Cat Bitcoin puppet as a Bitcoin protocol developer
+- [Bitcoin Pubkey](/assets/HereComesBitcoinAssets/Pubkey.png): Bitcoin puppet presenting a cryptographic public key
+- [Puppet Jack](/assets/HereComesBitcoinAssets/puppet-jack.png): Bitcoin puppet operating as a hand puppet named Jack
+- [Bitcoin Pyro](/assets/HereComesBitcoinAssets/Pyro.png): Bitcoin puppet as a fire-wielding pyromaniac surrounded by flames
+- [Bitcoin Queen](/assets/HereComesBitcoinAssets/Queen.png): Bitcoin puppet in royal queen crown and regalia
+- [Register Cat](/assets/HereComesBitcoinAssets/Register-cat.png): Cat Bitcoin puppet operating a cash register
+- [Bitcoin Robe](/assets/HereComesBitcoinAssets/Robe.png): Bitcoin puppet draped in a flowing ceremonial robe
+- [Rockstar Dev](/assets/HereComesBitcoinAssets/rockstar-dev.png): Bitcoin puppet as a guitar-shredding rockstar software developer
+- [Roman Bitcoin](/assets/HereComesBitcoinAssets/roman.png): Bitcoin puppet in ancient Roman toga and laurel wreath
+- [Bitcoin Sandwich](/assets/HereComesBitcoinAssets/Sandwich.png): Bitcoin puppet enthusiastically eating a giant sandwich
+- [Bitcoin Satoshi](/assets/HereComesBitcoinAssets/Satoshi.png): Bitcoin puppet as a tribute to Satoshi Nakamoto, the anonymous Bitcoin creator
+- [SHAmory Bitcoin](/assets/HereComesBitcoinAssets/SHAmory.png): Bitcoin puppet in SHAmory Bitcoin education memory card game branding
+- [Bitcoin Sir](/assets/HereComesBitcoinAssets/sir.png): Bitcoin puppet as a dapper English gentleman in top hat and monocle
+- [Bitcoin Skater](/assets/HereComesBitcoinAssets/Skater.png): Bitcoin puppet pulling tricks on a skateboard
+- [Solar Powered Meow](/assets/HereComesBitcoinAssets/Solar-powered-meow.png): Cat Bitcoin puppet running on solar panel power
+- [Bitcoin Sorceress](/assets/HereComesBitcoinAssets/Sorceress.png): Bitcoin puppet as a powerful sorceress casting a spell
+- [Stacker News](/assets/HereComesBitcoinAssets/stacker-news.png): Bitcoin puppet in Stacker News community forum branding
+- [Student Network](/assets/HereComesBitcoinAssets/Student-network.png): Bitcoin puppet as a student or educator in an academic network
+- [Summer Bitcoin](/assets/HereComesBitcoinAssets/summer.png): Bitcoin puppet in bright summer vacation attire
+- [Summoning The Circle](/assets/HereComesBitcoinAssets/Summoning-the-circle.png): Bitcoin puppet performing a mystical ritual summoning circle
+- [Bitcoin Super](/assets/HereComesBitcoinAssets/super.png): Bitcoin puppet as a caped superhero in flight
+- [Bitcoin Surfer](/assets/HereComesBitcoinAssets/surfer.png): Bitcoin puppet riding a cresting ocean wave on a surfboard
+- [Surfing Bitcoin](/assets/HereComesBitcoinAssets/surfing.png): Bitcoin puppet balanced on a surfboard in a surfing pose
+- [Bitcoin Sushi](/assets/HereComesBitcoinAssets/Sushi.png): Bitcoin puppet as or serving Japanese sushi
+- [The Sun Soaker](/assets/HereComesBitcoinAssets/The-sun-soaker.png): Bitcoin puppet sunbathing and soaking up warm sunrays
+- [The Unstoppable](/assets/HereComesBitcoinAssets/The-unstoppable.png): Bitcoin puppet as an unstoppable force charging forward relentlessly
+- [Therapist Bitty](/assets/HereComesBitcoinAssets/therapistbitty.png): Bitcoin puppet as a therapist holding a notepad
+- [THNDR Games](/assets/HereComesBitcoinAssets/THNDR-games.png): Bitcoin puppet in THNDR Bitcoin mobile gaming platform branding
+- [Tokyo Bitcoin Base](/assets/HereComesBitcoinAssets/tokyo-bitcoin-base.png): Bitcoin puppet at the Tokyo Bitcoin Base community hub
+- [Tokyo Streetwear Bittys](/assets/HereComesBitcoinAssets/tokyostreetwearbittys.png): Bitcoin puppets styled in Tokyo street fashion and streetwear
+- [Bitcoin Triceratops](/assets/HereComesBitcoinAssets/Triceratops.png): Bitcoin puppet as a three-horned triceratops dinosaur
+- [Bitcoin UFO](/assets/HereComesBitcoinAssets/UFO.png): Bitcoin puppet piloting or being abducted by a flying saucer
+- [Bitcoin Unicorn](/assets/HereComesBitcoinAssets/Unicorn.png): Bitcoin puppet as a magical rainbow unicorn with a horn
+- [Bitcoin Vault](/assets/HereComesBitcoinAssets/Vault.png): Bitcoin puppet inside or guarding a bank vault full of coins
+- [Bitcoin Venus](/assets/HereComesBitcoinAssets/Venus.png): Bitcoin puppet parody of Botticelli's Birth of Venus painting
+- [Vibe Coding](/assets/HereComesBitcoinAssets/vibe-coding.png): Bitcoin puppet vibe coding at a laptop in a chill laid-back setting
+- [Victory Bitcoin](/assets/HereComesBitcoinAssets/victory.png): Bitcoin puppet triumphantly celebrating a victory with arms raised
+- [Vinteum](/assets/HereComesBitcoinAssets/vinteum.png): Bitcoin puppet in Vinteum Bitcoin development organization branding
+- [Vitruvian Bitcoin](/assets/HereComesBitcoinAssets/vitruvian.png): Bitcoin puppet parody of Leonardo da Vinci's Vitruvian Man
+- [Volcano Miner](/assets/HereComesBitcoinAssets/Volcano-miner.png): Bitcoin puppet mining near a glowing active volcano
+- [Woods Bitcoin](/assets/HereComesBitcoinAssets/woods.png): Bitcoin puppet wandering through a dense forest
+- [Zeus Bitcoin](/assets/HereComesBitcoinAssets/Zeus-bitcoin.png): Bitcoin puppet as Zeus, Greek god of thunder, wielding a lightning bolt
+
+### Sticker Set — "Make Chats Stickier"
+
+Here Comes Bitcoin sticker bundles for Signal and Telegram, featuring Bitcoin puppet characters for use in private messaging apps.
+
+- [Telegram Sticker Pack](https://t.me/addstickers/herecomesbitcoin)
+- [Signal Sticker Pack](https://signal.art/addstickers/#pack_id=8fa42aa13ec8f0efebe4b038f41afbd1&pack_key=ef7c64b27126e1fed904c2ccaacf78d312a3f8dd846cd2e146c749fe2e51f335)
+- [Sticker Preview Images](/assets/StrickerSetImages/): PNG preview images of the sticker set
+
+### GIFs — "The Perfect Gif"
+
+12 animated GIFs of the Bitcoin puppet character, free to use and share anywhere.
+
+- [All GIF Files](/assets/HereComesBitconGifs/): Direct folder access to all 12 animated GIFs
+- [Giphy Library](https://giphy.com/herecomesbitcoin): Full GIF library on Giphy
+
+### Partners — "Partners in Code"
+
+Bitcoin-aligned organizations that have partnered with Here Comes Bitcoin. Brands good for Bitcoin can get in touch about custom sticker partnerships.
+
+- [SHAmory](https://shamory.com): Bitcoin education card game
+- [HRF – Human Rights Foundation](https://hrf.org): Promoting freedom globally with Bitcoin
+- [OpenSats](https://opensats.org): Supporting Bitcoin open-source development
+
+### Products — "Here Comes Your Bitcoin"
+
+Physical merchandise featuring the Here Comes Bitcoin character. Presented as a swipeable card carousel.
+
+- [Here Comes Bitcoin Plushie — $39.99](https://www.uncute.com/collections/all/products/here-comes-bitcoin)
+- [The 21M Faces of Bitcoin Mug — $15.00](https://www.spiralswag.xyz/product/the-21m-faces-of-bitcoin-mug/4?cp=true&sa=true&sbp=false&q=false)
+- [Here Comes Bitcoin Satscard — $8.99](https://store.coinkite.com/store/sc-hcb-1)
+
+### Video — "Who is Bitcoin?"
+
+Embedded YouTube short film answering the age-old question: "Who is Bitcoin?" Many have asked "What is Bitcoin?" — few have dared ask "Who is Bitcoin?"
+
+- [Watch "Who is Bitcoin?" on YouTube](https://www.youtube.com/watch?v=DvHUOr8ruMw)
+
+### Coloring Pages — "Farts and Crafts"
+
+Printable Bitcoin puppet coloring pages. Download, print, color, and share. Kids and adults alike.
+
+- [Coloring Pages Folder](/assets/ColoringCardsImages/): Direct folder access to all coloring page PNGs
+  - `ColoringCardOne.png` — Main Here Comes Bitcoin coloring page
+  - `coloringCard2.png` — Up Top, Bitcoin!
+  - `coloringCard3.png` — Super Strong Amazing Very Muscles Bitcoin
+  - `coloringCard4.png` — Hungry Hungry Bitcoin
+  - `coloringCard5.png` — Oh, Bitcoin! Not Again!
+
+### Footer
+
+Links, social channels, and contact information. License: No Copyright — Make Whatever You Want.
+
+- [Contact Us](mailto:hello@herecomesbitcoin.org): For shop support, business, and licensing enquiries
+- [YouTube](https://www.youtube.com/@herecomesbitcoin): Here Comes Bitcoin YouTube channel
+- [Discord](https://discord.gg/BChUGPzS5U): Community Discord server
+- [Usage Guidelines](https://x.com/spiralbtc/status/1788239963626123600/): How to use the assets
+- [Built with HCB](/built-with-hcb): Projects and sites built using Here Comes Bitcoin assets
+
+## API
+
+- [GET /api/assets](/api/assets): Machine-readable JSON manifest of all site assets. Returns total asset count, categories (illustrations, gifs, coloring-pages, sticker-sets), format availability (PNG, SVG, GIF), and fully-qualified direct download URLs for every asset. CORS-enabled and publicly accessible.
+
+## Optional
+
+- [Spiral](https://spiral.xyz): Creator of Here Comes Bitcoin — a Bitcoin-focused subsidiary of Block, Inc.
+- [OpenSats](https://opensats.org): Supports Bitcoin open-source development; a founding partner of this project
+- [HRF – Human Rights Foundation](https://hrf.org): Promotes freedom globally using Bitcoin; a founding partner of this project
+- [SHAmory](https://shamory.com): Bitcoin education card game; a founding partner of this project
+- [Giphy](https://giphy.com/herecomesbitcoin): Full Here Comes Bitcoin GIF library hosted on Giphy
